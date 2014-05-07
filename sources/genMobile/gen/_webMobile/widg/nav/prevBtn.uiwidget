@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:navUiWidget code="prevBtn" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:scope>
+		<sm:customized>
+			<sm:scopeStartingPoint>
+				<sm:fromAbsoluteTop descendantOffset="0" includeInScope="no"/>
+			</sm:scopeStartingPoint>
+			<sm:ancestorEndingPoint/>
+			<sm:currentAndAncestorSiblings>
+				<sm:siblingsStartingPoint direction="scopeStartingPointToCurrent" offset="0">
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ue.model" axis="outline" includeInScope="no"/>
+				</sm:siblingsStartingPoint>
+				<sm:siblingsEndingPoint direction="currentToScopeStartingPoint" offset="0">
+					<sm:stopAtModel sc:refUri="/academic/model/Ue/ue.model" axis="outline" includeInScope="no"/>
+				</sm:siblingsEndingPoint>
+			</sm:currentAndAncestorSiblings>
+			<sm:currentDescendants/>
+		</sm:customized>
+	</sm:scope>
+	<sm:selectPage>
+		<sm:step>
+			<sm:previous/>
+		</sm:step>
+	</sm:selectPage>
+	<sm:content>
+		<sm:ifPageFound>
+			<sm:WLink widgetClass="mob_prevBtn">
+				<sm:label>Précédent</sm:label>
+				<sm:link/>
+			</sm:WLink>
+		</sm:ifPageFound>
+		<sm:ifPageNotFound>
+			<span class="mob_noPrevBtn" xmlns="http://www.w3.org/1999/xhtml"></span>
+		</sm:ifPageNotFound>
+	</sm:content>
+</sm:navUiWidget>

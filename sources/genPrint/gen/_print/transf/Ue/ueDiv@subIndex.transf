@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:axis code="subIndex"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="ueDiv">
+			<sm:title>
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="title"/>
+				</sm:callModel>
+			</sm:title>
+			<sm:Widget sc:refUri="/genPrint/gen/_print/widg/index/subIndex.uiwidget">
+				<sm:xhtmlContentZone key="content">
+					<sm:callModel>
+						<sm:current axis="co"/>
+					</sm:callModel>
+				</sm:xhtmlContentZone>
+			</sm:Widget>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

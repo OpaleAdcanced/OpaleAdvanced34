@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/binaries.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/math.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/metadata.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/pb.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/re.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/root.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/Ua.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/Uc.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/ue.transflist"/>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/_xxx@idNode.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/flv/flv.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WVideoFlv widgetClass="resVideo">
+			<sm:binaryUrl>
+				<sm:flvSize>
+					<sm:scaleFromStandardCharSize/>
+					<sm:sizeBounds maxWidthInPx="630" maxHeightInPx="630"/>
+				</sm:flvSize>
+			</sm:binaryUrl>
+			<sm:alt>
+				<sm:callBinaryMeta axis="alt"/>
+			</sm:alt>
+			<sm:declareSize/>
+			<sm:player show="always"/>
+			<sm:stopButton cancelLoad="false"/>
+			<sm:volumeButton/>
+			<sm:timeButton/>
+			<sm:fullscreenButton/>
+			<sm:configFile format="text" src="player/flv.txt" srcFrom="skin"/>
+		</sm:WVideoFlv>
+	</sm:content>
+</sm:binaryXhtmlTransf>

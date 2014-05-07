@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="heading">
+	<sm:zoneToDeclare key="class" occurence="One"/>
+	<sm:zoneToDeclare key="idNode" occurence="One"/>
+	<sm:zoneToDeclare key="title" occurence="One"/>
+	<sm:zoneToDeclare key="co" occurence="One"/>
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java op"
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:op="utc.fr:ics/opale3"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+		&lt;xsl:param name="vArguments" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+&lt;scBlock class="heading {resultatAgent('xhtmlContentZone_class')}"&gt;
+  &lt;hx class="heading_ti"&gt;
+    &lt;xsl:value-of select="resultatAgent('xhtmlContentZone_idNode')" disable-output-escaping="yes"/&gt;
+    &lt;span&gt;
+      &lt;xsl:value-of select="resultatAgent('xhtmlContentZone_title')" disable-output-escaping="yes"/&gt;
+    &lt;/span&gt;
+  &lt;/hx&gt;
+  &lt;div class="heading_co"&gt;
+      &lt;xsl:value-of select="resultatAgent('xhtmlContentZone_co')" disable-output-escaping="yes"/&gt;
+  &lt;/div&gt;
+&lt;/scBlock&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+</sm:widgetBsFragment>
+</sm:freeUiWidget>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame blockCache="yes" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:callRootModel/>
+	<sm:publishFiles sc:refUri="/genPrint/gen/pdf/uiframe/ui.doss"/>
+	<sm:freeInitProperties>generate.by.difference=false
+destination.purge=yes
+destination.root.filepath=matchextension:*.pdf
+destination.onestream.builder=file:matchextension:*.pdf
+destination.onestream.mimetype=application/pdf
+postTask.ant=build.xml</sm:freeInitProperties>
+</sm:transparentUiFrame>

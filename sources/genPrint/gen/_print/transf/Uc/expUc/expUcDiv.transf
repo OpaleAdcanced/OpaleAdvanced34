@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/expUcDiv.model"/>
+	<sm:content format="xhtml">
+		<sm:WSimpleBlock widgetClass="section">
+			<sm:WHeadingBlock widgetClass="expUcDiv">
+				<sm:title>
+					<sm:callModel view="xhtmlContent">
+						<sm:current axis="title"/>
+					</sm:callModel>
+				</sm:title>
+				<sm:for codes="pb">
+					<sm:callSubModel/>
+				</sm:for>
+				<sm:for codes="div">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:callSubModel/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</sm:WHeadingBlock>
+		</sm:WSimpleBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="resInfoM">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="resInfoM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="pubMode" name="Mode de publication (web et diaporama)" occurence="zeroOrOne">
+			<sm:enum>
+				<sm:option key="embeded" name="Embarquée"/>
+				<sm:option key="zoom" name="Zoom"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="index" name="Type d'index (papier)" occurence="zeroOrOne">
+			<sm:enum>
+				<sm:option key="graph" name="Graphique"/>
+				<sm:option key="tab" name="Tableau"/>
+				<sm:option key="img" name="Image"/>
+				<sm:option key="form" name="Formule"/>
+				<sm:option key="anim" name="Animation"/>
+				<!--
+<sm:optionSeparator xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"/>-->
+				<!--
+<sm:option xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" key="none" name="Non indexée"/>-->
+			</sm:enum>
+		</sm:field>
+		<sm:subData code="instruct" name="Consignes" occurence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/instructionM.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/_edt/metaData/resInfoM.xed"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

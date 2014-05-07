@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="OpaleStarter" name="Opale Starter" majorVersion="3" mediumVersion="4" minorVersion="301">
+	<sm:publicClasses>
+		<!--ATTENTION : la méthode normal d'obtention du wsppack Opale* Starter est de le faire passer par les scripts du dériver "modelStarter". Bien qu'il soit possible et plus simple de le lancer directement par un wspmake dans trunk/model/, les scripts du dériver permentent d'épurer certaines méta-données et certaines balises inline, il est donc nécessaire d'utiliser le deriver pour obtenir un wsppack starter conforme à ceux publiés sur le site scenari-platform.org.-->
+		<sm:class sc:refUri="/academic/model/Ue/ue.model" access="readWrite" sortKey="A">
+			<sm:mainView>
+				<sm:formEditorTab name="￼;Édition Opale￼" label="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+				<sm:blocksTab name="￼;Publications￼" label="￼;Publi.￼" display="visible" idInView="tabPub">
+					<sm:generatorsBlock name="￼;Publications￼" idInView="bkPub" displayMode="lockedOpen">
+						<sm:genBox idInView="genPaper">
+							<sm:generator sc:refUri="/academic/gen/quadra/paper/paper.generator"/>
+						</sm:genBox>
+						<sm:genBox idInView="genWeb">
+							<sm:generator sc:refUri="/academic/gen/quadra/web/web.generator"/>
+						</sm:genBox>
+					</sm:generatorsBlock>
+				</sm:blocksTab>
+				<sm:blocksTab name="￼;Informations￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+					<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+				</sm:blocksTab>
+				<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+			</sm:mainView>
+		</sm:class>
+		<sm:group name="￼;Ressources￼" displayMode="closed" sortKey="B">
+			<sm:group name="￼;Images￼" displayMode="open" sortKey="A">
+				<sm:class sc:refUri="/binaries/jpg/jpeg.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/png/png.model" access="readWrite" sortKey="C"/>
+			</sm:group>
+			<sm:group name="￼;Schémas vectoriels￼" displayMode="open" sortKey="B">
+				<sm:class sc:refUri="/binaries/odg/odg.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Tableaux￼" displayMode="open" sortKey="C">
+				<sm:class sc:refUri="/binaries/ods/ods.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Vidéos, sons, interactions￼" displayMode="closed" sortKey="D">
+				<sm:class sc:refUri="/binaries/mp3/mp3.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/flash/flash.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/avi/avi.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/flv/flv.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/mp4/mp4.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/mov/mov.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/mpg/mpg.model" access="readWrite" sortKey="G"/>
+				<sm:class sc:refUri="/binaries/rm/rm.model" access="readWrite" sortKey="H"/>
+				<sm:class sc:refUri="/binaries/wmv/wmv.model" access="readWrite" sortKey="I"/>
+			</sm:group>
+			<sm:group name="￼;Formules Mathématiques￼" displayMode="open" sortKey="E">
+				<sm:class sc:refUri="/math/odf/odf.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Documents bureautiques￼" displayMode="closed" sortKey="F">
+				<sm:class sc:refUri="/binaries/doc/doc.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/xls/xls.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/ppt/ppt.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/odp/odp.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/odt/odt.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/pdf/pdf.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/zip/zip.model" access="readWrite" sortKey="G"/>
+			</sm:group>
+		</sm:group>
+		<sm:class sc:refUri="/binaries/undef/undefBinary.model" access="readWriteNoCreator" sortKey="C">
+			<sm:mainView>
+				<sm:formEditorTab name="￼;Propriétés￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+			</sm:mainView>
+		</sm:class>
+		<sm:class sc:refUri="/binaries/undef/xml.model" access="readWriteNoCreator" sortKey="D"/>
+		<sm:overlays>
+			<!--Suppression des activités (niv de réutilisation) + simplification des fonctions (evaluation)-->
+			<sm:removeInternClass sc:refUri="/academic/model/Ua/courseUa.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Ua/assmntUa.model"/>
+			<!--Suppression des références (et donc du support racine)-->
+			<sm:removeInternClass sc:refUri="/academic/model/Re/refs/genRef.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Re/simu.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Re/listingTxt.model"/>
+			<!--Exclusions Méta-données-->
+			<sm:removeInternClass sc:refUri="/academic/model/metaData/keywds.model"/>
+			<!--quiz-->
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/quiz/field.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/quiz/match.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/quiz/ordWord.model"/>
+			<!--uc-->
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/practUc.model"/>
+			<sm:removeInternClass sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+		</sm:overlays>
+	</sm:publicClasses>
+	<sm:defaultMainView>
+		<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="nonBinaryClasses"/>
+		<sm:blocksTab name="￼;Visualisation￼" label="￼;Visu.￼" idInView="tabView" display="visible" usedIn="binaryClasses">
+			<sm:block name="￼;Dimensions￼" code="size" idInView="bkSize" displayMode="memorized" usedIn="binaryClasses"/>
+			<sm:previewBlock name="￼;Aperçu￼" idInView="bkPreview" displayMode="memorized"/>
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="memorized" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:formEditorTab name="￼;Propriétés￼" label="￼;Props.￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="binaryClasses"/>
+		<sm:blocksTab name="￼;Informations￼" label="￼;Infos.￼" idInView="tabInfo" display="extra" usedIn="nonBinaryClasses">
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+	</sm:defaultMainView>
+	<sm:migration>
+		<!--changements de structure exercices en 3.2-->
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSupStarter" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSup" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSupStarter" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSup" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.3.001.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="3" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="3" minorVersion="002" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.3.001.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="3" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="OpaleStarter" majorVersion="3" mediumVersion="3" minorVersion="002" scenariVersion="3.7"/>
+		</sm:update>
+	</sm:migration>
+</sm:wspDefinition>

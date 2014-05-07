@@ -1,0 +1,6 @@
+- Started around 11/2008 last update 06/2013
+- Last updated by Ghislain Fabre & Kelis for Opale 3.4
+- Currently maintained by Kelis and the Université de Technologie de Compiègne
+- Open to any review or participation request, but mostly need people to distribute the released version
+
+

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="Opale" name="￼;Opale Advanced￼" defaultWspCode="Opale" majorVersion="3" mediumVersion="4" minorVersion="003">
+	<sm:publicClasses>
+		<sm:group name="￼;Supports￼" sortKey="A">
+			<sm:class sc:refUri="/academic/model/root/webRoot.model" access="readWrite" sortKey="A">
+				<sm:mainView>
+					<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Publications Web￼" label="￼;Web￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications Web￼" idInView="bkGenWeb" displayMode="lockedOpen">
+							<sm:genBox idInView="genWeb">
+								<sm:generator sc:refUri="/academic/gen/quadra/web/web.generator"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Publications SCORM￼" label="￼;SCORM￼" display="visible" idInView="tabScorm">
+						<sm:generatorsBlock name="￼;Publications SCORM￼" idInView="bkGenScorm" displayMode="lockedOpen">
+							<sm:genBox idInView="genScormMono">
+								<sm:generator sc:refUri="/academic/gen/quadra/scormMono/scormMono.generator"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packScorm12.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packScorm2k4.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packClaroline.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packGanesha.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packMoodle.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packSyfadis.genDeploy"/>
+							</sm:genBox>
+							<sm:genBox idInView="genScormMulti">
+								<sm:generator sc:refUri="/academic/gen/quadra/scormMulti/scormMulti.generator"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packScorm12.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packScorm2k4.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packClaroline.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packGanesha.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packMoodle.genDeploy"/>
+								<sm:deployment sc:refUri="/academic/gen/_scorm/genDeploy/packSyfadis.genDeploy"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="visible" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+			<sm:class sc:refUri="/academic/model/root/odRoot.model" access="readWrite" sortKey="B">
+				<sm:mainView>
+					<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Publications Papier￼" label="￼;Papier￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications Papier￼" idInView="bkGenOd" displayMode="lockedOpen">
+							<sm:genBox idInView="genPaper">
+								<sm:generator sc:refUri="/academic/gen/quadra/paper/paper.generator"/>
+							</sm:genBox>
+							<sm:genBox idInView="genPrint">
+								<sm:generator sc:refUri="/genPrint/gen/pdf/pdf.generator"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="visible" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+			<sm:class sc:refUri="/academic/model/root/presRoot.model" access="readWrite" sortKey="C">
+				<sm:mainView>
+					<sm:ribbons>
+						<sm:webRibbon name="￼;Aperçu￼">
+							<sm:openWebButton name="￼;Short￼" description="￼;Ouvrir l'aperçu (Version &quot;courte&quot;) dans un navigateur externe￼">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_pres/shortContent/previewPresShort.generator"/>
+							</sm:openWebButton>
+							<sm:openWebButton name="￼;Standard￼" description="￼;Ouvrir l'aperçu (Version &quot;standard&quot;) dans un navigateur externe￼">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_pres/standardContent/previewPresStandard.generator"/>
+							</sm:openWebButton>
+						</sm:webRibbon>
+					</sm:ribbons>
+					<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Publications diaporama￼" label="￼;Diapo.￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications diaporama￼" idInView="bkGenPres" displayMode="lockedOpen">
+							<sm:genBox idInView="genPres">
+								<sm:generator sc:refUri="/academic/gen/quadra/pres/pres.generator"/>
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Aperçu Slideshow￼" label="￼;Aperçu￼" display="visible" idInView="tabPrePres">
+						<sm:displayingBlock name="￼;Prévisualisation SLIDESHOW (Version &quot;courte&quot;)￼" idInView="bkPrePresShort" displayMode="openedByDefault">
+							<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_pres/shortContent/previewPresShort.generator"/>
+						</sm:displayingBlock>
+						<sm:displayingBlock name="￼;Prévisualisation SLIDESHOW (Version &quot;standard&quot;)￼" idInView="bkPrePresStandard" displayMode="memorized">
+							<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_pres/standardContent/previewPresStandard.generator"/>
+						</sm:displayingBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="visible" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+		</sm:group>
+		<sm:group name="￼;Organisation du plan￼" sortKey="B">
+			<sm:class sc:refUri="/academic/model/Ue/ue.model" access="readWrite" sortKey="A">
+				<sm:mainView>
+					<sm:ribbons>
+						<sm:webRibbon name="￼;Aperçu￼">
+							<sm:openWebButton name="￼;Standard￼" description="￼;Ouvrir l'aperçu (Version &quot;standard&quot;) dans un navigateur externe￼">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:openWebButton>
+							<sm:openWebButton name="￼;Short￼" description="￼;Ouvrir l'aperçu (Version &quot;courte&quot;) dans un navigateur externe￼">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:openWebButton>
+						</sm:webRibbon>
+					</sm:ribbons>
+					<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Aperçu Web￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+						<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+							<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+						</sm:displayingBlock>
+						<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;courte&quot;)￼" idInView="bkPreWebShort" displayMode="memorized">
+							<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+						</sm:displayingBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+			<sm:group name="￼;Activités￼" displayMode="open" sortKey="B">
+				<sm:class sc:refUri="/academic/model/Ua/courseUa.model" access="readWrite" sortKey="A">
+					<sm:mainView>
+						<sm:ribbons>
+							<sm:webRibbon name="￼;Aperçu￼">
+								<sm:openWebButton name="￼;Standard￼" description="￼;Ouvrir l'aperçu (Version &quot;standard&quot;) dans un navigateur externe￼">
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+								</sm:openWebButton>
+								<sm:openWebButton name="￼;Short￼" description="￼;Ouvrir l'aperçu (Version &quot;courte&quot;) dans un navigateur externe￼">
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+								</sm:openWebButton>
+							</sm:webRibbon>
+						</sm:ribbons>
+						<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+						<sm:blocksTab name="￼;Aperçu Web￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+							<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:displayingBlock>
+							<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;courte&quot;)￼" idInView="bkPreWebShort" displayMode="memorized">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:displayingBlock>
+						</sm:blocksTab>
+						<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+							<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+						</sm:blocksTab>
+						<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+					</sm:mainView>
+				</sm:class>
+				<sm:class sc:refUri="/academic/model/Ua/assmntUa.model" access="readWrite" sortKey="B"/>
+			</sm:group>
+			<sm:group name="￼;Contenus d'apprentissage￼" displayMode="open" sortKey="C">
+				<sm:class sc:refUri="/academic/model/Uc/expUc.model" access="readWrite" sortKey="A">
+					<sm:mainView>
+						<sm:ribbons>
+							<sm:webRibbon name="￼;Aperçu￼">
+								<sm:openWebButton name="￼;Standard￼" description="￼;Ouvrir l'aperçu (Version &quot;standard&quot;) dans un navigateur externe￼">
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+								</sm:openWebButton>
+								<sm:openWebButton name="￼;Short￼" description="￼;Ouvrir l'aperçu (Version &quot;courte&quot;) dans un navigateur externe￼">
+									<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+								</sm:openWebButton>
+							</sm:webRibbon>
+						</sm:ribbons>
+						<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+						<sm:blocksTab name="￼;Aperçu Web￼" label="￼;Aperçu￼" display="visible" idInView="tabPreWeb">
+							<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;standard&quot;)￼" idInView="bkPreWebStandard" displayMode="openedByDefault">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/standardContent/previewWebStandard.generator"/>
+							</sm:displayingBlock>
+							<sm:displayingBlock name="￼;Prévisualisation WEB (Version &quot;courte&quot;)￼" idInView="bkPreWebShort" displayMode="memorized">
+								<sm:interactiveGenerator sc:refUri="/academic/gen/quadra/preview/_web/shortContent/previewWebShort.generator"/>
+							</sm:displayingBlock>
+						</sm:blocksTab>
+						<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="extra" idInView="tabInfo">
+							<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+						</sm:blocksTab>
+						<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+					</sm:mainView>
+				</sm:class>
+				<sm:class sc:refUri="/academic/model/Uc/practUc.model" access="readWrite" sortKey="B"/>
+			</sm:group>
+			<sm:group name="￼;Exercices auto-évalués￼" displayMode="closed" sortKey="D">
+				<sm:class sc:refUri="/academic/model/Uc/quiz/mcqSur.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/mcqMur.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/match.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/ordWord.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/cloze.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/field.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/academic/model/Uc/quiz/coQuiz.model" access="readWrite" sortKey="G"/>
+				<sm:group name="￼;Exercices graphiques￼" displayMode="open" sortKey="H">
+					<sm:class sc:refUri="/academic/model/Uc/quiz/mcgSur.model" access="readWrite" sortKey="A"/>
+					<sm:class sc:refUri="/academic/model/Uc/quiz/mcgMur.model" access="readWrite" sortKey="B"/>
+				</sm:group>
+			</sm:group>
+		</sm:group>
+		<sm:group name="￼;Références￼" displayMode="closed" sortKey="C">
+			<sm:class sc:refUri="/academic/model/Re/refs/acr.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/academic/model/Re/refs/glos.model" access="readWrite" sortKey="B"/>
+			<sm:class sc:refUri="/academic/model/Re/refs/bib.model" access="readWrite" sortKey="C"/>
+			<sm:class sc:refUri="/academic/model/Re/refs/ref.model" access="readWrite" sortKey="D"/>
+		</sm:group>
+		<sm:group name="￼;Ressources￼" displayMode="closed" sortKey="D">
+			<sm:group name="￼;Images￼" displayMode="open" sortKey="A">
+				<sm:class sc:refUri="/binaries/jpg/jpeg.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/png/png.model" access="readWrite" sortKey="C"/>
+			</sm:group>
+			<sm:group name="￼;Schémas vectoriels￼" displayMode="open" sortKey="B">
+				<sm:class sc:refUri="/binaries/odg/odg.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Tableaux￼" displayMode="open" sortKey="C">
+				<sm:class sc:refUri="/binaries/ods/ods.model" access="readWrite" sortKey="A"/>
+			</sm:group>
+			<sm:group name="￼;Vidéos, sons, interactions￼" displayMode="closed" sortKey="D">
+				<sm:class sc:refUri="/binaries/mp3/mp3.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/opus/opus.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/flash/flash.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/avi/avi.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/flv/flv.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/mp4/mp4.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/mov/mov.model" access="readWrite" sortKey="G"/>
+				<sm:class sc:refUri="/binaries/mpg/mpg.model" access="readWrite" sortKey="H"/>
+				<sm:class sc:refUri="/binaries/rm/rm.model" access="readWrite" sortKey="I"/>
+				<sm:class sc:refUri="/binaries/webm/webm.model" access="readWrite" sortKey="J"/>
+				<sm:class sc:refUri="/binaries/wmv/wmv.model" access="readWrite" sortKey="K"/>
+				<sm:class sc:refUri="/academic/model/Re/eSite/eSite.model" access="readWrite" sortKey="L"/>
+				<sm:class sc:refUri="/binaries/eWeb/eWeb.model" access="readWrite" sortKey="M"/>
+				<sm:class sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model" access="readWrite" sortKey="N"/>
+				<sm:class sc:refUri="/academic/model/Re/gallery.model" access="readWrite" sortKey="O"/>
+				<sm:class sc:refUri="/academic/model/Re/simu.model" access="readWriteNoCreator" sortKey="P"/>
+			</sm:group>
+			<sm:group name="￼;Formules Mathématiques￼" displayMode="open" sortKey="E">
+				<sm:class sc:refUri="/math/odf/odf.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/math/latex/mathTex.model" access="readWrite" sortKey="B"/>
+			</sm:group>
+			<sm:group name="￼;Documents bureautiques￼" displayMode="closed" sortKey="F">
+				<sm:class sc:refUri="/binaries/doc/doc.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/binaries/xls/xls.model" access="readWrite" sortKey="B"/>
+				<sm:class sc:refUri="/binaries/ppt/ppt.model" access="readWrite" sortKey="C"/>
+				<sm:class sc:refUri="/binaries/odp/odp.model" access="readWrite" sortKey="D"/>
+				<sm:class sc:refUri="/binaries/odt/odt.model" access="readWrite" sortKey="E"/>
+				<sm:class sc:refUri="/binaries/pdf/pdf.model" access="readWrite" sortKey="F"/>
+				<sm:class sc:refUri="/binaries/zip/zip.model" access="readWrite" sortKey="G"/>
+			</sm:group>
+			<sm:group name="￼;Applets￼" displayMode="closed" sortKey="G">
+				<sm:class sc:refUri="/academic/model/Re/applet/applet.model" access="readWrite" sortKey="A"/>
+				<sm:class sc:refUri="/academic/model/Re/applet/jar.model" access="readWrite" sortKey="B"/>
+			</sm:group>
+		</sm:group>
+		<sm:group name="￼;Métadonnées pré-renseignées￼" displayMode="closed" sortKey="E">
+			<sm:class sc:refUri="/academic/model/metaData/info.model" access="readWrite" sortKey="A"/>
+			<sm:class sc:refUri="/academic/model/metaData/infoBin.model" access="readWrite" sortKey="B"/>
+		</sm:group>
+		<sm:class sc:refUri="/binaries/undef/undefBinary.model" access="readWriteNoCreator" sortKey="F">
+			<sm:mainView>
+				<sm:formEditorTab name="￼;Propriétés￼" label="￼;Props.￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+			</sm:mainView>
+		</sm:class>
+		<sm:class sc:refUri="/binaries/undef/xml.model" access="readWriteNoCreator" sortKey="G"/>
+	</sm:publicClasses>
+	<sm:defaultMainView>
+		<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="nonBinaryClasses"/>
+		<sm:blocksTab name="￼;Visualisation￼" label="￼;Visu.￼" idInView="tabView" display="visible" usedIn="binaryClasses">
+			<sm:block name="￼;Dimensions￼" code="size" idInView="bkSize" displayMode="openedByDefault" usedIn="binaryClasses"/>
+			<sm:previewBlock name="￼;Aperçu￼" idInView="bkPreview" displayMode="openedByDefault"/>
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="closedByDefault" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:formEditorTab name="￼;Propriétés￼" label="￼;Props.￼" idInView="tabEdit" display="visible" formEditorKey="" usedIn="binaryClasses"/>
+		<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" idInView="tabInfo" display="extra" usedIn="nonBinaryClasses">
+			<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen" usedIn="allClasses"/>
+		</sm:blocksTab>
+		<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+	</sm:defaultMainView>
+	<sm:migration>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale2.doss">
+			<sm:from key="Opale" majorVersion="2" mediumVersion="0" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="0" minorVersion="0" scenariVersion="3.6"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.0.6.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="0" minorVersion="6" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+		</sm:update>
+		<!--changements de structure exercices en 3.2-->
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSupStarter" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSup" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="0" minorVersion="7" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSupStarter" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleSup" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.1.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="1" minorVersion="0" scenariVersion="3.6"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="2" minorVersion="004" scenariVersion="3.7"/>
+		</sm:update>
+		<!--changements de la 3.3-->
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.2.014.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="2" minorVersion="014" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="000" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.2.014.doss">
+			<sm:from key="OpaleSup" majorVersion="3" mediumVersion="2" minorVersion="014" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="000" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.2.014.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="2" minorVersion="014" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="000" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.2.014.doss">
+			<sm:from key="OpaleSupStarter" majorVersion="3" mediumVersion="2" minorVersion="014" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="000" scenariVersion="3.7"/>
+		</sm:update>
+		<!--changements de la 3.3.001-->
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.3.001.doss">
+			<sm:from key="Opale" majorVersion="3" mediumVersion="3" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="002" scenariVersion="3.7"/>
+		</sm:update>
+		<sm:update sc:refUri="/academic/migr/migrFromOpale3.3.001.doss">
+			<sm:from key="OpaleStarter" majorVersion="3" mediumVersion="3" minorVersion="001" scenariVersion="3.7"/>
+			<sm:to key="Opale" majorVersion="3" mediumVersion="3" minorVersion="002" scenariVersion="3.7"/>
+		</sm:update>
+	</sm:migration>
+</sm:wspDefinition>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:axis code="gal"/>
+	<sm:fullTitleText>
+		<sm:callBinaryMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WLink widgetClass="galPvLnk">
+			<sm:label>
+				<sm:WImage widgetClass="imgPv">
+					<sm:binaryUrl>
+						<sm:freeTransform code="od2img" options="outType=PNG"/>
+						<sm:freeTransform code="imageMagick" options="outType=PNG&amp;command=convert%20-scale%20120x80%20%24src%20%24dst"/>
+					</sm:binaryUrl>
+					<sm:alt>
+						<sm:title>
+							<sm:binaryMeta axis="altTitle"/>
+							<sm:binaryFileName format="trimExtension"/>
+						</sm:title>
+					</sm:alt>
+					<sm:declareSize maxWidth="120" maxHeight="80"/>
+				</sm:WImage>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle axis="gal"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow">
+				<sm:binaryUrl>
+					<sm:odTransform>
+						<sm:scaleFromStandardCharSize/>
+						<sm:sizeBounds maxWidthInPx="700" maxHeightInPx="500"/>
+						<sm:outputPNG/>
+					</sm:odTransform>
+				</sm:binaryUrl>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormGenDeploy xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" code="packClaroline" name="￼;packaging pour la LMS Claroline￼">
+	<sm:icon sc:refUri="/academic/gen/_scorm/genDeploy/claroline.png"/>
+	<sm:scormVersion>
+		<sm:scorm12>
+			<sm:code/>
+			<sm:title/>
+		</sm:scorm12>
+	</sm:scormVersion>
+	<sm:override sc:refUri="/academic/gen/_scorm/genDeploy/claroline.doss"/>
+</sma:scormGenDeploy>

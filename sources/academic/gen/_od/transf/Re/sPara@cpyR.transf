@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/academic/model/Re/sPara.model"/>
+	<sm:axis code="cpyR"/>
+	<sm:content>
+		<sm:paraTag/>
+		<sm:uLinkTag>
+			<sm:WLink globalStyle="txtUrl">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:link>
+					<sm:externalUrlLink/>
+				</sm:link>
+			</sm:WLink>
+			<sm:footNote>
+				<sm:WParagraph globalStyle="txtUrlFootNote">
+					<sm:dynamicString>
+						<sm:freeSelect xpath="si(@url!=normalize-space(text()), @url)"/>
+					</sm:dynamicString>
+				</sm:WParagraph>
+			</sm:footNote>
+		</sm:uLinkTag>
+		<sm:inlineStyleTag role="emp" globalStyle="txtEmp"/>
+		<sm:inlineStyleTag role="spec" globalStyle="txtSpec"/>
+	</sm:content>
+</sm:textOdTransf>

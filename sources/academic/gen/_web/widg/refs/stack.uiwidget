@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:outlineUiWidget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" code="stack">
+	<sm:scope>
+		<sm:customized>
+			<sm:scopeStartingPoint>
+				<sm:fromAbsoluteTop descendantOffset="1" includeInScope="no"/>
+			</sm:scopeStartingPoint>
+			<sm:ancestorEndingPoint>
+				<sm:depthLimit from="current" depth="1"/>
+			</sm:ancestorEndingPoint>
+		</sm:customized>
+	</sm:scope>
+	<sm:treeContent>
+		<sm:outline>
+			<sm:nodeArch>
+				<sm:inline rootElt="none">
+					<sm:children listElt="inline" childElt="inline">
+						<sm:listPrefix>
+							<span xmlns="http://www.w3.org/1999/xhtml" class="stackSep"> &gt; </span>
+						</sm:listPrefix>
+					</sm:children>
+				</sm:inline>
+			</sm:nodeArch>
+		</sm:outline>
+	</sm:treeContent>
+</sm:outlineUiWidget>

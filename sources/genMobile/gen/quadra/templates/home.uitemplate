@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" blockCache="no" pageUnicityCriterion="none">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/htmlMeta.uiwidget"/>
+		<!--<sm:Widget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/tplMgr.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_home.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="site/webMob/thirdParty/jquery.mobile-1.3.1.min.css" srcFrom="publishFiles"/>
+		<sm:styleSheet src="site/webMob/css/struct_home_mob.css" srcFrom="publishFiles" media="screen"/>
+		<sm:styleSheet src="site/webMob/css/mob_spec.css" srcFrom="publishFiles" media="screen"/>
+		<sm:script src="site/webMob/thirdParty/jquery-1.9.1.min.js" srcFrom="publishFiles" type="text/JavaScript"/>
+		<sm:script src="site/webMob/thirdParty/jquery.mobile-1.3.1.js" srcFrom="publishFiles" type="text/JavaScript"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="page" data-role="page">
+			<header id="my-header" data-role="header" data-position="fixed" data-id="myheader" data-theme="b" data-tap-toggle="false">
+				<h2>
+					<sm:title>
+						<sm:rootTitle type="shortTitle"/>
+					</sm:title>
+				</h2>
+			</header>
+			<article id="tplContent" data-role="content">
+				<sm:callZone key="zImg" format="xhtml"/>
+				<div id="main_co">
+					<h1 id="main_ti">
+						<sm:title>
+							<sm:pageTitle/>
+						</sm:title>
+					</h1>
+					<sm:callMainZone format="xhtml"/>
+					<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+				</div>
+				<!--<div xmlns="http://www.w3.org/1999/xhtml" id="main_nav">
+	<sm:callZone xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" key="zNav" format="xhtml"/>
+</div>-->
+			</article>
+			<footer data-theme="b" data-role="footer" data-position="fixed" data-mini="true" data-tap-toggle="false">
+				<div align="left" style="padding-left:5px;">
+					<h3>
+						<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/madeWithSc.uiwidget"/>
+					</h3>
+				</div>
+				<div align="right" data-role="controlgroup" data-type="horizontal" style="padding-right:5px;" data-mini="true">
+					<sm:callZone key="zNav" format="xhtml"/>
+				</div>
+			</footer>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+		<sm:script src="site/webMob/js/jqm_init.js" srcFrom="publishFiles" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

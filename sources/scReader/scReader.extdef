@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:extDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyExt="opaleExtScReader" name="￼;Opale - ScenariReader￼" majorVersion="1" mediumVersion="0" minorVersion="100">
+	<sm:parentWspDef sc:refUri="/opale/opaleAdvanced.wspdef"/>
+	<sm:publicClasses>
+		<sm:group name="￼;Supports￼" sortKey="A">
+			<sm:class sc:refUri="/scReader/model/root/rssScReader.model" access="readWrite" sortKey="Z">
+				<sm:mainView>
+					<sm:formEditorTab name="￼;Édition￼" idInView="tabEdit" display="visible" formEditorKey=""/>
+					<sm:blocksTab name="￼;Publication RSS￼" label="￼;RSS￼" display="visible" idInView="tabPub">
+						<sm:generatorsBlock name="￼;Publications￼" idInView="bkGenPres" displayMode="lockedOpen">
+							<sm:genBox idInView="genRss">
+								<sm:generator sc:refUri="/scReader/gen/rssScReader/rssScReader.generator"/>
+								<!--<sm:deployment xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/utils/ftp.genDeploy" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+							</sm:genBox>
+						</sm:generatorsBlock>
+					</sm:blocksTab>
+					<sm:blocksTab name="￼;Informations techniques￼" label="￼;Infos.￼" display="visible" idInView="tabInfo">
+						<sm:technicalInfoBlock name="￼;Informations techniques￼" idInView="bkTech" displayMode="lockedOpen"/>
+					</sm:blocksTab>
+					<sm:textEditorTab name="￼;Édition texte￼" label="￼;Texte￼" idInView="tabTxt" display="extra"/>
+				</sm:mainView>
+			</sm:class>
+		</sm:group>
+	</sm:publicClasses>
+	<sm:mainViewsOverlays>
+		<sm:class sc:refUri="/academic/model/root/webRoot.model">
+			<sm:insertGenBoxes position="asLastBoxOfBlock" refIdInView="bkGenWeb">
+				<sm:genBox idInView="genMobile">
+					<sm:generator sc:refUri="/genMobile/gen/quadra/webMobile.generator"/>
+				</sm:genBox>
+			</sm:insertGenBoxes>
+		</sm:class>
+	</sm:mainViewsOverlays>
+</sm:extDefinition>

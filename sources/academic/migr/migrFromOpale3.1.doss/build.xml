@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Opale 3.1 -> Opale 3.2" default="main" basedir=".">
+	<property name="filterXPathNS" value="sc:http://www.utc.fr/ics/scenari/v3/core;sp:http://www.utc.fr/ics/scenari/v3/primitive;op:utc.fr:ics/opale3" />
+	<!-- 
+		@param vWspRoot : path vers le répertoire root contenant le contenu de l'atelier (répertoire sources)
+	-->
+	<fileset id="fsTrainUcList" dir="${vWspRoot}" includes="**/*.xml,**/*.quiz" excludes="**/*.log.xml"/>
+	<fileset id="fsAllItemList" dir="${vWspRoot}" includes="**/*.xml,**/*.quiz" excludes="**/*.log.xml"/>
+	
+	<target name="main">
+		<echo>####### MIGRATION Opale 3.1 -> Opale 3.2</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		<property name="pReportDir" location="${vWspRoot}/#migrationReport/${timestamp}"/>
+		<property name="pTraceFilePath" location="${pReportDir}/report.log.xml"/>
+		<mkdir dir="${pReportDir}"/>
+
+		<!-- # XSL de migration -->
+		<echo file="${pTraceFilePath}" ><![CDATA[<?xml version="1.0" encoding="UTF-8"  ?>
+			<migration date="]]>${timestamp}<![CDATA[">
+		]]></echo>
+
+		<!-- Transformtion des trainUc -->
+		<migrateXsl style="${basedir}/trainUc.xsl">
+			<param name="pWspPath" expression="${vWspRoot}"/>
+			<param name="pTraceFilePath" expression="${pTraceFilePath}"/>
+
+			<fileset dir="${vWspRoot}" includes="**/*.xml" excludes="**/*.log.xml">
+			    <custom classname="com.scenari.m.co.ant.XpathSelector">
+			    	<param name="filterXPathNS" value="${filterXPathNS}"/>
+			        <param name="filterXPath" value="//op:trainUc"/>
+			    </custom>
+			</fileset>
+		</migrateXsl>
+
+		<!-- Transformtion principales -->
+		<migrateXsl style="${basedir}/main.xsl">
+			<param name="pWspPath" expression="${vWspRoot}"/>
+			<param name="pTraceFilePath" expression="${pTraceFilePath}"/>
+
+			<fileset dir="${vWspRoot}" includes="**/*.xml,**/*.quiz" excludes="**/*.log.xml" />
+		</migrateXsl>
+		
+		<echo file="${pTraceFilePath}" append="true"><![CDATA[
+			</migration>
+		]]></echo>
+
+		<!-- Renommage des anciens trainUc en .quiz -->
+		<move todir="${vWspRoot}">
+			<fileset dir="${vWspRoot}" includes="**/*.xml" excludes="**/*.log.xml">
+			    <custom classname="com.scenari.m.co.ant.XpathSelector">
+			    	<param name="filterXPathNS" value="${filterXPathNS}"/>
+			        <param name="filterXPath" value="/sc:item[op:cloze | op:field | op:match | op:mcqMur | op:mcqSur | op:ordWord]"/>
+			    </custom>
+			</fileset>
+			<mapper type="regexp" from="^(.*)\..*$" to="\1.quiz"/>
+		</move>
+		
+		<!-- Nettoyage des trainUc non convertis -->
+		<delete>
+			<fileset dir="${vWspRoot}" includes="**/*.xml" excludes="**/*.log.xml">
+			    <custom classname="com.scenari.m.co.ant.XpathSelector">
+			    	<param name="filterXPathNS" value="${filterXPathNS}"/>
+			        <param name="filterXPath" value="/sc:item/op:trainUc"/>
+			    </custom>
+			</fileset>
+		</delete>
+
+		<!-- cleanup du fichier de trace. lié à insuffiances de la fonction redirect de xalan -->
+		<replaceregexp match='&lt;\?xml version="1\.0" encoding="UTF-8"\?&gt;' replace="" byline="true" flags="g" encoding="UTF-8" file="${pTraceFilePath}"/>		
+		<replaceregexp match=' xmlns:.*?&quot;.*?&quot;' replace="" byline="true" flags="g" encoding="UTF-8" file="${pTraceFilePath}"/>		
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

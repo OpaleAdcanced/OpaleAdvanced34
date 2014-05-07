@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeCond code="isPortrait" info="Retourne true si l'image est en format portrait" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:condBsFragment>    &lt;source type=&quot;xsl-dynamique&quot;>
+      &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:sc=&quot;http://www.utc.fr/ics/scenari/v3/core&quot; xmlns:sp=&quot;http://www.utc.fr/ics/scenari/v3/primitive&quot; xmlns:xalan=&quot;http://xml.apache.org/xalan&quot; xmlns:java=&quot;http://xml.apache.org/xslt/java&quot; exclude-result-prefixes=&quot;sc sp&quot; version=&quot;1.0&quot;>
+        &lt;xsl:output method=&quot;text&quot;/>
+        &lt;xsl:param name=&quot;vAgent&quot;/>
+        &lt;xsl:param name=&quot;vDialog&quot;/>
+        &lt;xsl:param name=&quot;vArguments&quot;/>
+
+        &lt;xsl:template match=&quot;*&quot;>
+					&lt;xsl:variable name=&quot;vPropsBase&quot; select=&quot;xalan:tokenize(resultatAgent('//', concat('get:src:', java:getSrcUri(srcFileAgent()), '?', 'transform=img2img&amp;amp;sizeRules=Px(ScSCS())&amp;amp;outType=DIMS&amp;amp;outRules=', &amp;quot;Str(pattern'!wpx_!hpx_!scs_!lcs')&amp;quot;)), '_')&quot; />
+					&lt;xsl:variable select=&quot;number($vPropsBase[1])&quot; name=&quot;vWidthBase&quot; />
+					&lt;xsl:variable select=&quot;number($vPropsBase[2])&quot; name=&quot;vHeightBase&quot; />
+          &lt;xsl:variable name=&quot;vIsPortrait&quot; select=&quot;$vWidthBase&amp;lt;$vHeightBase&quot;/>
+          &lt;xsl:value-of select=&quot;bool2Str($vIsPortrait)&quot;/>
+        &lt;/xsl:template>
+      &lt;/xsl:stylesheet>
+    &lt;/source>
+</sm:condBsFragment>
+</sm:freeCond>

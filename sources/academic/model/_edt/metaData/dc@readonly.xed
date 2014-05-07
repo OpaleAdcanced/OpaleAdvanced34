@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXed code="op_dc" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:se="http://www.utc.fr/ics/scenari/v3/editing" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<sm:normalInternalizedEditor id="op_dc"/>
+	<sm:hideHeaderInternalizedEditor id="op_dc:hideHeader"/>
+	<sm:namespaceToDeclare prefix="op" ns="utc.fr:ics/opale3"/>
+	<sm:namespaceToDeclare prefix="sp" ns="http://www.utc.fr/ics/scenari/v3/primitive"/>
+	<se:editor se:namespaces="true">
+		<se:uiLib se:src="[chromeContentPrefixUrl]/op_txt/xedUi/uilib.xml"/>
+		<se:lib>
+			<element se:id="op_dc" se:bind="element" readonly="true" se:declareNs="op sp sc" se:title="[Dublin Core]" se:name="op:dc">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</element>
+			<hiddenElement se:id="op_dc:hideHeader" se:bind="element" se:declareNs="op sp sc" se:title="[Dublin Core]" se:name="op:dc">
+				<childs>
+					<se:ref se:refid="s_content"/>
+				</childs>
+			</hiddenElement>
+			<se:template se:id="s_content">
+				<element se:bind="element" se:name="sp:auth" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Auteur]" tooltipTag="Syntaxe imposée : Prénom-Nom" se:card="*" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<textInput readonly="true" trim="true" notnull="true" textStyle="color :#6286cc ;"/>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:cont" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Contributeur]" tooltipTag="Syntaxe imposée : Prénom-Nom" insert="true" se:card="*" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<textInput readonly="true" trim="true" notnull="true" textStyle="color :#6286cc ;"/>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:publisher" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Editeur]" tooltipTag="Syntaxe imposée : Prénom-Nom" insert="true" se:card="*" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<textInput readonly="true" trim="true" notnull="true" textStyle="color :#6286cc ;"/>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:desc" class="property" styleTag="font-style:italic;" startAt="80" se:title="[Description]" tooltipTag="[Résumé, description, plan du contenu]" insert="true" se:card="?">
+					<childs>
+						<contentElement se:bind="element" se:declareNs="op sc" se:title="[Texte]" se:name="op:txt">
+							<richTextInput se:bind="plugin" readonly="true" notnull="true" se:childs="*" type="op_txt_"/>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:objs" readonly="true" styleTag="font-style:italic;" class="property" se:title="[Objectifs Pédagogiques]" se:card="?">
+					<childs>
+						<element se:bind="element" se:name="sp:obj" readonly="true" class="property" startAt="80" se:title="[Objectif]" nextElementToAppend="." se:card="+" orientation="horizontal">
+							<childs>
+								<contentElement se:bind="text" class="property">
+									<textInput readonly="true" trim="true" notnull="true" textStyle="color :#6286cc ;"/>
+								</contentElement>
+							</childs>
+						</element>
+						<insert se:bind="current"/>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:lang" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Langue]" se:card="?" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<choiceInput readonly="true" notnull="true">
+								<ciItem value="FR" label="Français"/>
+								<ciItem value="EN" label="Anglais"/>
+								<ciItem value="OT" label="Autre"/>
+							</choiceInput>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:cover" readonly="true" styleTag="font-style:italic;" class="property" se:title="[Couverture spatiale]" se:card="?">
+					<childs>
+						<element se:bind="element" se:name="sp:spatial" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Pays]" tooltipTag="Pays de validité du contenu" se:card="*" orientation="horizontal">
+							<childs>
+								<contentElement se:bind="text" class="property">
+									<choiceInput readonly="true" notnull="true">
+										<ciItem value="FR" label="France"/>
+										<ciItem value="EN" label="Grande-Bretagne"/>
+										<ciItem value="OT" label="Autre"/>
+									</choiceInput>
+								</contentElement>
+							</childs>
+						</element>
+						<insert se:bind="current"/>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:level" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Niveau LMD]" se:card="?" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<choiceInput readonly="true" notnull="true">
+								<ciItem value="L" label="Licence"/>
+								<ciItem value="M" label="Master"/>
+								<ciItem value="D" label="Doctorat"/>
+							</choiceInput>
+						</contentElement>
+					</childs>
+				</element>
+				<element se:bind="element" se:name="sp:date" readonly="true" styleTag="font-style:italic;" class="property" startAt="80" se:title="[Date]" tooltipTag="Format recommandé : AAAA-MM-JJ" se:card="?" orientation="horizontal">
+					<childs>
+						<contentElement se:bind="text" class="property">
+							<textInput readonly="true" trim="true" notnull="true" textStyle="color :#6286cc ;"/>
+						</contentElement>
+					</childs>
+				</element>
+			</se:template>
+		</se:lib>
+	</se:editor>
+</sm:freeXed>

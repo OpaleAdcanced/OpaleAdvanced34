@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="keywdTt">
+	<sm:content>
+		<sm:WTooltip widgetClass="keywdItem" class="keywdTt">
+			<sm:label/>
+			<sm:tooltip class="tt">
+				<sm:basket key="keywd" render="inBasket"/>
+				<sm:ttContent>
+					<sm:callZone key="content"/>
+				</sm:ttContent>
+			</sm:tooltip>
+		</sm:WTooltip>
+	</sm:content>
+</sm:openUiWidget>

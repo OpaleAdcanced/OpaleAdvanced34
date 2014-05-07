@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="large"/>
+	<sm:content>
+		<sm:choose>
+			<sm:when sc:refUri="/scReader/gen/rssScReader/cond/testImageIsPortrait.cond">
+				<sm:WImage>
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:sizeBounds maxWidthInPx="320" maxHeightInPx="480"/>
+							<sm:outputJPEG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:when>
+			<sm:otherwise>
+				<sm:WImage>
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:sizeBounds maxWidthInPx="480" maxHeightInPx="320"/>
+							<sm:outputJPEG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:otherwise>
+		</sm:choose>
+	</sm:content>
+</sm:binaryXhtmlTransf>

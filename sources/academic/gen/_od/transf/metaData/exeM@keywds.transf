@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="Création de la liste des mots-clef">
+	<sm:model sc:refUri="/academic/model/metaData/exeM.model"/>
+	<sm:axis code="keywds"/>
+	<sm:content>
+		<sm:forSubData codes="info">
+			<sm:callSubModel axis="keywds"/>
+		</sm:forSubData>
+	</sm:content>
+</sm:dataFormOdTransf>

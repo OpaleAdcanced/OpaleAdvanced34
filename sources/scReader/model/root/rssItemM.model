@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Méta des listes de compléments de Opale￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="rssItemM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<!--
+<sm:field xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="link" name="￼;URL￼" occurence="zeroOrOne">
+	<sm:help quickHelp="￼;Doit correspondre à un répertoire￼"/>
+	<sm:string/>
+</sm:field>-->
+		<sm:field code="pubDate" name="￼;Date de publication-modification￼" occurence="one">
+			<sm:date/>
+		</sm:field>
+		<sm:field code="category" name="￼;Catégorie￼" occurence="zeroOrMore">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="imagetteSmall" name="￼;Image petit format (75x75)￼" occurence="zeroOrOne">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:refItem>
+		</sm:field>
+		<sm:field code="imagetteLarge" name="￼;Image grand format (280x140)￼" occurence="zeroOrOne">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:refItem>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+</sm:dataFormPrim>

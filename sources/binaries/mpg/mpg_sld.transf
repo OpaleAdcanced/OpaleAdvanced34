@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/mpg/mpg.model"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" class="ssCutable ssFixedHeight" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:binaryMeta/>
+				</sm:title>
+			</sm:caption>
+			<sm:content>
+				<sm:callModel>
+					<sm:current axis="view"/>
+				</sm:callModel>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

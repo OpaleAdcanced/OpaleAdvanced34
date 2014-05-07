@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/avi/avi.model"/>
+	<sm:model sc:refUri="/binaries/doc/doc.model"/>
+	<sm:model sc:refUri="/binaries/flash/flash.model"/>
+	<sm:model sc:refUri="/binaries/flv/flv.model"/>
+	<sm:model sc:refUri="/binaries/gif/gif.model"/>
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:model sc:refUri="/binaries/mov/mov.model"/>
+	<sm:model sc:refUri="/binaries/mp3/mp3.model"/>
+	<sm:model sc:refUri="/binaries/mp4/mp4.model"/>
+	<sm:model sc:refUri="/binaries/mpg/mpg.model"/>
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:model sc:refUri="/binaries/odp/odp.model"/>
+	<sm:model sc:refUri="/binaries/ods/ods.model"/>
+	<sm:model sc:refUri="/binaries/odt/odt.model"/>
+	<sm:model sc:refUri="/binaries/opus/opus.model"/>
+	<sm:model sc:refUri="/binaries/pdf/pdf.model"/>
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:model sc:refUri="/binaries/ppt/ppt.model"/>
+	<sm:model sc:refUri="/binaries/rm/rm.model"/>
+	<sm:model sc:refUri="/binaries/webm/webm.model"/>
+	<sm:model sc:refUri="/binaries/wmv/wmv.model"/>
+	<sm:model sc:refUri="/binaries/xls/xls.model"/>
+	<sm:model sc:refUri="/binaries/zip/zip.model"/>
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<sm:model sc:refUri="/math/odf/odf.model"/>
+	<sm:model sc:refUri="/academic/model/Re/applet/applet.model"/>
+	<sm:model sc:refUri="/academic/model/Re/eSite/eSite.model"/>
+	<sm:model sc:refUri="/academic/model/Re/gallery.model"/>
+	<sm:model sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model"/>
+	<sm:axis code="idNode"/>
+	<sm:bs sc:refUri="/genPrint/gen/_print/transf/_xxx@idNode.doss" bsPath="_xxx_AidNode.xml"/>
+</sm:freeXhtmlTransf>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/metaData/info.model"/>
+	<sm:axis code="licences"/>
+	<sm:content>
+		<sm:forField codes="cc">
+			<sm:WBlock widgetClass="licence">
+				<sm:fieldValueEnum format="label"/>
+				<sm:WText value="￼; : http://creativecommons.org/licenses/￼"/>
+				<sm:fieldValueEnum format="key"/>
+				<sm:WText value="￼;/2.0/fr/￼"/>
+			</sm:WBlock>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

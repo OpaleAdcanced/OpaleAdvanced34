@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRootM.model"/>
+	<sm:axis code="autoEvalSol"/>
+	<sm:content>
+		<sm:forGroup codes="settings">
+			<sm:forField codes="autoEvalSol">
+				<sm:fieldValueEnum format="key"/>
+			</sm:forField>
+		</sm:forGroup>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

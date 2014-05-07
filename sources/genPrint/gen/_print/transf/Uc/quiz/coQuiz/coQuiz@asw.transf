@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="asw"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="quizSol coQuiz">
+				<div class="quiz_ti">
+					<span>￼;Solution n°￼</span>
+				</div>
+				<div class="quiz_co">
+					<sm:WSimpleBlock widgetClass="bkBase" class="bkCoQuiz bkCorrections">
+						<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcCloze">
+							<sm:choose>
+								<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+									<sm:WHeadingBlock widgetClass="bkBase" class="bkCoSol">
+										<sm:title>
+											<sm:subModelTitle/>
+											<sm:fixedTitle value="￼;Exercice￼"/>
+										</sm:title>
+										<sm:callSubModel axis="asw"/>
+									</sm:WHeadingBlock>
+								</sm:when>
+							</sm:choose>
+						</sm:for>
+					</sm:WSimpleBlock>
+				</div>
+			</div>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

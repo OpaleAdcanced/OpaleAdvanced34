@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" name="￼;Positionnement illustration￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="txtResM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="pos" name="￼;Position￼" occurence="one" family="property">
+			<sm:enum>
+				<sm:option key="lft" name="￼;Texte à droite, Illustration à gauche￼"/>
+				<sm:option key="rgt" name="￼;Texte à gauche, Illustration à droite￼"/>
+			</sm:enum>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

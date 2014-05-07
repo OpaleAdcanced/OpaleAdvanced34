@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<structure code="_root">
+	<listenoeuds>
+		<noeud cle="content" type="singleton">
+			<ref type="xpath-statique">concat('@', getIdNode(.))</ref>
+		</noeud>
+	</listenoeuds>
+</structure>

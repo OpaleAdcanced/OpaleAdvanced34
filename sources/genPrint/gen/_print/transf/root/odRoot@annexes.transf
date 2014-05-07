@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/odRoot.model"/>
+	<sm:axis code="annexes"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<ifText xmlns="http://www.w3.org/1999/xhtml">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Ressources annexes￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Ressources annexes￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/resLnk.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</ifText>
+		</sm:WFreeBlock>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:quest='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Questions de synthèse￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Questions de synthèse￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/quest.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:solution='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solutions des exercices￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solutions des exercices￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/solution.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:solutionQuiz='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solutions des quiz￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solutions des quiz￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/solutionQuiz.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:glos='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Glossaire￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Glossaire￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/glos.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:acr='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Signification des abréviations￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Abréviations￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/acr.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:ref='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Références￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Références￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/ref.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:bib='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Bibliographie￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Bibliographie￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/bib.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Webographie￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Webographie￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/refs/web.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:index='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Index￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Index￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/annex/keywd.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:resource='yes'">
+				<sm:WSimpleBlock widgetClass="part">
+					<sm:WSimpleBlock class="headerLeft">
+						<sm:title>
+							<sm:fixedTitle value="￼;Crédits des ressources￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="headerRight">
+						<sm:title>
+							<sm:fixedTitle value="￼;Crédits des ressources￼"/>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/annex/cprRes.uiwidget"/>
+					<sm:WSimpleBlock class="footerLeft">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+					<sm:WSimpleBlock class="footerRight">
+						<sm:title>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="cpy"/>
+							</sm:callModel>
+						</sm:title>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

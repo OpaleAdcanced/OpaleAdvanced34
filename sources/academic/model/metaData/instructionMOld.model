@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Instructions￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="instructionMOld" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="webInstruct" name="￼;Consigne (pour le web)￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;Préciser une consigne opératoire (comment utiliser la ressource...)￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/txt.model"/>
+		</sm:field>
+		<sm:field code="odInstruct" name="￼;Consigne (pour le papier)￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;Préciser où consulter la ressource par exemple.￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/txt.model"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

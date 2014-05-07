@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/txt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:tableTag widgetClass="op_txt table" targetFontSizeInPt="11.5">
+			<sm:Widget sc:refUri="/genPrint/gen/_print/widg/utils/txtTableIndex.uiwidget"/>
+			<sm:captionTag/>
+			<sm:columnTag/>
+			<sm:columnTag role="head" preferedCellTagName="th"/>
+			<sm:rowTag/>
+			<sm:rowTag role="head" preferedCellTagName="th"/>
+			<sm:cellTag/>
+			<sm:cellTag role="num"/>
+			<sm:cellTag role="word"/>
+		</sm:tableTag>
+		<sm:uLinkTag>
+			<sm:externalUrl>
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:link target="newWindow"/>
+			</sm:externalUrl>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt ttSimple" role="acr">
+			<sm:refItem>
+				<sm:label>
+					<sm:textLink/>
+					<sm:callSubModel axis="titleRef"/>
+				</sm:label>
+				<sm:tooltip widgetClass="acrItem">
+					<sm:basket key="acr" render="inBasket"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="glos">
+			<sm:refItem>
+				<sm:label>
+					<sm:textLink/>
+					<sm:callSubModel axis="titleRef"/>
+				</sm:label>
+				<sm:tooltip widgetClass="glosItem">
+					<sm:basket key="glos" render="inBasket"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="bib">
+			<sm:choose>
+				<sm:when xpath="getContent(gotoSubModel(),'type') = 'bib'">
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+							<sm:callSubModel axis="titleRef"/>
+						</sm:label>
+						<sm:tooltip widgetClass="bibItem">
+							<sm:basket key="bib" render="inBasket"/>
+							<sm:ttTitle>
+								<sm:subModelTitle/>
+							</sm:ttTitle>
+							<sm:ttContent>
+								<sm:callSubModel/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+							<sm:callSubModel axis="titleRef"/>
+						</sm:label>
+						<sm:tooltip widgetClass="bibItem">
+							<sm:basket key="web" render="inBasket"/>
+							<sm:ttTitle>
+								<sm:subModelTitle/>
+							</sm:ttTitle>
+							<sm:ttContent>
+								<sm:callSubModel/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="ref">
+			<sm:refItem>
+				<sm:label>
+					<sm:textLink/>
+					<sm:callSubModel axis="titleRef"/>
+				</sm:label>
+				<sm:tooltip widgetClass="refItem">
+					<sm:basket key="ref" render="inBasket"/>
+					<sm:ttTitle>
+						<sm:subModelTitle/>
+					</sm:ttTitle>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt" role="docLnk">
+			<sm:refItem>
+				<sm:label>
+					<sm:textLink/>
+					<sm:fixedString value="￼; (cf. ￼"/>
+					<sm:callSubModel axis="ico"/>
+					<sm:callSubModel axis="inline"/>
+					<sm:fixedString value="￼;)￼"/>
+				</sm:label>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag widgetClass="op_txt tooltip" role="resLnk">
+			<sm:choose>
+				<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357233700534">Si l'uri est dans le buffer on renvoie dans le document. Sinon on pose un tooltip en basket.</comment></comment>-->
+				<sm:when xpath="getEntryBuffer('resLnkList',srcFields(resolveSrcPath(@sc:refUri), 'srcUri'))">
+					<sm:refItem>
+						<sm:label class="resLnkTitle">
+							<sm:textLink/>
+							<sm:callSubModel axis="idNode"/>
+						</sm:label>
+					</sm:refItem>
+				</sm:when>
+				<sm:otherwise>
+					<sm:refItem>
+						<sm:label>
+							<sm:textLink/>
+						</sm:label>
+						<sm:tooltip widgetClass="resLnkItem">
+							<sm:basket key="resLnk" render="inBasket"/>
+							<sm:ttTitle>
+								<sm:subModelTitle/>
+							</sm:ttTitle>
+							<sm:ttContent>
+								<sm:callSubModel/>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:refItem>
+				</sm:otherwise>
+			</sm:choose>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="ucLnk">
+			<sm:refItem>
+				<sm:label class="ucLnkTitle">
+					<sm:textLink/>
+					<sm:callSubModel axis="idNode"/>
+				</sm:label>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:inlineStyleTag role="quote" tagName="q">
+			<sm:textWrapper prefix="￼;« ￼" suffix="￼; »￼"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="emp" tagName="span"/>
+		<sm:inlineStyleTag role="spec" tagName="em">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/txtLangAttr.uiwidget"/>
+		</sm:inlineStyleTag>
+		<sm:inlineStyleTag role="code" tagName="code"/>
+		<sm:textLeafTag role="exp" tagName="sup"/>
+		<sm:textLeafTag role="ind" tagName="sub"/>
+		<sm:textLeafTag role="mathtex">
+			<sm:Widget sc:refUri="/genPrint/gen/_print/transf/math/mathTexInline_print.uiwidget"/>
+		</sm:textLeafTag>
+		<sm:inlineImgTag role="form" axis="inline"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textXhtmlTransf>

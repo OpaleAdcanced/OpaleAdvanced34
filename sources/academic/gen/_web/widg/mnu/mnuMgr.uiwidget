@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="mnuMgr">
+	<sm:widgetPublishFiles sc:refUri="/academic/gen/_web/widg/mnu/mnuMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match="body" priority="100"&gt;
+	&lt;xsl:value-of select="execute(java:append($vBufJs, 'mnuMgr.init();'))"/&gt;
+&lt;/xsl:overlay&gt;</sm:postXslFragment>
+		<sm:linkScript path="mnuMgr.js" pathFrom="localPublishFiles" sortKey="AA"/>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/dynSizes.uiwidget"/>
+		<script xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript">
+			<sm:callModel>
+				<sm:root axis="initMnuMgr"/>
+			</sm:callModel>
+		</script>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="mnuBlock"></div>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="mnuFra">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/mnu/mnu.uiwidget"/>
+		</div>
+	</sm:content>
+</sm:openUiWidget>

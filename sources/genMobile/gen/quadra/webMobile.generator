@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="webMob" name="￼;Publication Web Mobile￼">
+	<sm:icon sc:refUri="/scReader/model/authoring/webMobileGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/root/webRoot.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 5" debug="no"/>
+	<sm:uiFrame sc:refUri="/genMobile/gen/quadra/webMobile.uiframe"/>
+	<sm:transformerList sc:refUri="/genMobile/gen/quadra/webMobile.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="page" sc:refUri="/genMobile/gen/quadra/templates/page.uitemplate"/>
+		<sm:uiTemplate code="home" sc:refUri="/genMobile/gen/quadra/templates/home.uitemplate"/>
+		<sm:uiTemplate code="tools" sc:refUri="/genMobile/gen/quadra/templates/tools.uitemplate"/>
+		<sm:uiTemplate code="eval" sc:refUri="/genMobile/gen/quadra/templates/eval.uitemplate"/>
+		<sm:uiTemplate code="ref" sc:refUri="/genMobile/gen/quadra/templates/ref.uitemplate"/>
+		<sm:uiTemplate code="player" sc:refUri="/genMobile/gen/quadra/templates/evalPlayer.uitemplate"/>
+		<sm:uiTemplate code="outline" sc:refUri="/academic/gen/quadra/web/templates/outline.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/genMobile/gen/quadra/webMobile.skin.doss" name="￼;Quadra￼"/>
+	<sm:publishFiles sc:refUri="/genMobile/gen/quadra/webMobile.doss"/>
+</sm:webSiteGenerator>

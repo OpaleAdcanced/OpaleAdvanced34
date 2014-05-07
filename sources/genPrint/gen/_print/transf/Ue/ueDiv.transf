@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:content format="xhtml">
+		<sm:WHeadingBlock widgetClass="ueDiv">
+			<sm:title>
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="title"/>
+				</sm:callModel>
+			</sm:title>
+			<sm:callModel>
+				<sm:current axis="co"/>
+			</sm:callModel>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

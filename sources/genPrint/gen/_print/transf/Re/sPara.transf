@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/sPara.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="span"/>
+		<sm:listTags>
+			<sm:itemizedListTag/>
+			<sm:orderedListTag/>
+		</sm:listTags>
+		<sm:uLinkTag>
+			<sm:externalUrl>
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:link target="newWindow"/>
+			</sm:externalUrl>
+		</sm:uLinkTag>
+		<sm:inlineStyleTag role="emp" tagName="span"/>
+		<sm:inlineStyleTag role="spec" tagName="em">
+			<sm:Widget sc:refUri="/academic/gen/_web/widg/util/txtLangAttr.uiwidget"/>
+		</sm:inlineStyleTag>
+	</sm:content>
+</sm:textXhtmlTransf>

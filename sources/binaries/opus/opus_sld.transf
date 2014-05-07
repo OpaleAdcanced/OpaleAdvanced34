@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/opus/opus.model"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" class="ssCutable ssFixedHeight" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:binaryMeta/>
+				</sm:title>
+			</sm:caption>
+			<sm:content>
+				<sm:WFreeBlock>
+					<audio xmlns="http://www.w3.org/1999/xhtml" preload="none" controls="controls">
+						<source onerror="tplMgr.xMediaFallback(this.parentNode)">
+							<addAttribute name="src">
+								<sm:binaryUrl/>
+							</addAttribute>
+						</source>
+						<div class="infoVideo">
+							<p>￼;Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :￼</p>
+							<sm:WLink>
+								<sm:label>
+									<sm:binaryFileName/>
+								</sm:label>
+								<sm:link target="newWindow">
+									<sm:binaryUrl>
+										<sm:imageSize/>
+									</sm:binaryUrl>
+								</sm:link>
+							</sm:WLink>
+						</div>
+					</audio>
+				</sm:WFreeBlock>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

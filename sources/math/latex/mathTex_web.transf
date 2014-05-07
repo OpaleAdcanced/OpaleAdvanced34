@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/math/latex/mathTex.model"/>
+	<!--
+<sm:fullTitleText xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:returnFirst>
+		<sm:callBinaryMeta/>
+		<sm:binaryFileName format="trimExtension"/>
+	</sm:returnFirst>
+</sm:fullTitleText>-->
+	<!--
+<sm:shortTitleText xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:returnFirst>
+		<sm:callBinaryMeta/>
+		<sm:binaryFileName format="trimExtension"/>
+	</sm:returnFirst>
+</sm:shortTitleText>-->
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" position="bottom">
+			<sm:caption>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:caption>
+			<sm:content>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+						<sm:imageSize/>
+					</sm:binary>
+					<sm:whenSize widthOver="693" heightOver="693">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+								<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+								<sm:imageTransform>
+									<sm:sizeBounds maxWidthInPx="630" maxHeightInPx="630"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callModel>
+									<sm:current axis="altText"/>
+								</sm:callModel>
+							</sm:alt>
+							<sm:declareSize/>
+							<sm:linkOverImage class="imgZoom">
+								<sm:binaryUrl>
+									<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+									<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+									<sm:imageTransform>
+										<sm:sizeBounds maxWidthInPx="1200" maxHeightInPx="900"/>
+										<sm:outputPNG/>
+									</sm:imageTransform>
+								</sm:binaryUrl>
+							</sm:linkOverImage>
+						</sm:WImage>
+					</sm:whenSize>
+					<sm:otherwise>
+						<sm:WImage>
+							<sm:binaryUrl>
+								<!--Pour mettre une couleur de fond : &backgroundColor=rgb%201.0%201.0%201.0-->
+								<sm:freeTransform code="latex2img" options="resolution=96&amp;scale=1.3"/>
+								<sm:imageTransform>
+									<sm:sizeBounds maxWidthInPx="630" maxHeightInPx="630"/>
+									<sm:outputPNG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:alt>
+								<sm:callModel>
+									<sm:current axis="altText"/>
+								</sm:callModel>
+							</sm:alt>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:otherwise>
+				</sm:chooseOnBinary>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

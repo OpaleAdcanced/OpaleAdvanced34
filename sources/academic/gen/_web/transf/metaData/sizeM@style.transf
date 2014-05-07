@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/metaData/sizeM.model"/>
+	<sm:axis code="style"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/academic/gen/_web/transf/metaData/sizeM@style.xsl"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

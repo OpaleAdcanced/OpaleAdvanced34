@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="solution">
+	<sm:content>
+		<sm:WBasket key="solution" widgetClass="heading solutionBk" tagName="div" suppressIfEmpty="yes">
+			<sm:title tagName="hx">￼;Solutions des exercices￼</sm:title>
+		</sm:WBasket>
+	</sm:content>
+</sm:openUiWidget>

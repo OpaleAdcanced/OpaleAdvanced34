@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/mp4/mp4.model"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/vidInFlow.uiwidget">
+			<sm:xhtmlContentZone key="object">
+				<!--<sm:WVideoFlv xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:binaryUrl>
+		<sm:flvSize>
+			<sm:scaleFromStandardCharSize>
+				<sm:ifNoStandardCharSize>
+					<sm:scale ratio="1.2"/>
+				</sm:ifNoStandardCharSize>
+			</sm:scaleFromStandardCharSize>
+			<sm:sizeBounds maxWidthInPx="800" maxHeightInPx="533"/>
+		</sm:flvSize>
+	</sm:binaryUrl>
+	<sm:declareSize/>
+	<sm:interface margin="10"/>
+	<sm:player show="always"/>
+	<sm:stopButton cancelLoad="false"/>
+	<sm:volumeButton/>
+	<sm:timeButton/>
+	<sm:fullscreenButton/>
+	<sm:iconPlay/>
+	<sm:configFile format="text" src="player/flv.txt" srcFrom="skin"/>
+</sm:WVideoFlv>-->
+				<sm:WFreeBlock>
+					<video xmlns="http://www.w3.org/1999/xhtml" controls="controls" preload="none">
+						<sm:Widget sc:refUri="/binaries/_sld/widg/videoDims.uiwidget"/>
+						<source type="video/mp4" onerror="tplMgr.xMediaFallback(this.parentNode)">
+							<addAttribute name="src">
+								<sm:binaryUrl/>
+							</addAttribute>
+						</source>
+						<sm:WVideoFlv widgetClass="resVideo">
+							<sm:binaryUrl>
+								<sm:flvSize>
+									<sm:scaleFromStandardCharSize>
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="1.2"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="800" maxHeightInPx="533"/>
+								</sm:flvSize>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+							<sm:player show="always"/>
+							<sm:stopButton cancelLoad="false"/>
+							<sm:volumeButton/>
+							<sm:timeButton/>
+							<sm:fullscreenButton/>
+							<sm:configFile format="text" src="player/mp4.txt" srcFrom="skin"/>
+						</sm:WVideoFlv>
+					</video>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="caption">
+				<sm:WFreeBlock>
+					<sm:title>
+						<sm:binaryMeta/>
+					</sm:title>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:binaryXhtmlTransf>

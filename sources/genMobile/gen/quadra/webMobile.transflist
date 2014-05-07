@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList sc:refUri="/academic/gen/quadra/web/web.transflist"/>
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/ue@lblBtnHome.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/ue@rootModelNav.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@btnHome.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@lblBtnHome.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@mnuModePage.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@mnuModeTools.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@rootModelNav.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/webRoot@tools.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/qTxt.transf"/>
+		<sm:transformer sc:refUri="/genMobile/gen/_webMobile/transf/txt.transf"/>
+	</sm:transformerList>
+</sm:transformerList>

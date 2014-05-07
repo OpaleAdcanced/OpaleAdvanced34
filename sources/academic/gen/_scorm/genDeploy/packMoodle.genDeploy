@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormGenDeploy xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" code="packMoodle" name="￼;packaging pour la LMS Moodle￼">
+	<sm:icon sc:refUri="/academic/gen/_scorm/genDeploy/moodle.png"/>
+	<sm:scormVersion>
+		<sm:scorm12>
+			<sm:code/>
+			<sm:title/>
+		</sm:scorm12>
+	</sm:scormVersion>
+	<sm:override sc:refUri="/academic/gen/_scorm/genDeploy/moodle.doss"/>
+</sma:scormGenDeploy>

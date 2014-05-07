@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/odRoot.model"/>
+	<sm:axis code="legend"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when xpath="/*/*/op:odRootM/sp:typo='yes'">
+				<sm:WHeadingBlock widgetClass="legend">
+					<sm:title>
+						<sm:fixedTitle value="￼;Légende￼"/>
+					</sm:title>
+					<sm:choose>
+						<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:glos='yes'">
+							<sm:WFreeBlock>
+								<p xmlns="http://www.w3.org/1999/xhtml">
+									<span class="ctRef">§</span>
+									<span>￼;Entrée du glossaire￼</span>
+								</p>
+							</sm:WFreeBlock>
+						</sm:when>
+					</sm:choose>
+					<sm:choose>
+						<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:acr='yes'">
+							<sm:WFreeBlock>
+								<p xmlns="http://www.w3.org/1999/xhtml">
+									<span class="ctRef">&gt;</span>
+									<span>￼;Abréviation￼</span>
+								</p>
+							</sm:WFreeBlock>
+						</sm:when>
+					</sm:choose>
+					<sm:choose>
+						<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:bib='yes'">
+							<sm:WFreeBlock>
+								<p xmlns="http://www.w3.org/1999/xhtml">
+									<span class="ctRef">¨</span>
+									<span>￼;Référence Bibliographique￼</span>
+								</p>
+							</sm:WFreeBlock>
+						</sm:when>
+					</sm:choose>
+					<sm:choose>
+						<sm:when xpath="/*/*/op:odRootM/sp:annsettings/sp:ref='yes'">
+							<sm:WFreeBlock>
+								<p xmlns="http://www.w3.org/1999/xhtml">
+									<span class="ctRef">¤</span>
+									<span>￼;Référence générale￼</span>
+								</p>
+							</sm:WFreeBlock>
+						</sm:when>
+					</sm:choose>
+				</sm:WHeadingBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

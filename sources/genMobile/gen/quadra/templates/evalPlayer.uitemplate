@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" blockCache="yes" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="template">
+			<sm:fixedContent value="evalPlayer"/>
+		</sm:meta>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tpl/htmlMeta.uiwidget"/>
+		<!--<sm:Widget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/util/startLinkMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/setSubWinTitle.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContentEval.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/eval/scSiLibOveride.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_eval.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/print.css" srcFrom="skin" media="print"/>
+		<sm:styleSheet src="site/webMob/css/mob_spec.css" srcFrom="publishFiles" media="screen"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="tplFra">
+			<div id="tplCo">
+				<div id="evalPlayerCo" class="scroller">
+					<div id="tplCoMarginW">
+						<div id="tplCoFlexTop"></div>
+						<div id="evalPlayerCo2">
+							<sm:callMainZone format="xhtml"/>
+							<sm:WBasket key="footnotes" widgetClass="footnotes" tagName="ol" suppressIfEmpty="yes"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="evalPlayerBar">
+				<div id="evalPlayerBarFra1">
+					<div id="evalPlayerBarFra2">
+						<div id="evalPlayerBarFra3">
+							<sm:callZone key="counter" format="xhtml"/>
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/prevEval.uiwidget"/>
+							<sm:Widget sc:refUri="/academic/gen/_web/widg/nav/nextEval.uiwidget"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div xmlns="http://www.w3.org/1999/xhtml" id="evalPlayerPrint">
+	<sm:WButton xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" class="printEval">
+		<sm:label>￼;Imprimer￼</sm:label>
+		<sm:labelTitle>￼;Imprimer la page￼</sm:labelTitle>
+		<sm:action>
+			<sm:print/>
+		</sm:action>
+	</sm:WButton>
+</div>-->
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

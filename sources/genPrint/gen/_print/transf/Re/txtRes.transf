@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/txtRes.model"/>
+	<sm:content format="xhtml">
+		<sm:WTable widgetClass="op_txtRes_tab">
+			<sm:WTableRow>
+				<sm:choose>
+					<sm:when xpath="op:txtResM/sp:pos='rgt'">
+						<sm:WTableCell widgetClass="op_txtRes_cellTxt">
+							<sm:for codes="txt">
+								<sm:WSimpleBlock widgetClass="op_txtRes_txt txt">
+									<sm:callSubModel/>
+								</sm:WSimpleBlock>
+							</sm:for>
+						</sm:WTableCell>
+						<sm:WTableCell widgetClass="op_txtRes_cellResRgt">
+							<sm:for codes="img">
+								<sm:WCaptionBlock widgetClass="res" position="bottom">
+									<sm:caption>
+										<sm:callPartMeta axis="resTitle"/>
+										<sm:title>
+											<sm:subModelTitle format="shortTitleText"/>
+										</sm:title>
+									</sm:caption>
+									<sm:content>
+										<sm:callSubModel axis="txtRes"/>
+									</sm:content>
+								</sm:WCaptionBlock>
+								<sm:choose>
+									<sm:when xpath="string-length(getContent(gotoMeta(gotoSubModel()),'credit'))&gt;0">
+										<sm:WTooltip widgetClass="cprResItem">
+											<sm:label/>
+											<sm:tooltip>
+												<sm:basket key="cprRes" render="inBasket"/>
+												<sm:ttTitle>
+													<sm:title>
+														<sm:subModelTitle/>
+													</sm:title>
+												</sm:ttTitle>
+												<sm:ttContent>
+													<sm:WFreeBlock>
+														<sm:dynamicString>
+															<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'credit')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+														</sm:dynamicString>
+													</sm:WFreeBlock>
+												</sm:ttContent>
+											</sm:tooltip>
+										</sm:WTooltip>
+									</sm:when>
+								</sm:choose>
+							</sm:for>
+						</sm:WTableCell>
+					</sm:when>
+					<sm:otherwise>
+						<sm:WTableCell widgetClass="op_txtRes_cellResLft">
+							<sm:for codes="img">
+								<sm:WCaptionBlock widgetClass="res" position="bottom">
+									<sm:caption>
+										<sm:callPartMeta axis="resTitle"/>
+										<sm:title>
+											<sm:subModelTitle format="shortTitleText"/>
+										</sm:title>
+									</sm:caption>
+									<sm:content>
+										<sm:callSubModel axis="txtRes"/>
+									</sm:content>
+								</sm:WCaptionBlock>
+								<sm:choose>
+									<sm:when xpath="string-length(getContent(gotoMeta(gotoSubModel()),'credit'))&gt;0">
+										<sm:WTooltip widgetClass="cprResItem">
+											<sm:label/>
+											<sm:tooltip>
+												<sm:basket key="cprRes" render="inBasket"/>
+												<sm:ttTitle>
+													<sm:title>
+														<sm:subModelTitle/>
+													</sm:title>
+												</sm:ttTitle>
+												<sm:ttContent>
+													<sm:WFreeBlock>
+														<sm:dynamicString>
+															<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'credit')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+														</sm:dynamicString>
+													</sm:WFreeBlock>
+												</sm:ttContent>
+											</sm:tooltip>
+										</sm:WTooltip>
+									</sm:when>
+								</sm:choose>
+							</sm:for>
+						</sm:WTableCell>
+						<sm:WTableCell widgetClass="op_txtRes_cellTxt">
+							<sm:for codes="txt">
+								<sm:WSimpleBlock widgetClass="op_txtRes_txt txt">
+									<sm:callSubModel/>
+								</sm:WSimpleBlock>
+							</sm:for>
+						</sm:WTableCell>
+					</sm:otherwise>
+				</sm:choose>
+			</sm:WTableRow>
+		</sm:WTable>
+	</sm:content>
+</sm:compositionXhtmlTransf>

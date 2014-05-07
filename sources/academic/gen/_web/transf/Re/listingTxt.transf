@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Re/listingTxt.model"/>
+	<sm:content classConstructionType="legacy">
+		<sm:paraTag tagName="p"/>
+		<sm:textLeafTag role="note"/>
+	</sm:content>
+</sm:textXhtmlTransf>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Propriétés de ressources￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="binM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurence="one" family="content">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="altTxt" name="￼;Alternative textuelle (pour accessibilité)￼" occurence="zeroOrOne" family="content">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="desc" name="￼;Description complète (Déprécié)￼" occurence="zeroOrOne" family="content">
+			<sm:otherType sc:refUri="/academic/model/Re/sTxt.model"/>
+		</sm:field>
+		<sm:subData code="info" name="￼;Métadonnées￼" occurence="zeroOrOne" family="content">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/infoBin.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="title" defaultStyle="property" textStyle="color :#6286cc ;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

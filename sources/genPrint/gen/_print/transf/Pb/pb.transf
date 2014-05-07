@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Pb/pb.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="info">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="bloc" class="info">
+							<sm:title>
+								<sm:partTitle/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="def">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc def">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Définition : ￼"/>
+											<sm:fixedTitle value="￼;Définition￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="ex">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc example">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Exemple : ￼"/>
+											<sm:fixedTitle value="￼;Exemple￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="rem">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc remark">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Remarque : ￼"/>
+											<sm:fixedTitle value="￼;Remarque￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="adv">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc advice">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Conseil : ￼"/>
+											<sm:fixedTitle value="￼;Conseil￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="warning">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc warning">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Attention : ￼"/>
+											<sm:fixedTitle value="￼;Attention￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="comp">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc complement">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Complément : ￼"/>
+											<sm:fixedTitle value="￼;Complément￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="meth">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc method">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Méthode : ￼"/>
+											<sm:fixedTitle value="￼;Méthode￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="remind">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc remind">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Rappel : ￼"/>
+											<sm:fixedTitle value="￼;Rappel￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="basic">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc basic">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Fondamental : ￼"/>
+											<sm:fixedTitle value="￼;Fondamental￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="syntax">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc syntax">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Syntaxe : ￼"/>
+											<sm:fixedTitle value="￼;Syntaxe￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="legal">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc legal">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Texte légal : ￼"/>
+											<sm:fixedTitle value="￼;Texte légal￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="simul">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="bloc simulation">
+								<div class="bloc_ti">
+									<span>
+										<sm:title>
+											<sm:partTitle prefix="￼;Simulation : ￼"/>
+											<sm:fixedTitle value="￼;Simulation￼"/>
+										</sm:title>
+									</span>
+								</div>
+								<div class="bloc_co">
+									<sm:callSubModel/>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

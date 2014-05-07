@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/binAltM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/binAltM@credit.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/binAltM@alt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/binM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/binM@credit.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/info.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/info@cpyL.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/info@cpyR.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/info@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/info@licences.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/infoBin@credit.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/infoBin@creditData.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/instructionM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/resInfoM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/sTitle.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/uM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/uM@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/exeM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_od/transf/metaData/exeM@keywds.transf"/>
+</sm:transformerList>

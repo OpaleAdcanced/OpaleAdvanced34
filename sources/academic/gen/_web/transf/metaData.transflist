@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binAltM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binAltM@alt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binAltM@info.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binAltM@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binAltM@title.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM@alt.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM@altTitle.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM@info.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/binM@title.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/exeM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/sizeM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/sizeM@style.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/info@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/infoXxx@legal.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/instructionM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/keywds@keywds.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/resInfoM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/sTitle.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/uM.transf"/>
+	<sm:transformer sc:refUri="/academic/gen/_web/transf/metaData/xxx@legal.transf"/>
+</sm:transformerList>

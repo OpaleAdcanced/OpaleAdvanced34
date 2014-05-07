@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/altRes.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="txt">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="staticRes">
+				<sm:WTooltip widgetClass="cprResItem">
+					<sm:label/>
+					<sm:tooltip>
+						<sm:basket key="cprRes" render="inBasket"/>
+						<sm:ttTitle>
+							<sm:title>
+								<sm:subModelTitle/>
+							</sm:title>
+						</sm:ttTitle>
+						<sm:ttContent>
+							<sm:WFreeBlock>
+								<sm:dynamicString>
+									<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'credit')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+								</sm:dynamicString>
+							</sm:WFreeBlock>
+						</sm:ttContent>
+					</sm:tooltip>
+				</sm:WTooltip>
+				<sm:WCaptionBlock widgetClass="res" position="bottom">
+					<sm:caption>
+						<sm:callPartMeta/>
+						<sm:WFreeBlock>
+							<sm:title>
+								<sm:subModelTitle format="shortTitleText"/>
+							</sm:title>
+						</sm:WFreeBlock>
+					</sm:caption>
+					<sm:content>
+						<sm:callSubModel/>
+					</sm:content>
+				</sm:WCaptionBlock>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

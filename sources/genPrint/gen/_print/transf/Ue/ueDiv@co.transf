@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ueDiv.model"/>
+	<sm:axis code="co"/>
+	<sm:content format="xhtml">
+		<sm:for codes="intro">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WSimpleBlock widgetClass="section" class="intro">
+						<sm:WFreeBlock>
+							<scBlock xmlns="http://www.w3.org/1999/xhtml">
+								<hx>
+									<sm:dynamicString>
+										<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+ &lt;/span&gt;
+&lt;/span&gt;</sm:freeXslFragment>
+									</sm:dynamicString>
+								</hx>
+								<sm:callSubModel/>
+							</scBlock>
+						</sm:WFreeBlock>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:inDataOrder>
+			<sm:for codes="div">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="section" class="sectionDiv">
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="courseUa assmntUa courseUc practUc trainUcMcgSur trainUcMcgMur trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcCoQuiz">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="section">
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+		<sm:for codes="conclu">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WFreeBlock>
+						<p xmlns="http://www.w3.org/1999/xhtml" class="carBeforeConclu">*  *</p>
+						<p xmlns="http://www.w3.org/1999/xhtml" class="carBeforeConclu">*</p>
+					</sm:WFreeBlock>
+					<sm:WSimpleBlock widgetClass="section" class="conclu">
+						<sm:WFreeBlock>
+							<scBlock xmlns="http://www.w3.org/1999/xhtml">
+								<hx>
+									<span>
+										<sm:dynamicString>
+											<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+ &lt;/span&gt;</sm:freeXslFragment>
+										</sm:dynamicString>
+									</span>
+								</hx>
+								<sm:callSubModel/>
+							</scBlock>
+						</sm:WFreeBlock>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

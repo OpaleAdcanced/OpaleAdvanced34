@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<!--Free obligatoire pour gérer le problème de certains caratcères utf8 comme l'indentation, non pris en charge par le parseur xml de Flying Saucer-->
+	<sm:model sc:refUri="/academic/model/Re/listingTxt.model"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/genPrint/gen/_print/transf/Re/listingTxt.xsl"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

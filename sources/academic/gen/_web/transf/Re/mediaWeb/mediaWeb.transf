@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model"/>
+	<sm:content format="xhtml">
+		<sm:WCaptionBlock widgetClass="resInFlow" class="mediaWeb">
+			<sm:caption>
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+				<sm:callCompositionMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:for codes="*">
+					<sm:callPartMeta/>
+				</sm:for>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

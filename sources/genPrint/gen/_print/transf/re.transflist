@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/altRes.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/eSite.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/gallery.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/galleryM.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/listingTxt.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/qTxt.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/res.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/sPara.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/sTxt.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/sTxt@txt.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/txt.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Re/txtRes.transf"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/Re/mediaWeb.transflist"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/_print/transf/Re/refs.transflist"/>
+</sm:transformerList>

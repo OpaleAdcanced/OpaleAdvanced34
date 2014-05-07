@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiTemplate xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" blockCache="no" pageUnicityCriterion="hierarchicalContext">
+	<sm:head>
+		<sm:windowTitle>
+			<sm:pageTitle/>
+		</sm:windowTitle>
+		<sm:meta name="author">
+			<sm:callRootModel axis="author"/>
+		</sm:meta>
+		<sm:meta name="keywords">
+			<sm:callRootModel axis="keywds"/>
+		</sm:meta>
+		<sm:meta name="date">
+			<sm:callRootModel axis="date"/>
+		</sm:meta>
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/htmlMeta.uiwidget"/>
+		<!--<sm:Widget xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" sc:refUri="/academic/gen/_web/widg/tpl/revisedMeta.uiwidget" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"/>-->
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/util/startLinkMeta.uiwidget"/>
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/tplMgr.uiwidget"/>
+		<sm:Widget sc:refUri="/academic/gen/_web/widg/tplDynElts/centerContent.uiwidget"/>
+		<sm:styleSheet src="css/html.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/struct_page.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/buttons.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/mnu_child.css" srcFrom="skin" media="screen"/>
+		<sm:styleSheet src="css/transf.css" srcFrom="skin" media="all"/>
+		<sm:styleSheet src="css/indexes.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/assmnt_train.css" srcFrom="skin"/>
+		<sm:styleSheet src="css/sub_windows.css" srcFrom="skin"/>
+		<sm:styleSheet src="site/webMob/thirdParty/jquery.mobile-1.3.1.min.css" srcFrom="publishFiles"/>
+		<sm:styleSheet src="site/webMob/css/struct_page_mob.css" srcFrom="publishFiles" media="screen"/>
+		<sm:styleSheet src="site/webMob/css/mob_spec.css" srcFrom="publishFiles" media="screen"/>
+		<sm:script src="site/webMob/thirdParty/jquery-1.9.1.min.js" srcFrom="publishFiles" type="text/JavaScript"/>
+		<sm:script src="site/webMob/thirdParty/jquery.mobile-1.3.1.js" srcFrom="publishFiles" type="text/JavaScript"/>
+	</sm:head>
+	<sm:body>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="page" class="ui-page ui-responsive-panel" data-role="page">
+			<div align="" id="showBtnDiv" data-role="controlgroup" data-mini="true">
+				<a id="showBtn" data-icon="plus" data-iconpos="notext" data-theme="b" data-role="button" data-mini="true">Show</a>
+			</div>
+			<header id="my-header" data-role="header" data-position="fixed" data-id="myheader" data-theme="b" data-tap-toggle="false">
+				<div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+					<a id="menuBtn" data-icon="bars" data-iconpos="left" data-theme="b" data-role="button" data-mini="true" data-dismissible="false">Menu</a>
+					<a id="hideBtn" data-icon="minus" data-iconpos="notext" data-theme="b" data-role="button" data-mini="true">Hide</a>
+					<!--<sm:callRootModel xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" axis="btnHome"/>-->
+				</div>
+				<h2>
+					<sm:title>
+						<sm:pageTitle/>
+					</sm:title>
+				</h2>
+				<div align="right" class="ui-btn-right" data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<a id="playBtn" class="ui-btn-active" data-icon="home" data-theme="b" data-role="button" data-mini="true">Cours</a>
+					<sm:callRootModel axis="mnuModePage"/>
+				</div>
+				<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/mnu/breadcrumb.uiwidget"/>
+			</header>
+			<article id="tplContent" data-role="content">
+				<div id="menu-top" data-role="collapsible" data-theme="b" data-content-theme="c" data-mini="true">
+					<h2>Menu</h2>
+					<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/mnu/mnu.uiwidget"/>
+				</div>
+				<sm:callMainZone format="xhtml"/>
+			</article>
+			<footer data-theme="b" data-role="footer" data-position="fixed" data-mini="true" data-tap-toggle="false">
+				<div class="my-footer-grid ui-grid-a" data-theme="b" data-mini="true">
+					<div class="ui-block-a" data-theme="b" data-mini="true">
+						<div align="left" style="padding-left:5px;">
+							<h3>
+								<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/tpl/madeWithSc.uiwidget"/>
+							</h3>
+						</div>
+					</div>
+					<div class="ui-block-b" data-theme="b" data-mini="true">
+						<div align="right" data-role="controlgroup" data-type="horizontal" style="padding-right:5px;" data-mini="true">
+							<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/nav/prevMgr.uiwidget"/>
+							<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/nav/nextMgr.uiwidget"/>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div id="mypanel" data-role="panel" data-dismissible="false" data-swipe-close="false" data-display="reveal" data-position-fixed="true" data-theme="c" data-animate="false">
+				<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/mnu/mnu.uiwidget"/>
+			</div>
+		</div>
+		<sm:script src="js/skin.js" srcFrom="skin" type="text/JavaScript"/>
+		<sm:script src="site/webMob/js/jqm_init.js" srcFrom="publishFiles" type="text/JavaScript"/>
+	</sm:body>
+</sm:openUiTemplate>

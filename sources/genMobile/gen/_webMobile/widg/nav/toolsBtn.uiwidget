@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="btnTools" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match=&quot;a[containWord(@class, 'modeBtn mob_toolsBtn saveBtn')]&quot;>
+      &lt;xsl:attribute name=&quot;id&quot;>toolsBtn&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-theme&quot;>b&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-mini&quot;>true&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-role&quot;>button&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-icon&quot;>gear&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-ajax&quot;>false&lt;/xsl:attribute>
+      &lt;xsl:attribute name=&quot;data-iconpos&quot;>right&lt;/xsl:attribute>
+&lt;/xsl:overlay ></sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content>
+		<sm:WLink widgetClass="modeBtn mob_toolsBtn saveBtn">
+			<sm:label>Outils</sm:label>
+			<sm:link target="sameWindow">
+				<sm:callUrlZone key="urlPage"/>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:openUiWidget>

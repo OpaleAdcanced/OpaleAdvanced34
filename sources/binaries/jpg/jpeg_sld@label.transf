@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="label"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgLabel.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:WImage widgetClass="imgBase">
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="0.45"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+							<sm:sizeBounds maxWidthInPx="145" maxHeightInPx="60"/>
+							<sm:outputJPEG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgOthers">
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:imageSize>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="1.5"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+						</sm:imageSize>
+					</sm:binary>
+					<sm:whenSize widthOver="145" heightOver="60">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:imageTransform>
+									<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="1.5"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="240" maxHeightInPx="100"/>
+									<sm:outputJPEG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:binaryXhtmlTransf>

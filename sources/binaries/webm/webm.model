@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:videoPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Vidéo WEBM￼" category="￼;Ressources￼">
+	<sm:help quickHelp="￼;Format non pris en charge par internet explorer 6 7 et 8 et Safari. Un plugin est nécessaire pour fonctionner sur Internet Explorer 9. ￼"/>
+	<sm:identification extensions="webm" mimeTypes="video/webm"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/academic/model/metaData/binAltM.model" usage="required"/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:sizeBlock>
+			<sm:htmlViewer>
+				<sm:fromBinary/>
+			</sm:htmlViewer>
+			<sm:standardCharSize>
+				<sm:editor/>
+				<sm:defaultValue defaultWidthInPx="500"/>
+			</sm:standardCharSize>
+		</sm:sizeBlock>
+		<sm:icon sc:refUri="/binaries/webm/_res/webm.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;video￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

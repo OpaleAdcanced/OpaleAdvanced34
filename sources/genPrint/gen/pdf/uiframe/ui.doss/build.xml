@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project default="main">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+
+	<property name="dest.folderPath" value="${vFolderDest}" />
+	<property name="dest.content.folderPath" value="${vFolderDest}/co" />
+	<property name="dest.meta.folderPath" value="${vFolderDest}/meta" />
+
+	<target name="main">				
+		<path id="dest.content.filePath">
+			<fileset id="dest.content.file" dir="${dest.content.folderPath}" includes="*.xhtml" />
+		</path>
+		
+		<pathconvert property="dest.content.filePath" refid="dest.content.filePath" />
+		<pathconvert property="dest.filePath" refid="dest.content.filePath">
+			<chainedmapper>
+				<globmapper from="${dest.content.folderPath}/*" to="${dest.folderPath}/*" handledirsep="true"/>
+				<globmapper from="*.xhtml" to="*.pdf"/> 
+			</chainedmapper>
+		</pathconvert>
+	    
+		<replace file="${dest.content.filePath}" value="">
+			<replacetoken><![CDATA[xmlns=""]]></replacetoken>
+		</replace>
+		
+		<delete file="${dest.filePath}" failonerror="false" />
+		
+		<java classname="org.xhtmlrenderer.simple.PDFRenderer">
+			<arg value="${dest.content.filePath}" />
+			<arg value="${dest.filePath}" />
+			<jvmarg value="-Dxr.image.scale=HIGH" />
+			<jvmarg value="-Dxr.text.scale=2.0" />
+ 			<jvmarg value="-Djava.awt.headless=true" />
+		</java>
+	</target>
+
+</project>

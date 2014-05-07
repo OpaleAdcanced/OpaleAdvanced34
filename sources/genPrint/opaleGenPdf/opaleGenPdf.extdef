@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:extDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyExt="opaleGenPdf" name="￼;Opale - Génération PDF￼" majorVersion="1" mediumVersion="0" minorVersion="100">
+	<sm:parentWspDef sc:refUri="/opale/opaleAdvanced.wspdef"/>
+	<sm:mainViewsOverlays>
+		<sm:class sc:refUri="/academic/model/root/odRoot.model">
+			<sm:insertGenBoxes position="asLastBoxOfBlock" refIdInView="bkGenOd">
+				<sm:genBox name="￼;Publication PDF￼" idInView="genPrint">
+					<sm:generator sc:refUri="/genPrint/gen/pdf/pdf.generator"/>
+				</sm:genBox>
+			</sm:insertGenBoxes>
+		</sm:class>
+	</sm:mainViewsOverlays>
+</sm:extDefinition>

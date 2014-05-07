@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ua/assmntUa.model"/>
+	<sm:content format="xhtml">
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:WHeadingBlock widgetClass="assmntUa">
+			<sm:title>
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="title"/>
+				</sm:callModel>
+			</sm:title>
+			<sm:for codes="obj">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="section" class="obj">
+							<sm:title>
+								<sm:fixedTitle value="￼;Objectifs￼"/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="intro">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="section" class="intro">
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="quiz">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:WSimpleBlock widgetClass="section">
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:WHeadingBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;rssScReaderM￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="rssScReaderM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurence="one">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="link" name="￼;URL￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;Ce champ n'est pas utilisé par l'application ScenariReader. Si le flux est utilisé par un autre lecteur, cette URL peut pointer vers une page de description.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="base" name="￼;URL de base￼" occurence="one">
+			<sm:help quickHelp="￼;Emplacement où sera déposé le flux RSS. Ex : http://www.monserveur.com/depot￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="description" name="￼;Description￼" occurence="one">
+			<sm:help quickHelp="￼;Description du dépôt. Ce champ est repris dans la vue d'information sur le flux de l'application ScenariReader.￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="onlineDisponibility" name="￼;Disponible en ligne￼" occurence="one">
+			<sm:help quickHelp="￼;Oui -&gt; les publications seront aussi consultable sans les télécharger dans l'application￼"/>
+			<sm:enum>
+				<sm:option key="no" name="￼;Non￼"/>
+				<sm:option key="yes" name="￼;Oui￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="language" name="￼;Code du langage￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;en, fr, etc...￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="copyright" name="￼;Copyright￼" occurence="zeroOrMore">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="managingEditor" name="￼;E-mail du responsable￼" occurence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="webMaster" name="￼;E-mail du webmaster￼" occurence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="pubDate" name="￼;Date de publication￼" occurence="zeroOrOne">
+			<sm:date/>
+		</sm:field>
+		<sm:field code="category" name="￼;Catégorie￼" occurence="zeroOrMore">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="image" name="￼;Image￼" occurence="zeroOrOne">
+			<sm:refItem>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:refItem>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+</sm:dataFormPrim>

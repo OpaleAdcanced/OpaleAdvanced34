@@ -1,0 +1,6 @@
+Dictionnaire provenant du développeur "fjoerfoks" sur la page des extensions firefox :
+https://addons.mozilla.org/en-US/firefox/addon/3291/
+Licence GNU General Public License, version 3.0
+
+
+

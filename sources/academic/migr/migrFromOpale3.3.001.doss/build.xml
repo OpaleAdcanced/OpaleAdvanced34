@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Migration Opale Opale 3.3.001 -> Opale 3.3.002" default="main" basedir=".">
+	
+	<target name="main">
+		<echo>####### MIGRATION Opale 3.3.001 -> Opale 3.3.002</echo>
+		<tstamp><format property="timestamp" pattern="yyMMdd-HHmm"/></tstamp>
+		
+		
+		<migrateXsl style="${basedir}/eSite.xsl" filterXPath="/sc:item/op:eSite" filterXPathNs="op:utc.fr:ics/opale3;sc:http://www.utc.fr/ics/scenari/v3/core">
+			<param name="pWspPath" expression="${scenari.wsp.path}"/>
+			<fileset dir="${scenari.wsp.path}" includes="**/*.xml"/>
+		</migrateXsl>
+		
+		<echo>--- Migration terminée ---</echo>
+	</target>
+	
+</project>

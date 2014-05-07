@@ -1,0 +1,2253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="gen" source-language="" datatype="plaintext">
+        <header>
+            <note>Scenari model : OpaleStarter3-4</note>
+        </header>
+        <body>
+            <trans-unit id="1" resname="Légende">
+                <source xml:space="preserve">Légende</source>
+                <target xml:space="preserve">Caption</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="2" resname="Ressources annexes">
+                <source xml:space="preserve">Ressources annexes</source>
+                <target xml:space="preserve">Complementary resources</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="3" resname="Questions de synthèse">
+                <source xml:space="preserve">Questions de synthèse</source>
+                <target xml:space="preserve">Comprehensive questions</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="4" resname="Solution des exercices">
+                <source xml:space="preserve">Solution des exercices</source>
+                <target xml:space="preserve">Exercises solution</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="5" resname="Solution n°">
+                <source xml:space="preserve">Solution n°</source>
+                <target xml:space="preserve">Solution n°</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="6" resname=" (exercice p. ">
+                <source xml:space="preserve"> (exercice p. </source>
+                <target xml:space="preserve"> (exercise p. </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="7" resname="Glossaire">
+                <source xml:space="preserve">Glossaire</source>
+                <target xml:space="preserve">Glossary</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="8" resname="Signification des abréviations">
+                <source xml:space="preserve">Signification des abréviations</source>
+                <target xml:space="preserve">Abbreviations meaning</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="9" resname="Références">
+                <source xml:space="preserve">Références</source>
+                <target xml:space="preserve">References</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="10" resname="Bibliographie">
+                <source xml:space="preserve">Bibliographie</source>
+                <target xml:space="preserve">Bibliography</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="11" resname="Webographie">
+                <source xml:space="preserve">Webographie</source>
+                <target xml:space="preserve">Web bibliography</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="12" resname="Index">
+                <source xml:space="preserve">Index</source>
+                <target xml:space="preserve">Index</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="13" resname=" p.">
+                <source xml:space="preserve"> p.</source>
+                <target xml:space="preserve"> p.</target>
+                <note>Page</note>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="14" resname="Crédit des ressources">
+                <source xml:space="preserve">Crédit des ressources</source>
+                <target xml:space="preserve">Resources credits</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="15" resname=" p. ">
+                <source xml:space="preserve"> p. </source>
+                <target xml:space="preserve"> p. </target>
+                <note>Page</note>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="16" resname=" p ">
+                <source xml:space="preserve"> p </source>
+                <target xml:space="preserve"> p </target>
+                <note>page</note>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="17" resname=" (cf. ">
+                <source xml:space="preserve"> (cf. </source>
+                <target xml:space="preserve"> (see </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="18" resname="Formule ">
+                <source xml:space="preserve">Formule </source>
+                <target xml:space="preserve">Formula </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="19" resname="Tableau ">
+                <source xml:space="preserve">Tableau </source>
+                <target xml:space="preserve">Table </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="20" resname="Graphique ">
+                <source xml:space="preserve">Graphique </source>
+                <target xml:space="preserve">Graphic </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="21" resname="Image ">
+                <source xml:space="preserve">Image </source>
+                <target xml:space="preserve">Image </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="22" resname="Animation ">
+                <source xml:space="preserve">Animation </source>
+                <target xml:space="preserve">Animation </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="23" resname="Document ">
+                <source xml:space="preserve">Document </source>
+                <target xml:space="preserve">Document </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="24" resname="Entrée du glossaire">
+                <source xml:space="preserve">Entrée du glossaire</source>
+                <target xml:space="preserve">Glossary entry</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="25" resname="Abréviation">
+                <source xml:space="preserve">Abréviation</source>
+                <target xml:space="preserve">Abbreviation</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="26" resname="Référence Bibliographique">
+                <source xml:space="preserve">Référence Bibliographique</source>
+                <target xml:space="preserve">Bibliographical reference</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="27" resname="Référence générale">
+                <source xml:space="preserve">Référence générale</source>
+                <target xml:space="preserve">General reference</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="28" resname="Table des matières">
+                <source xml:space="preserve">Table des matières</source>
+                <target xml:space="preserve">Table of contents</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="29" resname="Question ">
+                <source xml:space="preserve">Question </source>
+                <target xml:space="preserve">Question </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="30" resname="aller au contenu">
+                <source xml:space="preserve">aller au contenu</source>
+                <target xml:space="preserve">go to the content</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="31" resname="contenu">
+                <source xml:space="preserve">contenu</source>
+                <target xml:space="preserve">content</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="32" resname="aller au menu">
+                <source xml:space="preserve">aller au menu</source>
+                <target xml:space="preserve">go to the menu</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="33" resname="menu">
+                <source xml:space="preserve">menu</source>
+                <target xml:space="preserve">menu</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="34" resname="aller à la navigation">
+                <source xml:space="preserve">aller à la navigation</source>
+                <target xml:space="preserve">go to the navigation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="35" resname="navigation">
+                <source xml:space="preserve">navigation</source>
+                <target xml:space="preserve">navigation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="36" resname="aller aux outils">
+                <source xml:space="preserve">aller aux outils</source>
+                <target xml:space="preserve">go to the tools</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="37" resname="outils">
+                <source xml:space="preserve">outils</source>
+                <target xml:space="preserve">tools</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="38" resname="aller au pied de page">
+                <source xml:space="preserve">aller au pied de page</source>
+                <target xml:space="preserve">go to the page footer</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="39" resname="pied de page">
+                <source xml:space="preserve">pied de page</source>
+                <target xml:space="preserve">page footer</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="40" resname="Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités de ce module sont restreintes.">
+                <source xml:space="preserve">Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités de ce module sont restreintes.</source>
+                <target xml:space="preserve">Warning: your browser does not support javascript or it has been disabled. Some features of this module might be unavailable.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="41" resname="Réalisé avec Scenari (nouvelle fenêtre)">
+                <source xml:space="preserve">Réalisé avec Scenari (nouvelle fenêtre)</source>
+                <target xml:space="preserve">Created with Scenari (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="42" resname="Ce module de formation a été produit avec OPALE 3.">
+                <source xml:space="preserve">Ce module de formation a été produit avec OPALE 3.</source>
+                <target xml:space="preserve">This training course has been created with OPALE 3.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="43" resname="Vous utilisez une version ancienne d'internet explorer (inférieur à la version 7)">
+                <source xml:space="preserve">Vous utilisez une version ancienne d'internet explorer (inférieur à la version 7)</source>
+                <target xml:space="preserve">You're using an old version of internet explorer (earlier than version 7)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="44" resname="Ce module pourrait ne pas être compatible ou présenter des erreurs d'affichage avec ces anciennes versions.">
+                <source xml:space="preserve">Ce module pourrait ne pas être compatible ou présenter des erreurs d'affichage avec ces anciennes versions.</source>
+                <target xml:space="preserve">This module might be incompatible or show display errors with IE prior to version 6.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="45" resname="Nous vous recommandons de mettre à jours vers une version plus récente ou de choisir un autre navigateur.">
+                <source xml:space="preserve">Nous vous recommandons de mettre à jours vers une version plus récente ou de choisir un autre navigateur.</source>
+                <target xml:space="preserve">Please upgrade or switch to another browser.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="46" resname="précédent">
+                <source xml:space="preserve">précédent</source>
+                <target xml:space="preserve">previous</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="47" resname="image précédente (flèche de gauche)">
+                <source xml:space="preserve">image précédente (flèche de gauche)</source>
+                <target xml:space="preserve">previous picture (left arrow)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="48" resname="suivant">
+                <source xml:space="preserve">suivant</source>
+                <target xml:space="preserve">next</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="49" resname="image suivante (flèche de droite)">
+                <source xml:space="preserve">image suivante (flèche de droite)</source>
+                <target xml:space="preserve">next picture (right arrow)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="50" resname="fermer">
+                <source xml:space="preserve">fermer</source>
+                <target xml:space="preserve">close</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="51" resname="fermer le diaporama (Echap)">
+                <source xml:space="preserve">fermer le diaporama (Echap)</source>
+                <target xml:space="preserve">close the slideshow (Esc)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="52" resname="lancer">
+                <source xml:space="preserve">lancer</source>
+                <target xml:space="preserve">launch</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="53" resname="lancer le diaporama (espace)">
+                <source xml:space="preserve">lancer le diaporama (espace)</source>
+                <target xml:space="preserve">launch the slideshow (space)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="54" resname="arrêter">
+                <source xml:space="preserve">arrêter</source>
+                <target xml:space="preserve">stop</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="55" resname="arrêter le diaporama (espace)">
+                <source xml:space="preserve">arrêter le diaporama (espace)</source>
+                <target xml:space="preserve">stop the slideshow (space)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="56" resname="Cette page est en cours de chargement. Veuillez patienter.">
+                <source xml:space="preserve">Cette page est en cours de chargement. Veuillez patienter.</source>
+                <target xml:space="preserve">Loading. Please wait.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="57" resname="image précédente">
+                <source xml:space="preserve">image précédente</source>
+                <target xml:space="preserve">previous picture</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="58" resname="image suivante">
+                <source xml:space="preserve">image suivante</source>
+                <target xml:space="preserve">next picture</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="59" resname="lancer l'animation">
+                <source xml:space="preserve">lancer l'animation</source>
+                <target xml:space="preserve">launch the animation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="60" resname="arrêter l'animation">
+                <source xml:space="preserve">arrêter l'animation</source>
+                <target xml:space="preserve">stop the animation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="61" resname="début">
+                <source xml:space="preserve">début</source>
+                <target xml:space="preserve">start</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="62" resname="aller au début de l'animation">
+                <source xml:space="preserve">aller au début de l'animation</source>
+                <target xml:space="preserve">go to the beginning of the animation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="63" resname="fin">
+                <source xml:space="preserve">fin</source>
+                <target xml:space="preserve">end</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="64" resname="aller à la fin de l'animation">
+                <source xml:space="preserve">aller à la fin de l'animation</source>
+                <target xml:space="preserve">go to the end of the animation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="65" resname="vitesse">
+                <source xml:space="preserve">vitesse</source>
+                <target xml:space="preserve">speed</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="66" resname="changer la vitesse de l'animation">
+                <source xml:space="preserve">changer la vitesse de l'animation</source>
+                <target xml:space="preserve">change the speed of the animation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="67" resname="image">
+                <source xml:space="preserve">image</source>
+                <target xml:space="preserve">image</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="68" resname="boucle">
+                <source xml:space="preserve">boucle</source>
+                <target xml:space="preserve">loop</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="69" resname="jouer en boucle continue">
+                <source xml:space="preserve">jouer en boucle continue</source>
+                <target xml:space="preserve">play (continuous loop)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="70" resname="fermer le zoom (Echap)">
+                <source xml:space="preserve">fermer le zoom (Echap)</source>
+                <target xml:space="preserve">close the zoom (Esc)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="71" resname="défilement haut">
+                <source xml:space="preserve">défilement haut</source>
+                <target xml:space="preserve">scroll up</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="72" resname="Faire défiler le menu vers le haut">
+                <source xml:space="preserve">Faire défiler le menu vers le haut</source>
+                <target xml:space="preserve">Scroll up the menu</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="73" resname="défilement bas">
+                <source xml:space="preserve">défilement bas</source>
+                <target xml:space="preserve">scroll down</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="74" resname="Faire défiler le menu vers le bas">
+                <source xml:space="preserve">Faire défiler le menu vers le bas</source>
+                <target xml:space="preserve">Scroll down the menu</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="75" resname="Masquer le plan">
+                <source xml:space="preserve">Masquer le plan</source>
+                <target xml:space="preserve">Hide the outline</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="76" resname="Afficher le plan">
+                <source xml:space="preserve">Afficher le plan</source>
+                <target xml:space="preserve">Show the outline</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="77" resname="Masquer / afficher le plan">
+                <source xml:space="preserve">Masquer / afficher le plan</source>
+                <target xml:space="preserve">Hide/show the outline</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="78" resname="Mode : ">
+                <source xml:space="preserve">Mode : </source>
+                <target xml:space="preserve">Mode: </target>
+                <note>note descriptif de page HTML</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="79" resname="Cliquez pour agrandir (nouvelle fenêtre)">
+                <source xml:space="preserve">Cliquez pour agrandir (nouvelle fenêtre)</source>
+                <target xml:space="preserve">Click to enlarge (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="80" resname="defaultWebLangCode">
+                <source xml:space="preserve">fr</source>
+                <target xml:space="preserve">en</target>
+                <note>Langue par defaut des pages html</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="81" resname="Notes &amp; renvois :">
+                <source xml:space="preserve">Notes &amp; renvois :</source>
+                <target xml:space="preserve">Notes &amp; cross-references:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="82" resname="Menu : ">
+                <source xml:space="preserve">Menu : </source>
+                <target xml:space="preserve">Menu: </target>
+                <note>note descriptif de page HTML</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="83" resname="Contenu : ">
+                <source xml:space="preserve">Contenu : </source>
+                <target xml:space="preserve">Content: </target>
+                <note>note descriptif de page HTML</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="84" resname="Navigation : ">
+                <source xml:space="preserve">Navigation : </source>
+                <target xml:space="preserve">Navigation: </target>
+                <note>note descriptif de page HTML</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="85" resname="Imprimer la page">
+                <source xml:space="preserve">Imprimer la page</source>
+                <target xml:space="preserve">Print the page</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="86" resname="Imprimer">
+                <source xml:space="preserve">Imprimer</source>
+                <target xml:space="preserve">Print</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="87" resname="Précédent (">
+                <source xml:space="preserve">Précédent (</source>
+                <target xml:space="preserve">Previous (</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="88" resname="Suivant (">
+                <source xml:space="preserve">Suivant (</source>
+                <target xml:space="preserve">Next (</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="89" resname="Précédent">
+                <source xml:space="preserve">Précédent</source>
+                <target xml:space="preserve">Previous</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="90" resname="Suivant">
+                <source xml:space="preserve">Suivant</source>
+                <target xml:space="preserve">Next</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="91" resname="Construit par la solution SCENARI (http://scenari-platform.org)\r\nChaine éditoriale Opale">
+                <source xml:space="preserve">Construit par la solution SCENARI (http://scenari-platform.org)
+Chaine éditoriale Opale</source>
+                <target xml:space="preserve">Created with the publishing chain Opale, a Scenari solution http://scenari-platform.org</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="92" resname="Version">
+                <source xml:space="preserve">Version</source>
+                <target xml:space="preserve">Version</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="93" resname="Date">
+                <source xml:space="preserve">Date</source>
+                <target xml:space="preserve">Date</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="94" resname="Copyright">
+                <source xml:space="preserve">Copyright</source>
+                <target xml:space="preserve">Copyright</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="95" resname="Galerie d'images">
+                <source xml:space="preserve">Galerie d'images</source>
+                <target xml:space="preserve">Image gallery</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="96" resname="« ">
+                <source xml:space="preserve">« </source>
+                <target xml:space="preserve">&quot;</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="97" resname=" »">
+                <source xml:space="preserve"> »</source>
+                <target xml:space="preserve">&quot;</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="98" resname="Zone ">
+                <source xml:space="preserve">Zone </source>
+                <target xml:space="preserve">Area </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="99" resname="Domaine Public">
+                <source xml:space="preserve">Domaine Public</source>
+                <target xml:space="preserve">Public domain</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="100" resname="Creative Commons Zéro">
+                <source xml:space="preserve">Creative Commons Zéro</source>
+                <target xml:space="preserve">Creative Commons Zero</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="101" resname="Paternité">
+                <source xml:space="preserve">Paternité</source>
+                <target xml:space="preserve">Attribution</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="102" resname="Paternité - Pas d'Utilisation Commerciale">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale</source>
+                <target xml:space="preserve">Attribution – Non commercial</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="103" resname="Paternité - Pas d'Utilisation Commerciale - Pas de Modification">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale - Pas de Modification</source>
+                <target xml:space="preserve">Attribution – Non commercial - No Derivative Work</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="104" resname="Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique</source>
+                <target xml:space="preserve">Attribution – Non commercial - Share Alike</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="105" resname="Paternité - Pas de Modification">
+                <source xml:space="preserve">Paternité - Pas de Modification</source>
+                <target xml:space="preserve">Attribution - No Derivative Work</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="106" resname="Paternité - Partage des Conditions Initiales à l'Identique">
+                <source xml:space="preserve">Paternité - Partage des Conditions Initiales à l'Identique</source>
+                <target xml:space="preserve">Attribution - Share Alike</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="107" resname="Licence de documentation libre GNU">
+                <source xml:space="preserve">Licence de documentation libre GNU</source>
+                <target xml:space="preserve">GNU Free Documentation licence (GFDL)</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="108" resname=" ">
+                <source xml:space="preserve"> </source>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="109" resname="Définition">
+                <source xml:space="preserve">Définition</source>
+                <target xml:space="preserve">Definition</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="110" resname="Exemple">
+                <source xml:space="preserve">Exemple</source>
+                <target xml:space="preserve">Example</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="111" resname="Remarque">
+                <source xml:space="preserve">Remarque</source>
+                <target xml:space="preserve">Note</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="112" resname="Conseil">
+                <source xml:space="preserve">Conseil</source>
+                <target xml:space="preserve">Advice</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="113" resname="Attention">
+                <source xml:space="preserve">Attention</source>
+                <target xml:space="preserve">Warning</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="114" resname="Complément">
+                <source xml:space="preserve">Complément</source>
+                <target xml:space="preserve">Complement</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="115" resname="Méthode">
+                <source xml:space="preserve">Méthode</source>
+                <target xml:space="preserve">Method</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="116" resname="Rappel">
+                <source xml:space="preserve">Rappel</source>
+                <target xml:space="preserve">Reminder</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="117" resname="Fondamental">
+                <source xml:space="preserve">Fondamental</source>
+                <target xml:space="preserve">Fundamental</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="118" resname="Syntaxe">
+                <source xml:space="preserve">Syntaxe</source>
+                <target xml:space="preserve">Syntax</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="119" resname="Texte légal">
+                <source xml:space="preserve">Texte légal</source>
+                <target xml:space="preserve">Legal text</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="120" resname="Simulateur">
+                <source xml:space="preserve">Simulateur</source>
+                <target xml:space="preserve">Simulator</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="121" resname="Cf. &quot;">
+                <source xml:space="preserve">Cf. &quot;</source>
+                <target xml:space="preserve">See &quot;</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="122" resname="&quot;">
+                <source xml:space="preserve">&quot;</source>
+                <target xml:space="preserve">&quot;</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="123" resname=")">
+                <source xml:space="preserve">)</source>
+                <target xml:space="preserve">)</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="124" resname=" (">
+                <source xml:space="preserve"> (</source>
+                <target xml:space="preserve"> (</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="125" resname="Réponse : ">
+                <source xml:space="preserve">Réponse : </source>
+                <target xml:space="preserve">Answer: </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="126" resname="Activité d'apprentissage">
+                <source xml:space="preserve">Activité d'apprentissage</source>
+                <target xml:space="preserve">Learning activity</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="127" resname="Activité d'auto-évaluation">
+                <source xml:space="preserve">Activité d'auto-évaluation</source>
+                <target xml:space="preserve">Self-assessment activity</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="128" resname="Exercice">
+                <source xml:space="preserve">Exercice</source>
+                <target xml:space="preserve">Quiz</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="129" resname="Exercice : ">
+                <source xml:space="preserve">Exercice : </source>
+                <target xml:space="preserve">Quiz: </target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="130" resname=" [">
+                <source xml:space="preserve"> [</source>
+                <target xml:space="preserve"> [</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="131" resname="]">
+                <source xml:space="preserve">]</source>
+                <target xml:space="preserve">]</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="132" resname="Indices :">
+                <source xml:space="preserve">Indices :</source>
+                <target xml:space="preserve">Hints:</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="133" resname="Indice :">
+                <source xml:space="preserve">Indice :</source>
+                <target xml:space="preserve">Hint:</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="134" resname="Annexes">
+                <source xml:space="preserve">Annexes</source>
+                <target xml:space="preserve">Annexes</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="135" resname="Section">
+                <source xml:space="preserve">Section</source>
+                <target xml:space="preserve">Section</target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="136" resname="Objectifs">
+                <source xml:space="preserve">Objectifs</source>
+                <target xml:space="preserve">Objectives</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="137" resname="Introduction">
+                <source xml:space="preserve">Introduction</source>
+                <target xml:space="preserve">Introduction</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="138" resname=" - ">
+                <source xml:space="preserve"> - </source>
+                <target xml:space="preserve"> - </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="139" resname="Conclusion">
+                <source xml:space="preserve">Conclusion</source>
+                <target xml:space="preserve">Conclusion</target>
+                <note from="usedInGenSpecifier">paper</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="140" resname="Exercice ">
+                <source xml:space="preserve">Exercice </source>
+                <target xml:space="preserve">Exercise </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="141" resname=" : ">
+                <source xml:space="preserve"> : </source>
+                <target xml:space="preserve">: </target>
+                <note from="usedInGenSpecifier">paper</note>
+            </trans-unit>
+            <trans-unit id="142" resname="Licence : Domaine Public">
+                <source xml:space="preserve">Licence : Domaine Public</source>
+                <target xml:space="preserve">Public Domain licence</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="143" resname="(nouvelle fenêtre)">
+                <source xml:space="preserve">(nouvelle fenêtre)</source>
+                <target xml:space="preserve">(new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="144" resname="Cliquez pour visualiser la ressource (nouvelle fenêtre)">
+                <source xml:space="preserve">Cliquez pour visualiser la ressource (nouvelle fenêtre)</source>
+                <target xml:space="preserve">Click here to view the resource (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="145" resname="Cette galerie utilise Javascript pour un affichage optimal.">
+                <source xml:space="preserve">Cette galerie utilise Javascript pour un affichage optimal.</source>
+                <target xml:space="preserve">This gallery uses javascript for an optimum display.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="146" resname="Outils transverses">
+                <source xml:space="preserve">Outils transverses</source>
+                <target xml:space="preserve">Common tools</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="147" resname="Fin">
+                <source xml:space="preserve">Fin</source>
+                <target xml:space="preserve">End</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="148" resname="Question">
+                <source xml:space="preserve">Question</source>
+                <target xml:space="preserve">Question</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="149" resname="[Module]">
+                <source xml:space="preserve">[Module]</source>
+                <target xml:space="preserve">[Module]</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="150" resname=" (nouvelle fenêtre)">
+                <source xml:space="preserve"> (nouvelle fenêtre)</source>
+                <target xml:space="preserve"> (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="151" resname="Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités dynamiques de ce module sont restreintes.">
+                <source xml:space="preserve">Attention, votre navigateur ne supporte pas le javascript ou celui-ci a été désactivé. Certaines fonctionnalités dynamiques de ce module sont restreintes.</source>
+                <target xml:space="preserve">Warning: your browser does not support javascript or it has been disabled. Some features of this module might be unavailable.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="152" resname="Votre réponse est incorrecte.">
+                <source xml:space="preserve">Votre réponse est incorrecte.</source>
+                <target xml:space="preserve">Your answer is wrong.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="153" resname="Votre réponse est juste.">
+                <source xml:space="preserve">Votre réponse est juste.</source>
+                <target xml:space="preserve">Your answer is right.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="154" resname="Enoncé">
+                <source xml:space="preserve">Enoncé</source>
+                <target xml:space="preserve">Instructions</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="155" resname="Résultat">
+                <source xml:space="preserve">Résultat</source>
+                <target xml:space="preserve">Result</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="156" resname="Correction">
+                <source xml:space="preserve">Correction</source>
+                <target xml:space="preserve">Correction</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="157" resname="Explications">
+                <source xml:space="preserve">Explications</source>
+                <target xml:space="preserve">Explanation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="158" resname=" (nouvelle fenêtre - téléchargement)">
+                <source xml:space="preserve"> (nouvelle fenêtre - téléchargement)</source>
+                <target xml:space="preserve"> (new window – download)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="159" resname="Zoom (nouvelle fenêtre)...">
+                <source xml:space="preserve">Zoom (nouvelle fenêtre)...</source>
+                <target xml:space="preserve">Zoom (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="160" resname="[zoom...]">
+                <source xml:space="preserve">[zoom...]</source>
+                <target xml:space="preserve">[zoom...]</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="161" resname=", ">
+                <source xml:space="preserve">, </source>
+                <target xml:space="preserve">, </target>
+                <note>Séparateur d'énumération</note>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="162" resname="[sans titre]">
+                <source xml:space="preserve">[sans titre]</source>
+                <target xml:space="preserve">[no title]</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="163" resname="Accueil">
+                <source xml:space="preserve">Accueil</source>
+                <target xml:space="preserve">Homepage</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="164" resname="Bonne réponse">
+                <source xml:space="preserve">Bonne réponse</source>
+                <target xml:space="preserve">Good answer</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="165" resname="% de bonnes réponses">
+                <source xml:space="preserve">% de bonnes réponses</source>
+                <target xml:space="preserve">% of right answers</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="166" resname="Mauvaise réponse ">
+                <source xml:space="preserve">Mauvaise réponse </source>
+                <target xml:space="preserve">Wrong answer </target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="167" resname="Informations">
+                <source xml:space="preserve">Informations</source>
+                <target xml:space="preserve">Information</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="168" resname="Fermer">
+                <source xml:space="preserve">Fermer</source>
+                <target xml:space="preserve">Close</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="169" resname="Plus d'éléments à catégoriser">
+                <source xml:space="preserve">Plus d'éléments à catégoriser</source>
+                <target xml:space="preserve">No more elements to match</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="170" resname="Déposez ici">
+                <source xml:space="preserve">Déposez ici</source>
+                <target xml:space="preserve">Drop here</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="171" resname="Afficher le score et la correction">
+                <source xml:space="preserve">Afficher le score et la correction</source>
+                <target xml:space="preserve">Show score and solution</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="172" resname="Effacer mes réponses">
+                <source xml:space="preserve">Effacer mes réponses</source>
+                <target xml:space="preserve">Erase my answers</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="173" resname="Recommencer">
+                <source xml:space="preserve">Recommencer</source>
+                <target xml:space="preserve">Restart</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="174" resname="Effacer les réponses">
+                <source xml:space="preserve">Effacer les réponses</source>
+                <target xml:space="preserve">Erase the answers</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="175" resname="Vous avez bien répondu à toutes les questions!">
+                <source xml:space="preserve">Vous avez bien répondu à toutes les questions!</source>
+                <target xml:space="preserve">You have answeredall questions correctly!</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="176" resname="Vous avez obtenu... ">
+                <source xml:space="preserve">Vous avez obtenu... </source>
+                <target xml:space="preserve">you got... </target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="177" resname="% de bonnes réponses.">
+                <source xml:space="preserve">% de bonnes réponses.</source>
+                <target xml:space="preserve">% of right answers</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="178" resname="...">
+                <source xml:space="preserve">...</source>
+                <target xml:space="preserve">...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="179" resname="Evaluation">
+                <source xml:space="preserve">Evaluation</source>
+                <target xml:space="preserve">Assessment</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="180" resname="Exercice d'auto-évaluation">
+                <source xml:space="preserve">Exercice d'auto-évaluation</source>
+                <target xml:space="preserve">Self-assessment</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="181" resname="Fin de l'évaluation">
+                <source xml:space="preserve">Fin de l'évaluation</source>
+                <target xml:space="preserve">End of the assessment</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="182" resname="Vous avez fini l'évaluation, en allant à la page suivante, vous allez valider vos réponses et il ne vous sera plus possible de les modifier.">
+                <source xml:space="preserve">Vous avez fini l'évaluation, en allant à la page suivante, vous allez valider vos réponses et il ne vous sera plus possible de les modifier.</source>
+                <target xml:space="preserve">Your assessment is over. Go to the next page to validate your answers. Warning: you won't be able to change your answers after validation.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="183" resname="Validez votre évaluation">
+                <source xml:space="preserve">Validez votre évaluation</source>
+                <target xml:space="preserve">Validate your assessment</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="184" resname="Outils">
+                <source xml:space="preserve">Outils</source>
+                <target xml:space="preserve">Tools</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="185" resname="Simulation">
+                <source xml:space="preserve">Simulation</source>
+                <target xml:space="preserve">Simulation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="186" resname="Abréviations">
+                <source xml:space="preserve">Abréviations</source>
+                <target xml:space="preserve">Abbreviation</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="187" resname="Index des mots-clés">
+                <source xml:space="preserve">Index des mots-clés</source>
+                <target xml:space="preserve">Keywords index</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="188" resname="Crédits">
+                <source xml:space="preserve">Crédits</source>
+                <target xml:space="preserve">Credits</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="189" resname=" : ">
+                <source xml:space="preserve"> : </source>
+                <target xml:space="preserve">: </target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="190" resname="Aide">
+                <source xml:space="preserve">Aide</source>
+                <target xml:space="preserve">Help</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="191" resname="Indice">
+                <source xml:space="preserve">Indice</source>
+                <target xml:space="preserve">Hint</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="192" resname="Solution">
+                <source xml:space="preserve">Solution</source>
+                <target xml:space="preserve">Solution</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="193" resname="Erreur - aucun item n'a été saisi">
+                <source xml:space="preserve">Erreur - aucun item n'a été saisi</source>
+                <target xml:space="preserve">Error - no item has been entered</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="194" resname="Cours">
+                <source xml:space="preserve">Cours</source>
+                <target xml:space="preserve">Lesson</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="195" resname="Informations complémentaires...">
+                <source xml:space="preserve">Informations complémentaires...</source>
+                <target xml:space="preserve">Additional information...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="196" resname="Votre réponse">
+                <source xml:space="preserve">Votre réponse</source>
+                <target xml:space="preserve">Your answer</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="197" resname="Début">
+                <source xml:space="preserve">Début</source>
+                <target xml:space="preserve">Start</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="198" resname="Commencer le module">
+                <source xml:space="preserve">Commencer le module</source>
+                <target xml:space="preserve">Start this module</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="199" resname="Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :">
+                <source xml:space="preserve">Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :</source>
+                <target xml:space="preserve">Your browser does not support the OPUS format. Please download the file:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="200" resname="[Zoom...]">
+                <source xml:space="preserve">[Zoom...]</source>
+                <target xml:space="preserve">[Zoom...]</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="201" resname="Votre réponse :">
+                <source xml:space="preserve">Votre réponse :</source>
+                <target xml:space="preserve">Your answer:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="202" resname="Solution :">
+                <source xml:space="preserve">Solution :</source>
+                <target xml:space="preserve">Solution:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="203" resname="Plus d'éléments à ordonner">
+                <source xml:space="preserve">Plus d'éléments à ordonner</source>
+                <target xml:space="preserve">No more elements to sort</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="204" resname="Votre navigateur ne prend pas en charge le format WEBM. Téléchargez la vidéo :">
+                <source xml:space="preserve">Votre navigateur ne prend pas en charge le format WEBM. Téléchargez la vidéo :</source>
+                <target xml:space="preserve">Your browser does not support the WEBM format. Please download the video:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="205" resname="Si vous utilisez Internet Explorer 9 ou supérieur, vous pouvez installer ce plugin :">
+                <source xml:space="preserve">Si vous utilisez Internet Explorer 9 ou supérieur, vous pouvez installer ce plugin :</source>
+                <target xml:space="preserve">If you use Internet Explore 9 or later, you can install this plugin:</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="206" resname="Zoom">
+                <source xml:space="preserve">Zoom</source>
+                <target xml:space="preserve">Zoom</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="207" resname="Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...">
+                <source xml:space="preserve">Cliquez ici pour visualiser la ressource (nouvelle fenêtre)...</source>
+                <target xml:space="preserve">Click here to view the resource (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="208" resname="Cliquez ici pour visualiser les explications...">
+                <source xml:space="preserve">Cliquez ici pour visualiser les explications...</source>
+                <target xml:space="preserve">Click here to view the explanations...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="209" resname="Explications...">
+                <source xml:space="preserve">Explications...</source>
+                <target xml:space="preserve">Explanations...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="210" resname="Aide (nouvelle fenêtre)">
+                <source xml:space="preserve">Aide (nouvelle fenêtre)</source>
+                <target xml:space="preserve">Help (new window)</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="211" resname="Entrer dans le test...">
+                <source xml:space="preserve">Entrer dans le test...</source>
+                <target xml:space="preserve">Enter the test...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="212" resname="Galerie d'Images">
+                <source xml:space="preserve">Galerie d'Images</source>
+                <target xml:space="preserve">Image gallery</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="213" resname="Liste d'exercices">
+                <source xml:space="preserve">Liste d'exercices</source>
+                <target xml:space="preserve">Quiz list</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="214" resname="Résultats du test">
+                <source xml:space="preserve">Résultats du test</source>
+                <target xml:space="preserve">Test results</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="215" resname="Quitter le test">
+                <source xml:space="preserve">Quitter le test</source>
+                <target xml:space="preserve">Quit the test</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="216" resname="Solution d'exercice">
+                <source xml:space="preserve">Solution d'exercice</source>
+                <target xml:space="preserve">Quiz solution</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="217" resname="Fin du test">
+                <source xml:space="preserve">Fin du test</source>
+                <target xml:space="preserve">End of the test</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="218" resname="site web embarqué">
+                <source xml:space="preserve">site web embarqué</source>
+                <target xml:space="preserve">embedded website</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="219" resname="Enoncé général">
+                <source xml:space="preserve">Enoncé général</source>
+                <target xml:space="preserve">Instructions</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="220" resname="Vous allez à présent effectuer une série d'exercices d'auto-évaluation.">
+                <source xml:space="preserve">Vous allez à présent effectuer une série d'exercices d'auto-évaluation.</source>
+                <target xml:space="preserve">You're about to start a series of self-assessment quizzes.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="221" resname="Une synthèse vous sera présentée à la fin de cette série d'exercices.">
+                <source xml:space="preserve">Une synthèse vous sera présentée à la fin de cette série d'exercices.</source>
+                <target xml:space="preserve">You will see a summary at the end of test.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="222" resname="Commencer l'évaluation...">
+                <source xml:space="preserve">Commencer l'évaluation...</source>
+                <target xml:space="preserve">Start the assessment...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="223" resname="Commencer le test...">
+                <source xml:space="preserve">Commencer le test...</source>
+                <target xml:space="preserve">Start the test...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="224" resname="Vous avez déjà commencé ce test.">
+                <source xml:space="preserve">Vous avez déjà commencé ce test.</source>
+                <target xml:space="preserve">You have already started this test.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="225" resname=" Vos réponses ont été conservées. Vous pouvez les revoir et poursuivre le test ou les effacer et recommencer le test.">
+                <source xml:space="preserve"> Vos réponses ont été conservées. Vous pouvez les revoir et poursuivre le test ou les effacer et recommencer le test.</source>
+                <target xml:space="preserve"> Your answers were saved. Review them and go on from where you stopped, or erase them and start over again the test.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="226" resname="Reprendre le test...">
+                <source xml:space="preserve">Reprendre le test...</source>
+                <target xml:space="preserve">Continue the test...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="227" resname="Effacer et recommencer le test...">
+                <source xml:space="preserve">Effacer et recommencer le test...</source>
+                <target xml:space="preserve">Erase and restart the test...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="228" resname="Vous avez déjà réalisé ce test.">
+                <source xml:space="preserve">Vous avez déjà réalisé ce test.</source>
+                <target xml:space="preserve">You already did this test.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="229" resname=" Vous pouvez de nouveau consulter vos résultats ou effacer vos réponses et recommencer le test.">
+                <source xml:space="preserve"> Vous pouvez de nouveau consulter vos résultats ou effacer vos réponses et recommencer le test.</source>
+                <target xml:space="preserve"> You can review your answers or erase them, and start over again the test.</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="230" resname="Afficher les résultats...">
+                <source xml:space="preserve">Afficher les résultats...</source>
+                <target xml:space="preserve">Show the results...</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+            <trans-unit id="231" resname="Consulter les solutions...">
+                <source xml:space="preserve">Consulter les solutions...</source>
+                <target xml:space="preserve">View solutions</target>
+                <note from="usedInGenSpecifier">web</note>
+            </trans-unit>
+        </body>
+    </file>
+    <file original="authoring" source-language="" datatype="plaintext">
+        <header>
+            <note>Scenari model : OpaleStarter3-4</note>
+        </header>
+        <body>
+            <trans-unit id="1" resname="Vidéo AVI - déconseillé">
+                <source xml:space="preserve">Vidéo AVI - déconseillé</source>
+                <target xml:space="preserve">AVI video - not recommended</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Vidéo FLV">
+                <source xml:space="preserve">Vidéo FLV</source>
+                <target xml:space="preserve">FLV video</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Vidéo MP4">
+                <source xml:space="preserve">Vidéo MP4</source>
+                <target xml:space="preserve">MP4 video</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Vidéo MOV - déconseillé">
+                <source xml:space="preserve">Vidéo MOV - déconseillé</source>
+                <target xml:space="preserve">MOV video - not recommended</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Vidéo MPEG - déconseillé">
+                <source xml:space="preserve">Vidéo MPEG - déconseillé</source>
+                <target xml:space="preserve">MPEG video - not recommended</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Vidéo RM - déconseillé">
+                <source xml:space="preserve">Vidéo RM - déconseillé</source>
+                <target xml:space="preserve">RM video - not recommended</target>
+            </trans-unit>
+            <trans-unit id="7" resname="Vidéo WMV - déconseillé">
+                <source xml:space="preserve">Vidéo WMV - déconseillé</source>
+                <target xml:space="preserve">WMV video - not recommended</target>
+            </trans-unit>
+            <trans-unit id="8" resname="Audio MP3">
+                <source xml:space="preserve">Audio MP3</source>
+                <target xml:space="preserve">MP3 audio</target>
+            </trans-unit>
+            <trans-unit id="9" resname="Image GIF">
+                <source xml:space="preserve">Image GIF</source>
+                <target xml:space="preserve">GIF image</target>
+            </trans-unit>
+            <trans-unit id="10" resname="Image JPEG">
+                <source xml:space="preserve">Image JPEG</source>
+                <target xml:space="preserve">JPEG image</target>
+            </trans-unit>
+            <trans-unit id="11" resname="Image PNG">
+                <source xml:space="preserve">Image PNG</source>
+                <target xml:space="preserve">PNG image</target>
+            </trans-unit>
+            <trans-unit id="12" resname="Graphique OpenDocument">
+                <source xml:space="preserve">Graphique OpenDocument</source>
+                <target xml:space="preserve">OpenDocument graph</target>
+            </trans-unit>
+            <trans-unit id="13" resname="Classeur OpenDocument">
+                <source xml:space="preserve">Classeur OpenDocument</source>
+                <target xml:space="preserve">OpenDocument spreadsheet</target>
+            </trans-unit>
+            <trans-unit id="14" resname="Animation Flash">
+                <source xml:space="preserve">Animation Flash</source>
+                <target xml:space="preserve">Flash animation</target>
+            </trans-unit>
+            <trans-unit id="15" resname="Equation mathématique OpenDocument">
+                <source xml:space="preserve">Equation mathématique OpenDocument</source>
+                <target xml:space="preserve">OpenDocument formula</target>
+            </trans-unit>
+            <trans-unit id="16" resname="Présentation OpenDocument">
+                <source xml:space="preserve">Présentation OpenDocument</source>
+                <target xml:space="preserve">OpenDocument presentation</target>
+            </trans-unit>
+            <trans-unit id="17" resname="Texte OpenDocument">
+                <source xml:space="preserve">Texte OpenDocument</source>
+                <target xml:space="preserve">OpenDocument text</target>
+            </trans-unit>
+            <trans-unit id="18" resname="Document PDF">
+                <source xml:space="preserve">Document PDF</source>
+                <target xml:space="preserve">PDF document</target>
+            </trans-unit>
+            <trans-unit id="19" resname="Présentation Microsoft Powerpoint">
+                <source xml:space="preserve">Présentation Microsoft Powerpoint</source>
+                <target xml:space="preserve">Microsoft PowerPoint presentation</target>
+            </trans-unit>
+            <trans-unit id="20" resname="Classeur Microsoft Excel">
+                <source xml:space="preserve">Classeur Microsoft Excel</source>
+                <target xml:space="preserve">Microsoft Excel spreadsheet</target>
+            </trans-unit>
+            <trans-unit id="21" resname="Document Microsoft Word">
+                <source xml:space="preserve">Document Microsoft Word</source>
+                <target xml:space="preserve">Microsoft Word document</target>
+            </trans-unit>
+            <trans-unit id="22" resname="Archive ZIP">
+                <source xml:space="preserve">Archive ZIP</source>
+                <target xml:space="preserve">ZIP archive</target>
+            </trans-unit>
+            <trans-unit id="23" resname="Item indéfini">
+                <source xml:space="preserve">Item indéfini</source>
+                <target xml:space="preserve">Undefined item</target>
+            </trans-unit>
+            <trans-unit id="24" resname="Module OPALE">
+                <source xml:space="preserve">Module OPALE</source>
+                <target xml:space="preserve">OPALE Module</target>
+            </trans-unit>
+            <trans-unit id="25" resname="Publication ODT">
+                <source xml:space="preserve">Publication ODT</source>
+                <target xml:space="preserve">ODT publishing</target>
+            </trans-unit>
+            <trans-unit id="26" resname="Quadra">
+                <source xml:space="preserve">Quadra</source>
+                <target xml:space="preserve">Quadra</target>
+            </trans-unit>
+            <trans-unit id="27" resname="Publication Web">
+                <source xml:space="preserve">Publication Web</source>
+                <target xml:space="preserve">Web publishing</target>
+            </trans-unit>
+            <trans-unit id="28" resname="Ressources">
+                <source xml:space="preserve">Ressources</source>
+                <target xml:space="preserve">Resources</target>
+            </trans-unit>
+            <trans-unit id="29" resname="Ressource">
+                <source xml:space="preserve">Ressource</source>
+                <target xml:space="preserve">Resource</target>
+            </trans-unit>
+            <trans-unit id="30" resname="Math">
+                <source xml:space="preserve">Math</source>
+                <target xml:space="preserve">Math</target>
+            </trans-unit>
+            <trans-unit id="31" resname="Item indéfini de type Xml">
+                <source xml:space="preserve">Item indéfini de type Xml</source>
+                <target xml:space="preserve">Undefined XML item</target>
+            </trans-unit>
+            <trans-unit id="32" resname="Introduction">
+                <source xml:space="preserve">Introduction</source>
+                <target xml:space="preserve">Introduction</target>
+            </trans-unit>
+            <trans-unit id="33" resname="Activité d'apprentissage">
+                <source xml:space="preserve">Activité d'apprentissage</source>
+                <target xml:space="preserve">Learning activity</target>
+            </trans-unit>
+            <trans-unit id="34" resname="Activité d'auto-évaluation">
+                <source xml:space="preserve">Activité d'auto-évaluation</source>
+                <target xml:space="preserve">Self-assessment activity</target>
+            </trans-unit>
+            <trans-unit id="35" resname="Division">
+                <source xml:space="preserve">Division</source>
+                <target xml:space="preserve">Division</target>
+            </trans-unit>
+            <trans-unit id="36" resname="Grain de contenu">
+                <source xml:space="preserve">Grain de contenu</source>
+                <target xml:space="preserve">Content element</target>
+            </trans-unit>
+            <trans-unit id="37" resname="Exercice rédactionnel">
+                <source xml:space="preserve">Exercice rédactionnel</source>
+                <target xml:space="preserve">Writing task</target>
+            </trans-unit>
+            <trans-unit id="38" resname="Exercice : QCU">
+                <source xml:space="preserve">Exercice : QCU</source>
+                <target xml:space="preserve">Quiz: SCQ</target>
+            </trans-unit>
+            <trans-unit id="39" resname="Exercice : QCU graphique">
+                <source xml:space="preserve">Exercice : QCU graphique</source>
+                <target xml:space="preserve">Quiz: graphic SCQ</target>
+            </trans-unit>
+            <trans-unit id="40" resname="Exercice : QCM">
+                <source xml:space="preserve">Exercice : QCM</source>
+                <target xml:space="preserve">Quiz: MCQ</target>
+            </trans-unit>
+            <trans-unit id="41" resname="Exercice : QCM graphique">
+                <source xml:space="preserve">Exercice : QCM graphique</source>
+                <target xml:space="preserve">Quiz: graphic MCQ</target>
+            </trans-unit>
+            <trans-unit id="42" resname="Exercice : catégorisation">
+                <source xml:space="preserve">Exercice : catégorisation</source>
+                <target xml:space="preserve">Quiz: matching exercise</target>
+            </trans-unit>
+            <trans-unit id="43" resname="Exercice : ordonnancement">
+                <source xml:space="preserve">Exercice : ordonnancement</source>
+                <target xml:space="preserve">Quiz: jumble words exercise</target>
+            </trans-unit>
+            <trans-unit id="44" resname="Exercice : texte à trous">
+                <source xml:space="preserve">Exercice : texte à trous</source>
+                <target xml:space="preserve">Quiz: fill-in the gaps exercise</target>
+            </trans-unit>
+            <trans-unit id="45" resname="Exercice : question à réponse courte">
+                <source xml:space="preserve">Exercice : question à réponse courte</source>
+                <target xml:space="preserve">Quiz: short answer question</target>
+            </trans-unit>
+            <trans-unit id="46" resname="Liste d'exercices">
+                <source xml:space="preserve">Liste d'exercices</source>
+                <target xml:space="preserve">Quiz list</target>
+            </trans-unit>
+            <trans-unit id="47" resname="Conclusion">
+                <source xml:space="preserve">Conclusion</source>
+                <target xml:space="preserve">Conclusion</target>
+            </trans-unit>
+            <trans-unit id="48" resname="Partie">
+                <source xml:space="preserve">Partie</source>
+                <target xml:space="preserve">Part</target>
+            </trans-unit>
+            <trans-unit id="49" resname="Sous-partie">
+                <source xml:space="preserve">Sous-partie</source>
+                <target xml:space="preserve">Sub-part</target>
+            </trans-unit>
+            <trans-unit id="50" resname="Opale Starter">
+                <source xml:space="preserve">Opale Starter</source>
+            </trans-unit>
+            <trans-unit id="51" resname="Images">
+                <source xml:space="preserve">Images</source>
+                <target xml:space="preserve">Images</target>
+            </trans-unit>
+            <trans-unit id="52" resname="Schémas vectoriels">
+                <source xml:space="preserve">Schémas vectoriels</source>
+                <target xml:space="preserve">Vectorial schema</target>
+            </trans-unit>
+            <trans-unit id="53" resname="Tableaux">
+                <source xml:space="preserve">Tableaux</source>
+                <target xml:space="preserve">Table</target>
+            </trans-unit>
+            <trans-unit id="54" resname="Vidéos, sons, interactions">
+                <source xml:space="preserve">Vidéos, sons, interactions</source>
+                <target xml:space="preserve">Video, sound, interaction</target>
+            </trans-unit>
+            <trans-unit id="55" resname="Formules Mathématiques">
+                <source xml:space="preserve">Formules Mathématiques</source>
+                <target xml:space="preserve">Formulas</target>
+            </trans-unit>
+            <trans-unit id="56" resname="Documents bureautiques">
+                <source xml:space="preserve">Documents bureautiques</source>
+                <target xml:space="preserve">Office documents</target>
+            </trans-unit>
+            <trans-unit id="57" resname="module">
+                <source xml:space="preserve">module</source>
+                <target xml:space="preserve">module</target>
+                <note>utilisé dans un nom de fichier (sans accent ou caractères spéciaux !)</note>
+            </trans-unit>
+            <trans-unit id="58" resname="_">
+                <source xml:space="preserve">_</source>
+                <target xml:space="preserve">_</target>
+            </trans-unit>
+            <trans-unit id="59" resname="image">
+                <source xml:space="preserve">image</source>
+                <target xml:space="preserve">image</target>
+            </trans-unit>
+            <trans-unit id="60" resname="res">
+                <source xml:space="preserve">res</source>
+                <target xml:space="preserve">res</target>
+            </trans-unit>
+            <trans-unit id="61" resname="audio">
+                <source xml:space="preserve">audio</source>
+                <target xml:space="preserve">audio</target>
+            </trans-unit>
+            <trans-unit id="62" resname="anim">
+                <source xml:space="preserve">anim</source>
+                <target xml:space="preserve">anim</target>
+            </trans-unit>
+            <trans-unit id="63" resname="video">
+                <source xml:space="preserve">video</source>
+                <target xml:space="preserve">video</target>
+            </trans-unit>
+            <trans-unit id="64" resname="math">
+                <source xml:space="preserve">math</source>
+                <target xml:space="preserve">math</target>
+            </trans-unit>
+            <trans-unit id="65" resname="Édition Opale">
+                <source xml:space="preserve">Édition Opale</source>
+            </trans-unit>
+            <trans-unit id="66" resname="Édition">
+                <source xml:space="preserve">Édition</source>
+                <target xml:space="preserve">Edition</target>
+            </trans-unit>
+            <trans-unit id="67" resname="Publications">
+                <source xml:space="preserve">Publications</source>
+            </trans-unit>
+            <trans-unit id="68" resname="Publi.">
+                <source xml:space="preserve">Publi.</source>
+            </trans-unit>
+            <trans-unit id="69" resname="Informations">
+                <source xml:space="preserve">Informations</source>
+            </trans-unit>
+            <trans-unit id="70" resname="Infos.">
+                <source xml:space="preserve">Infos.</source>
+                <target xml:space="preserve">Info.</target>
+            </trans-unit>
+            <trans-unit id="71" resname="Informations techniques">
+                <source xml:space="preserve">Informations techniques</source>
+                <target xml:space="preserve">Technical information</target>
+            </trans-unit>
+            <trans-unit id="72" resname="Édition texte">
+                <source xml:space="preserve">Édition texte</source>
+                <target xml:space="preserve">Text edition</target>
+            </trans-unit>
+            <trans-unit id="73" resname="Texte">
+                <source xml:space="preserve">Texte</source>
+                <target xml:space="preserve">Text</target>
+            </trans-unit>
+            <trans-unit id="74" resname="Visualisation">
+                <source xml:space="preserve">Visualisation</source>
+                <target xml:space="preserve">Overview</target>
+            </trans-unit>
+            <trans-unit id="75" resname="Visu.">
+                <source xml:space="preserve">Visu.</source>
+                <target xml:space="preserve">View</target>
+            </trans-unit>
+            <trans-unit id="76" resname="Dimensions">
+                <source xml:space="preserve">Dimensions</source>
+                <target xml:space="preserve">Dimensions</target>
+            </trans-unit>
+            <trans-unit id="77" resname="Propriétés">
+                <source xml:space="preserve">Propriétés</source>
+                <target xml:space="preserve">Properties</target>
+            </trans-unit>
+            <trans-unit id="78" resname="Props.">
+                <source xml:space="preserve">Props.</source>
+                <target xml:space="preserve">Props.</target>
+            </trans-unit>
+            <trans-unit id="79" resname="Aperçu">
+                <source xml:space="preserve">Aperçu</source>
+                <target xml:space="preserve">Preview</target>
+            </trans-unit>
+            <trans-unit id="80" resname="Item racine du module">
+                <source xml:space="preserve">Item racine du module</source>
+                <target xml:space="preserve">Module's root item</target>
+            </trans-unit>
+            <trans-unit id="81" resname="Objectifs du module">
+                <source xml:space="preserve">Objectifs du module</source>
+                <target xml:space="preserve">Module's objectives</target>
+            </trans-unit>
+            <trans-unit id="82" resname="Contient les objectifs généraux du module">
+                <source xml:space="preserve">Contient les objectifs généraux du module</source>
+                <target xml:space="preserve">Contains the module's main objectives</target>
+            </trans-unit>
+            <trans-unit id="83" resname="Contient l'introduction générale du module">
+                <source xml:space="preserve">Contient l'introduction générale du module</source>
+                <target xml:space="preserve">Contains the module's main introduction</target>
+            </trans-unit>
+            <trans-unit id="84" resname="Structure le module et contient des activités, ou directement du contenu">
+                <source xml:space="preserve">Structure le module et contient des activités, ou directement du contenu</source>
+                <target xml:space="preserve">Structure the module and contains activities, or direct content</target>
+            </trans-unit>
+            <trans-unit id="85" resname="Contient du contenu expositif">
+                <source xml:space="preserve">Contient du contenu expositif</source>
+                <target xml:space="preserve">Contains explanatory content</target>
+            </trans-unit>
+            <trans-unit id="86" resname="Contient un exercice auto-évalué de type QCU">
+                <source xml:space="preserve">Contient un exercice auto-évalué de type QCU</source>
+                <target xml:space="preserve">Contains a self-assessed SCQ</target>
+            </trans-unit>
+            <trans-unit id="87" resname="Contient un exercice auto-évalué de type de type QCM">
+                <source xml:space="preserve">Contient un exercice auto-évalué de type de type QCM</source>
+                <target xml:space="preserve">Contains a self-assessed MCQ</target>
+            </trans-unit>
+            <trans-unit id="88" resname="Contient la conclusion globale du module">
+                <source xml:space="preserve">Contient la conclusion globale du module</source>
+                <target xml:space="preserve">Contains the module's main conclusion</target>
+            </trans-unit>
+            <trans-unit id="89" resname="Insérer une image JPEG à une résolution de 300 dpi">
+                <source xml:space="preserve">Insérer une image JPEG à une résolution de 300 dpi</source>
+                <target xml:space="preserve">Insert a 300 dpi JPEG image</target>
+            </trans-unit>
+            <trans-unit id="90" resname="Insérer une image GIF à une résolution de 96 dpi">
+                <source xml:space="preserve">Insérer une image GIF à une résolution de 96 dpi</source>
+                <target xml:space="preserve">Insert a 96 dpi GIF image</target>
+            </trans-unit>
+            <trans-unit id="91" resname="Insérer une image png à une résolution de 300 dpi">
+                <source xml:space="preserve">Insérer une image png à une résolution de 300 dpi</source>
+                <target xml:space="preserve">Insert a 300 dpi PNG image</target>
+            </trans-unit>
+            <trans-unit id="92" resname=" Ressource au format Open Document Graphics. ">
+                <source xml:space="preserve"> Ressource au format Open Document Graphics. </source>
+                <target xml:space="preserve"> OpenDocument Graphics resource. </target>
+            </trans-unit>
+            <trans-unit id="93" resname=" Ressource au format Open Document Spreadsheet. ">
+                <source xml:space="preserve"> Ressource au format Open Document Spreadsheet. </source>
+                <target xml:space="preserve"> OpenDocument Spreadsheet resource. </target>
+            </trans-unit>
+            <trans-unit id="94" resname="Ressource au format Macromedia Flash. ">
+                <source xml:space="preserve">Ressource au format Macromedia Flash. </source>
+                <target xml:space="preserve">Adobe flash resource. </target>
+            </trans-unit>
+            <trans-unit id="95" resname="Seules les vidéos utilisant le codec H.264/MPEG-4 AVC sont compatibles.">
+                <source xml:space="preserve">Seules les vidéos utilisant le codec H.264/MPEG-4 AVC sont compatibles.</source>
+                <target xml:space="preserve">Only videos using the H.264/MPEG-4 AVC codec are compatible.</target>
+            </trans-unit>
+            <trans-unit id="96" resname=" Ressource au format RealMedia. ">
+                <source xml:space="preserve"> Ressource au format RealMedia. </source>
+                <target xml:space="preserve"> RealMedia resource. </target>
+            </trans-unit>
+            <trans-unit id="97" resname=" Ressource au format Microsoft Word. ">
+                <source xml:space="preserve"> Ressource au format Microsoft Word. </source>
+                <target xml:space="preserve"> Microsoft Word resource. </target>
+            </trans-unit>
+            <trans-unit id="98" resname=" Ressource au format Microsoft Excel. ">
+                <source xml:space="preserve"> Ressource au format Microsoft Excel. </source>
+                <target xml:space="preserve"> Microsoft Excel resource. </target>
+            </trans-unit>
+            <trans-unit id="99" resname=" Ressource au format Microsoft Powerpoint. ">
+                <source xml:space="preserve"> Ressource au format Microsoft Powerpoint. </source>
+                <target xml:space="preserve"> Microsoft PowerPoint resource. </target>
+            </trans-unit>
+            <trans-unit id="100" resname=" Ressource au format Open Document Presentation. ">
+                <source xml:space="preserve"> Ressource au format Open Document Presentation. </source>
+                <target xml:space="preserve"> OpenDocument Presentation resource. </target>
+            </trans-unit>
+            <trans-unit id="101" resname="Ressource au format OpenDocument Text.">
+                <source xml:space="preserve">Ressource au format OpenDocument Text.</source>
+                <target xml:space="preserve">OpenDocument Text resource.</target>
+            </trans-unit>
+            <trans-unit id="102" resname=" Ressource au format PDF. ">
+                <source xml:space="preserve"> Ressource au format PDF. </source>
+                <target xml:space="preserve"> PDF resource. </target>
+            </trans-unit>
+            <trans-unit id="103" resname=" Ressource au format ZIP. ">
+                <source xml:space="preserve"> Ressource au format ZIP. </source>
+                <target xml:space="preserve"> ZIP resource. </target>
+            </trans-unit>
+            <trans-unit id="104" resname="Item non reconnu.">
+                <source xml:space="preserve">Item non reconnu.</source>
+                <target xml:space="preserve">Unrecognized item</target>
+            </trans-unit>
+            <trans-unit id="105" resname="Métadonnées">
+                <source xml:space="preserve">Métadonnées</source>
+                <target xml:space="preserve">Metadata</target>
+            </trans-unit>
+            <trans-unit id="106" resname="Contient les métadonnées du module">
+                <source xml:space="preserve">Contient les métadonnées du module</source>
+                <target xml:space="preserve">Contains the module metadata</target>
+            </trans-unit>
+            <trans-unit id="107" resname="Titre">
+                <source xml:space="preserve">Titre</source>
+                <target xml:space="preserve">Title</target>
+            </trans-unit>
+            <trans-unit id="108" resname="Titre court">
+                <source xml:space="preserve">Titre court</source>
+                <target xml:space="preserve">Short title</target>
+            </trans-unit>
+            <trans-unit id="109" resname="Texte Simple">
+                <source xml:space="preserve">Texte Simple</source>
+                <target xml:space="preserve">Simple text</target>
+            </trans-unit>
+            <trans-unit id="110" resname="Filtre par version">
+                <source xml:space="preserve">Filtre par version</source>
+                <target xml:space="preserve">Filter by version</target>
+            </trans-unit>
+            <trans-unit id="111" resname="Exclusion de la version &quot;standard&quot;">
+                <source xml:space="preserve">Exclusion de la version &quot;standard&quot;</source>
+                <target xml:space="preserve">Exclusion from the “Standard” version</target>
+            </trans-unit>
+            <trans-unit id="112" resname="Exclusion de la version &quot;courte&quot;">
+                <source xml:space="preserve">Exclusion de la version &quot;courte&quot;</source>
+                <target xml:space="preserve">Exclusion from the “Short” version</target>
+            </trans-unit>
+            <trans-unit id="113" resname="Ensemble de ressources">
+                <source xml:space="preserve">Ensemble de ressources</source>
+                <target xml:space="preserve">Resource set</target>
+            </trans-unit>
+            <trans-unit id="114" resname="Texte illustré">
+                <source xml:space="preserve">Texte illustré</source>
+                <target xml:space="preserve">Illustrated text</target>
+            </trans-unit>
+            <trans-unit id="115" resname="La ressource multimédia s'affiche dans la page web courante ou dans une nouvelle fenêtre via un lien. Par défaut, la ressource est embarquée ...">
+                <source xml:space="preserve">La ressource multimédia s'affiche dans la page web courante ou dans une nouvelle fenêtre via un lien. Par défaut, la ressource est embarquée ...</source>
+                <target xml:space="preserve">The multimedia resource appears in the current web page or in a new window via a link. By default, the resource is embedded …</target>
+            </trans-unit>
+            <trans-unit id="116" resname="Fichier en téléchargement">
+                <source xml:space="preserve">Fichier en téléchargement</source>
+                <target xml:space="preserve">File to download</target>
+            </trans-unit>
+            <trans-unit id="117" resname="Le document ou la ressource est proposée en téléchargement">
+                <source xml:space="preserve">Le document ou la ressource est proposée en téléchargement</source>
+                <target xml:space="preserve">The document or the resource is offered as a download</target>
+            </trans-unit>
+            <trans-unit id="118" resname="Citation pluriparagraphe">
+                <source xml:space="preserve">Citation pluriparagraphe</source>
+                <target xml:space="preserve">Multi-paragraph quote</target>
+            </trans-unit>
+            <trans-unit id="119" resname="Contenu filtrable">
+                <source xml:space="preserve">Contenu filtrable</source>
+                <target xml:space="preserve">Filterable content</target>
+            </trans-unit>
+            <trans-unit id="120" resname="Contient l'introduction de la division">
+                <source xml:space="preserve">Contient l'introduction de la division</source>
+                <target xml:space="preserve">Contains the division introduction</target>
+            </trans-unit>
+            <trans-unit id="121" resname="Contient des activités, ou directement du contenu">
+                <source xml:space="preserve">Contient des activités, ou directement du contenu</source>
+                <target xml:space="preserve">Contains an activity, or content directly</target>
+            </trans-unit>
+            <trans-unit id="122" resname="Contient la conclusion de la division">
+                <source xml:space="preserve">Contient la conclusion de la division</source>
+                <target xml:space="preserve">Contains the division conclusion</target>
+            </trans-unit>
+            <trans-unit id="123" resname="Contenu">
+                <source xml:space="preserve">Contenu</source>
+                <target xml:space="preserve">Content</target>
+            </trans-unit>
+            <trans-unit id="124" resname="Structure le grain pédagogique et contient du contenu expositif">
+                <source xml:space="preserve">Structure le grain pédagogique et contient du contenu expositif</source>
+                <target xml:space="preserve">Structures the educational granularity and contains explanatory content</target>
+            </trans-unit>
+            <trans-unit id="125" resname="Question à Choix Unique">
+                <source xml:space="preserve">Question à Choix Unique</source>
+                <target xml:space="preserve">Single choice question</target>
+            </trans-unit>
+            <trans-unit id="126" resname="Questionnaire à choix unique">
+                <source xml:space="preserve">Questionnaire à choix unique</source>
+                <target xml:space="preserve">Single Choice Question</target>
+            </trans-unit>
+            <trans-unit id="127" resname="Énoncé">
+                <source xml:space="preserve">Énoncé</source>
+                <target xml:space="preserve">Question</target>
+            </trans-unit>
+            <trans-unit id="128" resname="Choix">
+                <source xml:space="preserve">Choix</source>
+                <target xml:space="preserve">Option</target>
+            </trans-unit>
+            <trans-unit id="129" resname="Réponse">
+                <source xml:space="preserve">Réponse</source>
+                <target xml:space="preserve">Answer</target>
+            </trans-unit>
+            <trans-unit id="130" resname="Libellé">
+                <source xml:space="preserve">Libellé</source>
+                <target xml:space="preserve">Wording</target>
+            </trans-unit>
+            <trans-unit id="131" resname="Explication">
+                <source xml:space="preserve">Explication</source>
+                <target xml:space="preserve">Explanation</target>
+            </trans-unit>
+            <trans-unit id="132" resname="Solution">
+                <source xml:space="preserve">Solution</source>
+                <target xml:space="preserve">Solution</target>
+            </trans-unit>
+            <trans-unit id="133" resname="Explication globale">
+                <source xml:space="preserve">Explication globale</source>
+                <target xml:space="preserve">Comprehensive explanation</target>
+            </trans-unit>
+            <trans-unit id="134" resname="Question à Choix Multiple">
+                <source xml:space="preserve">Question à Choix Multiple</source>
+                <target xml:space="preserve">Multiple choice question</target>
+            </trans-unit>
+            <trans-unit id="135" resname="Questionnaire à choix multiple">
+                <source xml:space="preserve">Questionnaire à choix multiple</source>
+                <target xml:space="preserve">Multiple Choice Question</target>
+            </trans-unit>
+            <trans-unit id="136" resname="Enoncé">
+                <source xml:space="preserve">Enoncé</source>
+                <target xml:space="preserve">Instructions</target>
+            </trans-unit>
+            <trans-unit id="137" resname="Propriétés de ressources">
+                <source xml:space="preserve">Propriétés de ressources</source>
+                <target xml:space="preserve">Resource properties</target>
+            </trans-unit>
+            <trans-unit id="138" resname="Alternative textuelle (pour accessibilité)">
+                <source xml:space="preserve">Alternative textuelle (pour accessibilité)</source>
+                <target xml:space="preserve">Alternative text (for accessibility)</target>
+            </trans-unit>
+            <trans-unit id="139" resname="Description complète (Déprécié)">
+                <source xml:space="preserve">Description complète (Déprécié)</source>
+                <target xml:space="preserve">Full description (Deprecated)</target>
+            </trans-unit>
+            <trans-unit id="140" resname="Description complète">
+                <source xml:space="preserve">Description complète</source>
+                <target xml:space="preserve">Full description</target>
+            </trans-unit>
+            <trans-unit id="141" resname="Alternative statique">
+                <source xml:space="preserve">Alternative statique</source>
+                <target xml:space="preserve">Static alternative</target>
+            </trans-unit>
+            <trans-unit id="142" resname="supports non interactifs : papier, web accessible etc.">
+                <source xml:space="preserve">supports non interactifs : papier, web accessible etc.</source>
+                <target xml:space="preserve">Non interactive resources</target>
+            </trans-unit>
+            <trans-unit id="143" resname="Métadonnées des contenus pédagogiques">
+                <source xml:space="preserve">Métadonnées des contenus pédagogiques</source>
+                <target xml:space="preserve">Educational contents metadata</target>
+            </trans-unit>
+            <trans-unit id="144" resname="Licence">
+                <source xml:space="preserve">Licence</source>
+                <target xml:space="preserve">License</target>
+            </trans-unit>
+            <trans-unit id="145" resname="Plus d'info : http://creativecommons.org et http://www.gnu.org">
+                <source xml:space="preserve">Plus d'info : http://creativecommons.org et http://www.gnu.org</source>
+                <target xml:space="preserve">More information: http://creativecommons.org</target>
+            </trans-unit>
+            <trans-unit id="146" resname="Domaine Public">
+                <source xml:space="preserve">Domaine Public</source>
+                <target xml:space="preserve">Public Domain</target>
+            </trans-unit>
+            <trans-unit id="147" resname="Creative Commons Zéro">
+                <source xml:space="preserve">Creative Commons Zéro</source>
+                <target xml:space="preserve">Creative Commons Zero</target>
+            </trans-unit>
+            <trans-unit id="148" resname="Paternité">
+                <source xml:space="preserve">Paternité</source>
+                <target xml:space="preserve">Attribution</target>
+            </trans-unit>
+            <trans-unit id="149" resname="Paternité - Pas d'Utilisation Commerciale">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale</source>
+                <target xml:space="preserve">Attribution – Non commercial</target>
+            </trans-unit>
+            <trans-unit id="150" resname="Paternité - Pas d'Utilisation Commerciale - Pas de Modification">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale - Pas de Modification</source>
+                <target xml:space="preserve">Attribution – Non commercial - No Derivative Work</target>
+            </trans-unit>
+            <trans-unit id="151" resname="Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique">
+                <source xml:space="preserve">Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique</source>
+                <target xml:space="preserve">Attribution – Non commercial - Share Alike</target>
+            </trans-unit>
+            <trans-unit id="152" resname="Paternité - Pas de Modification">
+                <source xml:space="preserve">Paternité - Pas de Modification</source>
+                <target xml:space="preserve">Attribution - No Derivative Work</target>
+            </trans-unit>
+            <trans-unit id="153" resname="Paternité - Partage des Conditions Initiales à l'Identique">
+                <source xml:space="preserve">Paternité - Partage des Conditions Initiales à l'Identique</source>
+                <target xml:space="preserve">Attribution - Share Alike</target>
+            </trans-unit>
+            <trans-unit id="154" resname="Licence de documentation libre GNU">
+                <source xml:space="preserve">Licence de documentation libre GNU</source>
+                <target xml:space="preserve">GNU Free Documentation licence (GFDL)</target>
+            </trans-unit>
+            <trans-unit id="155" resname="Paternité ou copyright">
+                <source xml:space="preserve">Paternité ou copyright</source>
+                <target xml:space="preserve">Attribution or copyright</target>
+            </trans-unit>
+            <trans-unit id="156" resname="[Indexation Dublin-core et LomFr] - déprécié">
+                <source xml:space="preserve">[Indexation Dublin-core et LomFr] - déprécié</source>
+                <target xml:space="preserve">[Dublin-core and LomFr indexing] - deprecated</target>
+            </trans-unit>
+            <trans-unit id="157" resname="Insérer un texte accompagné d'une illustration (à droite ou à gauche)">
+                <source xml:space="preserve">Insérer un texte accompagné d'une illustration (à droite ou à gauche)</source>
+                <target xml:space="preserve">Insert a text paired with a picture (on the left or right side)</target>
+            </trans-unit>
+            <trans-unit id="158" resname="Image d'illustration">
+                <source xml:space="preserve">Image d'illustration</source>
+                <target xml:space="preserve">Illustration image</target>
+            </trans-unit>
+            <trans-unit id="159" resname="Insérer une image à une résolution de 300 dpi">
+                <source xml:space="preserve">Insérer une image à une résolution de 300 dpi</source>
+                <target xml:space="preserve">Insert a 300 dpi image</target>
+            </trans-unit>
+            <trans-unit id="160" resname="Mode de publication (web et diaporama)">
+                <source xml:space="preserve">Mode de publication (web et diaporama)</source>
+                <target xml:space="preserve">Publishing mode (web and slideshow)</target>
+            </trans-unit>
+            <trans-unit id="161" resname="Ressource publiée en ligne ou comme un lien externe.">
+                <source xml:space="preserve">Ressource publiée en ligne ou comme un lien externe.</source>
+                <target xml:space="preserve">Embedded or &quot;as a link&quot; resource</target>
+            </trans-unit>
+            <trans-unit id="162" resname="Embarquée">
+                <source xml:space="preserve">Embarquée</source>
+                <target xml:space="preserve">Embedded</target>
+            </trans-unit>
+            <trans-unit id="163" resname="Zoom">
+                <source xml:space="preserve">Zoom</source>
+                <target xml:space="preserve">Zoom</target>
+            </trans-unit>
+            <trans-unit id="164" resname="Type d'index (papier)">
+                <source xml:space="preserve">Type d'index (papier)</source>
+                <target xml:space="preserve">Index type (paper)</target>
+            </trans-unit>
+            <trans-unit id="165" resname="Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....">
+                <source xml:space="preserve">Ressources numérotées automatiquement sur le papier. Par exemple : Tableau 1 : ....</source>
+                <target xml:space="preserve">Resources automatically numbered on paper. For example: Table 1: ....</target>
+            </trans-unit>
+            <trans-unit id="166" resname="Graphique">
+                <source xml:space="preserve">Graphique</source>
+                <target xml:space="preserve">Graphic</target>
+            </trans-unit>
+            <trans-unit id="167" resname="Tableau">
+                <source xml:space="preserve">Tableau</source>
+                <target xml:space="preserve">Table</target>
+            </trans-unit>
+            <trans-unit id="168" resname="Image">
+                <source xml:space="preserve">Image</source>
+                <target xml:space="preserve">Image</target>
+            </trans-unit>
+            <trans-unit id="169" resname="Formule">
+                <source xml:space="preserve">Formule</source>
+                <target xml:space="preserve">Formula</target>
+            </trans-unit>
+            <trans-unit id="170" resname="Animation">
+                <source xml:space="preserve">Animation</source>
+                <target xml:space="preserve">Animation</target>
+            </trans-unit>
+            <trans-unit id="171" resname="Consignes">
+                <source xml:space="preserve">Consignes</source>
+                <target xml:space="preserve">Instructions</target>
+            </trans-unit>
+            <trans-unit id="172" resname="Précisions ou consignes opératoires.">
+                <source xml:space="preserve">Précisions ou consignes opératoires.</source>
+                <target xml:space="preserve">Details or instructions</target>
+            </trans-unit>
+            <trans-unit id="173" resname="Instructions">
+                <source xml:space="preserve">Instructions</source>
+                <target xml:space="preserve">Instructions</target>
+            </trans-unit>
+            <trans-unit id="174" resname="Consigne (pour le web et diaporama)">
+                <source xml:space="preserve">Consigne (pour le web et diaporama)</source>
+                <target xml:space="preserve">Instructions (for web and slideshow)</target>
+            </trans-unit>
+            <trans-unit id="175" resname="Préciser une consigne opératoire (comment utiliser la ressource...)">
+                <source xml:space="preserve">Préciser une consigne opératoire (comment utiliser la ressource...)</source>
+                <target xml:space="preserve">Specify the instructions (how to use the resource...)</target>
+            </trans-unit>
+            <trans-unit id="176" resname="Consigne (pour le papier)">
+                <source xml:space="preserve">Consigne (pour le papier)</source>
+                <target xml:space="preserve">Instructions (for paper)</target>
+            </trans-unit>
+            <trans-unit id="177" resname="Préciser où consulter la ressource par exemple.">
+                <source xml:space="preserve">Préciser où consulter la ressource par exemple.</source>
+                <target xml:space="preserve">I.e. specify where to view the resource.</target>
+            </trans-unit>
+            <trans-unit id="178" resname="Contient les métadonnées de la division">
+                <source xml:space="preserve">Contient les métadonnées de la division</source>
+                <target xml:space="preserve">Contains the division metadata</target>
+            </trans-unit>
+            <trans-unit id="179" resname="en Information">
+                <source xml:space="preserve">en Information</source>
+                <target xml:space="preserve">to Information</target>
+            </trans-unit>
+            <trans-unit id="180" resname="en Exemple">
+                <source xml:space="preserve">en Exemple</source>
+                <target xml:space="preserve">to Example</target>
+            </trans-unit>
+            <trans-unit id="181" resname="en Remarque">
+                <source xml:space="preserve">en Remarque</source>
+                <target xml:space="preserve">to Note</target>
+            </trans-unit>
+            <trans-unit id="182" resname="en Conseil">
+                <source xml:space="preserve">en Conseil</source>
+                <target xml:space="preserve">to Advice</target>
+            </trans-unit>
+            <trans-unit id="183" resname="en Attention">
+                <source xml:space="preserve">en Attention</source>
+                <target xml:space="preserve">to Warning</target>
+            </trans-unit>
+            <trans-unit id="184" resname="en Complément">
+                <source xml:space="preserve">en Complément</source>
+                <target xml:space="preserve">to Complement</target>
+            </trans-unit>
+            <trans-unit id="185" resname="en Méthode">
+                <source xml:space="preserve">en Méthode</source>
+                <target xml:space="preserve">to Method</target>
+            </trans-unit>
+            <trans-unit id="186" resname="en Rappel">
+                <source xml:space="preserve">en Rappel</source>
+                <target xml:space="preserve">to Reminder</target>
+            </trans-unit>
+            <trans-unit id="187" resname="en Fondamental">
+                <source xml:space="preserve">en Fondamental</source>
+                <target xml:space="preserve">to Fundamental</target>
+            </trans-unit>
+            <trans-unit id="188" resname="en Syntaxe">
+                <source xml:space="preserve">en Syntaxe</source>
+                <target xml:space="preserve">to Syntax</target>
+            </trans-unit>
+            <trans-unit id="189" resname="en Texte légal">
+                <source xml:space="preserve">en Texte légal</source>
+                <target xml:space="preserve">to Legal text</target>
+            </trans-unit>
+            <trans-unit id="190" resname="en Simulation">
+                <source xml:space="preserve">en Simulation</source>
+                <target xml:space="preserve">to Simulation</target>
+            </trans-unit>
+            <trans-unit id="191" resname="en Définition">
+                <source xml:space="preserve">en Définition</source>
+                <target xml:space="preserve">to Definition</target>
+            </trans-unit>
+            <trans-unit id="192" resname="Balises pédagogiques">
+                <source xml:space="preserve">Balises pédagogiques</source>
+                <target xml:space="preserve">Educational markup</target>
+            </trans-unit>
+            <trans-unit id="193" resname="Information">
+                <source xml:space="preserve">Information</source>
+                <target xml:space="preserve">Information</target>
+            </trans-unit>
+            <trans-unit id="194" resname="Définition">
+                <source xml:space="preserve">Définition</source>
+                <target xml:space="preserve">Definition</target>
+            </trans-unit>
+            <trans-unit id="195" resname="Exemple">
+                <source xml:space="preserve">Exemple</source>
+                <target xml:space="preserve">Example</target>
+            </trans-unit>
+            <trans-unit id="196" resname="Remarque">
+                <source xml:space="preserve">Remarque</source>
+                <target xml:space="preserve">Note</target>
+            </trans-unit>
+            <trans-unit id="197" resname="Conseil">
+                <source xml:space="preserve">Conseil</source>
+                <target xml:space="preserve">Advice</target>
+            </trans-unit>
+            <trans-unit id="198" resname="Attention">
+                <source xml:space="preserve">Attention</source>
+                <target xml:space="preserve">Warning</target>
+            </trans-unit>
+            <trans-unit id="199" resname="Complément">
+                <source xml:space="preserve">Complément</source>
+                <target xml:space="preserve">Complement</target>
+            </trans-unit>
+            <trans-unit id="200" resname="Méthode">
+                <source xml:space="preserve">Méthode</source>
+                <target xml:space="preserve">Method</target>
+            </trans-unit>
+            <trans-unit id="201" resname="Rappel">
+                <source xml:space="preserve">Rappel</source>
+                <target xml:space="preserve">Reminder</target>
+            </trans-unit>
+            <trans-unit id="202" resname="Fondamental">
+                <source xml:space="preserve">Fondamental</source>
+                <target xml:space="preserve">Fundamental</target>
+            </trans-unit>
+            <trans-unit id="203" resname="Syntaxe">
+                <source xml:space="preserve">Syntaxe</source>
+                <target xml:space="preserve">Syntax</target>
+            </trans-unit>
+            <trans-unit id="204" resname="Texte légal">
+                <source xml:space="preserve">Texte légal</source>
+                <target xml:space="preserve">Legal text</target>
+            </trans-unit>
+            <trans-unit id="205" resname="Simulation">
+                <source xml:space="preserve">Simulation</source>
+                <target xml:space="preserve">Simulation</target>
+            </trans-unit>
+            <trans-unit id="206" resname="Créer une partie dans l'unité de contenu">
+                <source xml:space="preserve">Créer une partie dans l'unité de contenu</source>
+                <target xml:space="preserve">Create a part in the content block</target>
+            </trans-unit>
+            <trans-unit id="207" resname="Métadonnées d'exercices">
+                <source xml:space="preserve">Métadonnées d'exercices</source>
+                <target xml:space="preserve">Quiz metadata</target>
+            </trans-unit>
+            <trans-unit id="208" resname="Titre accroche">
+                <source xml:space="preserve">Titre accroche</source>
+                <target xml:space="preserve">Catcher-title</target>
+            </trans-unit>
+            <trans-unit id="209" resname="Métadonnées des ressources binaires">
+                <source xml:space="preserve">Métadonnées des ressources binaires</source>
+                <target xml:space="preserve">Binary resources metadata</target>
+            </trans-unit>
+            <trans-unit id="210" resname="Licence Creative Commons">
+                <source xml:space="preserve">Licence Creative Commons</source>
+                <target xml:space="preserve">Creative Commons license</target>
+            </trans-unit>
+            <trans-unit id="211" resname="Plus d'info : http://creativecommons.org">
+                <source xml:space="preserve">Plus d'info : http://creativecommons.org</source>
+                <target xml:space="preserve">More information: http://creativecommons.org</target>
+            </trans-unit>
+            <trans-unit id="212" resname="Ressource alternative">
+                <source xml:space="preserve">Ressource alternative</source>
+                <target xml:space="preserve">Alternative resource</target>
+            </trans-unit>
+            <trans-unit id="213" resname="Insérer une ressource alternative destinée aux publications non interactives">
+                <source xml:space="preserve">Insérer une ressource alternative destinée aux publications non interactives</source>
+                <target xml:space="preserve">Insert an alternative, non-interactive resource</target>
+            </trans-unit>
+            <trans-unit id="214" resname="Ressource statique">
+                <source xml:space="preserve">Ressource statique</source>
+                <target xml:space="preserve">Static resource</target>
+            </trans-unit>
+            <trans-unit id="215" resname="Paragraphe Simple">
+                <source xml:space="preserve">Paragraphe Simple</source>
+                <target xml:space="preserve">Simple paragraph</target>
+            </trans-unit>
+            <trans-unit id="216" resname="Paragraphe">
+                <source xml:space="preserve">Paragraphe</source>
+                <target xml:space="preserve">Paragraph</target>
+            </trans-unit>
+            <trans-unit id="217" resname="Liste à puce">
+                <source xml:space="preserve">Liste à puce</source>
+                <target xml:space="preserve">Bullet list</target>
+            </trans-unit>
+            <trans-unit id="218" resname="Liste ordonnée">
+                <source xml:space="preserve">Liste ordonnée</source>
+                <target xml:space="preserve">Numbered list</target>
+            </trans-unit>
+            <trans-unit id="219" resname="Item">
+                <source xml:space="preserve">Item</source>
+                <target xml:space="preserve">Item</target>
+            </trans-unit>
+            <trans-unit id="220" resname="Adresse web, email">
+                <source xml:space="preserve">Adresse web, email</source>
+                <target xml:space="preserve">Web or email address</target>
+            </trans-unit>
+            <trans-unit id="221" resname="Important">
+                <source xml:space="preserve">Important</source>
+                <target xml:space="preserve">Emphasize</target>
+            </trans-unit>
+            <trans-unit id="222" resname="Terme étranger">
+                <source xml:space="preserve">Terme étranger</source>
+                <target xml:space="preserve">Foreign word</target>
+            </trans-unit>
+            <trans-unit id="223" resname="Caractères spéciaux">
+                <source xml:space="preserve">Caractères spéciaux</source>
+                <target xml:space="preserve">Special characters</target>
+            </trans-unit>
+            <trans-unit id="224" resname="Majuscules accentuées">
+                <source xml:space="preserve">Majuscules accentuées</source>
+                <target xml:space="preserve">Accented capitals</target>
+            </trans-unit>
+            <trans-unit id="225" resname="Symboles mathématiques">
+                <source xml:space="preserve">Symboles mathématiques</source>
+                <target xml:space="preserve">Mathematical symbols</target>
+            </trans-unit>
+            <trans-unit id="226" resname="Lettres grecques courantes">
+                <source xml:space="preserve">Lettres grecques courantes</source>
+                <target xml:space="preserve">Common Greek letters</target>
+            </trans-unit>
+            <trans-unit id="227" resname="Positionnement illustration">
+                <source xml:space="preserve">Positionnement illustration</source>
+                <target xml:space="preserve">Picture positioning</target>
+            </trans-unit>
+            <trans-unit id="228" resname="Position">
+                <source xml:space="preserve">Position</source>
+                <target xml:space="preserve">Position</target>
+            </trans-unit>
+            <trans-unit id="229" resname="Texte à droite, Illustration à gauche">
+                <source xml:space="preserve">Texte à droite, Illustration à gauche</source>
+                <target xml:space="preserve">Text at the right, Picture at the left</target>
+            </trans-unit>
+            <trans-unit id="230" resname="Texte à gauche, Illustration à droite">
+                <source xml:space="preserve">Texte à gauche, Illustration à droite</source>
+                <target xml:space="preserve">Text at the left, Picture at the right</target>
+            </trans-unit>
+            <trans-unit id="231" resname="Titre Balise Pédagogique">
+                <source xml:space="preserve">Titre Balise Pédagogique</source>
+                <target xml:space="preserve">Educational markup title</target>
+            </trans-unit>
+            <trans-unit id="232" resname="Donner un titre à la balise pédagogique">
+                <source xml:space="preserve">Donner un titre à la balise pédagogique</source>
+                <target xml:space="preserve">Give a title to the educational markup</target>
+            </trans-unit>
+            <trans-unit id="233" resname="Filtres">
+                <source xml:space="preserve">Filtres</source>
+                <target xml:space="preserve">Filters</target>
+            </trans-unit>
+            <trans-unit id="234" resname="Contient les métadonnées de la partie">
+                <source xml:space="preserve">Contient les métadonnées de la partie</source>
+                <target xml:space="preserve">Contains the part metadata</target>
+            </trans-unit>
+            <trans-unit id="235" resname="Propriétés de texte">
+                <source xml:space="preserve">Propriétés de texte</source>
+                <target xml:space="preserve">Text properties</target>
+            </trans-unit>
+            <trans-unit id="236" resname="Langue">
+                <source xml:space="preserve">Langue</source>
+                <target xml:space="preserve">Language</target>
+            </trans-unit>
+            <trans-unit id="237" resname="Colonne">
+                <source xml:space="preserve">Colonne</source>
+                <target xml:space="preserve">Column</target>
+            </trans-unit>
+            <trans-unit id="238" resname="Colonne d'entête">
+                <source xml:space="preserve">Colonne d'entête</source>
+                <target xml:space="preserve">Column in header</target>
+            </trans-unit>
+            <trans-unit id="239" resname="Ligne">
+                <source xml:space="preserve">Ligne</source>
+                <target xml:space="preserve">Row</target>
+            </trans-unit>
+            <trans-unit id="240" resname="Ligne d'entête">
+                <source xml:space="preserve">Ligne d'entête</source>
+                <target xml:space="preserve">Row in header</target>
+            </trans-unit>
+            <trans-unit id="241" resname="Cellule de texte">
+                <source xml:space="preserve">Cellule de texte</source>
+                <target xml:space="preserve">Text cell</target>
+            </trans-unit>
+            <trans-unit id="242" resname="Cellule de nombre">
+                <source xml:space="preserve">Cellule de nombre</source>
+                <target xml:space="preserve">Number cell</target>
+            </trans-unit>
+            <trans-unit id="243" resname="Cellule de mot">
+                <source xml:space="preserve">Cellule de mot</source>
+                <target xml:space="preserve">Word cell</target>
+            </trans-unit>
+            <trans-unit id="244" resname="Légende">
+                <source xml:space="preserve">Légende</source>
+                <target xml:space="preserve">Legend</target>
+            </trans-unit>
+            <trans-unit id="245" resname="Abréviation">
+                <source xml:space="preserve">Abréviation</source>
+                <target xml:space="preserve">Abbreviation</target>
+            </trans-unit>
+            <trans-unit id="246" resname="Glossaire">
+                <source xml:space="preserve">Glossaire</source>
+                <target xml:space="preserve">Glossary</target>
+            </trans-unit>
+            <trans-unit id="247" resname="Bibliographie">
+                <source xml:space="preserve">Bibliographie</source>
+                <target xml:space="preserve">Bibliography</target>
+            </trans-unit>
+            <trans-unit id="248" resname="Référence">
+                <source xml:space="preserve">Référence</source>
+                <target xml:space="preserve">Reference</target>
+            </trans-unit>
+            <trans-unit id="249" resname="Lien vers un document">
+                <source xml:space="preserve">Lien vers un document</source>
+                <target xml:space="preserve">Link to a document</target>
+            </trans-unit>
+            <trans-unit id="250" resname="Renvoi vers une ressource">
+                <source xml:space="preserve">Renvoi vers une ressource</source>
+                <target xml:space="preserve">Reference to a resource</target>
+            </trans-unit>
+            <trans-unit id="251" resname="Renvoi vers un grain de contenu">
+                <source xml:space="preserve">Renvoi vers un grain de contenu</source>
+                <target xml:space="preserve">Reference to a content element</target>
+            </trans-unit>
+            <trans-unit id="252" resname="Citation">
+                <source xml:space="preserve">Citation</source>
+                <target xml:space="preserve">Quote</target>
+            </trans-unit>
+            <trans-unit id="253" resname="Exposant">
+                <source xml:space="preserve">Exposant</source>
+                <target xml:space="preserve">Exponent</target>
+            </trans-unit>
+            <trans-unit id="254" resname="indiceTexte">
+                <source xml:space="preserve">Indice</source>
+                <target xml:space="preserve">Hint</target>
+                <note>Dans le sens &quot;exposant/indice&quot;</note>
+            </trans-unit>
+            <trans-unit id="255" resname="Formule mathématique interne LaTeX">
+                <source xml:space="preserve">Formule mathématique interne LaTeX</source>
+                <target xml:space="preserve">Internal LaTeX formula</target>
+            </trans-unit>
+            <trans-unit id="256" resname="Formule mathématique">
+                <source xml:space="preserve">Formule mathématique</source>
+                <target xml:space="preserve">Formula</target>
+            </trans-unit>
+            <trans-unit id="257" resname="Imagette">
+                <source xml:space="preserve">Imagette</source>
+                <target xml:space="preserve">Small image</target>
+            </trans-unit>
+            <trans-unit id="258" resname="Propriété de langue">
+                <source xml:space="preserve">Propriété de langue</source>
+                <target xml:space="preserve">Language properties</target>
+            </trans-unit>
+            <trans-unit id="259" resname="Code">
+                <source xml:space="preserve">Code</source>
+                <target xml:space="preserve">Code</target>
+            </trans-unit>
+            <trans-unit id="260" resname="Code de langue ISO639 ou RFC1766 de la forme &quot;en&quot; ou &quot;pt-BR&quot;.">
+                <source xml:space="preserve">Code de langue ISO639 ou RFC1766 de la forme &quot;en&quot; ou &quot;pt-BR&quot;.</source>
+                <target xml:space="preserve">Language code according to ISO639 or RFC1766: &quot;en&quot; or &quot;pt-BR&quot;.</target>
+            </trans-unit>
+            <trans-unit id="261" resname="Propriétés de tableau">
+                <source xml:space="preserve">Propriétés de tableau</source>
+                <target xml:space="preserve">Table properties</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

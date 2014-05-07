@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transparentUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" blockCache="yes">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/scorm.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/lmsHack.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/annotSvc.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/scPreload.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:transparentIframe>
+			<sm:ifContextNotFound>
+				<sm:goToHome/>
+			</sm:ifContextNotFound>
+		</sm:transparentIframe>
+	</sm:rootContext>
+	<sm:callRootModel axis="rootModel"/>
+</sm:transparentUiFrame>

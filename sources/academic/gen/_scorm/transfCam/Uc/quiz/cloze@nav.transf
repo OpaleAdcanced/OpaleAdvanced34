@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/cloze.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:callModel view="shortTitleText">
+					<sm:current/>
+				</sm:callModel>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:callModel view="xhtmlContent">
+					<sm:current/>
+				</sm:callModel>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

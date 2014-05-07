@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:localOutlineUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="index">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="index" id="index">
+			<div class="index_ti">
+				<span>￼;Table des matières￼</span>
+			</div>
+			<div class="index_co">
+				<sm:localOutline>
+					<sm:nodeArch>
+						<sm:constraints>
+							<sm:depth min="4"/>
+						</sm:constraints>
+						<sm:suppressed/>
+					</sm:nodeArch>
+					<sm:classes>
+						<sm:depth prefix="indexDepth_" onEntry="yes"/>
+						<sm:targetClasses onEntry="yes"/>
+					</sm:classes>
+				</sm:localOutline>
+			</div>
+		</div>
+		<sm:includeContent/>
+	</sm:content>
+</sm:localOutlineUiWidget>

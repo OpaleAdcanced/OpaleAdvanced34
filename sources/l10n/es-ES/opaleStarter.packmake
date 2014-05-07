@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:packMake xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:wspDef sc:refUri="/opale/opaleStarter.wspdef" lang="es-ES">
+		<sm:welcomeSite sc:refUri="/l10n/es-ES/_res/presStarter.site" mainFile="index.html"/>
+		<sm:localization defaultLang="en-US">
+			<sm:modeling>
+				<sm:locale sc:refUri="/l10n/es-ES/modeling.locale"/>
+			</sm:modeling>
+			<sm:model>
+				<sm:locale sc:refUri="/l10n/es-ES/modelStarter.locale"/>
+			</sm:model>
+		</sm:localization>
+	</sm:wspDef>
+</sm:packMake>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@annexes.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@cpy.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@legend.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@logo.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@pdg.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRoot@rootFilter.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRootM.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRootM@author.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/root/odRootM@logo.transf"/>
+</sm:transformerList>

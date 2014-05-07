@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ue.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ue@cpy.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ue@title.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueDiv.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueDiv@co.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueDiv@subIndex.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueDiv@title.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueDivM.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueM.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueM@cpy.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueM@keywds.transf"/>
+	<sm:transformer sc:refUri="/genPrint/gen/_print/transf/Ue/ueM@licences.transf"/>
+</sm:transformerList>

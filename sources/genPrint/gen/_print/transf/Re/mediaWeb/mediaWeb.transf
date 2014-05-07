@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/mediaWeb/mediaWeb.model"/>
+	<sm:content format="xhtml">
+		<sm:WSimpleBlock widgetClass="linkRef">
+			<sm:title>
+				<sm:compositionTitle prefix="￼;Cf. &quot;￼" suffix="￼;&quot;￼"/>
+			</sm:title>
+		</sm:WSimpleBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

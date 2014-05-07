@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="home"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callSubModel codes="ue" axis="sTitle"/>
+	</sm:shortTitleText>
+	<sm:navigation>
+		<sm:page template="page" step="1">
+			<sm:title>
+				<sm:compositionTitle/>
+			</sm:title>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:compositionTitle/>
+					</sm:title>
+					<sm:callCompositionMeta/>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

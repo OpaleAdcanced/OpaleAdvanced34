@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="resLnk">
+	<sm:content>
+		<sm:WBasket key="resLnk" widgetClass="heading resLnkBk" tagName="ul" suppressIfEmpty="yes" sort="byTitle">
+			<sm:title tagName="hx">￼;Ressources annexes￼</sm:title>
+		</sm:WBasket>
+	</sm:content>
+</sm:openUiWidget>

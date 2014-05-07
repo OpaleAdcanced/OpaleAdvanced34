@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/expUc.model"/>
+	<sm:content format="xhtml">
+		<sm:callCompositionMeta axis="keywds"/>
+		<sm:Widget sc:refUri="/genPrint/gen/_print/widg/utils/heading.uiwidget">
+			<sm:xhtmlContentZone key="class">
+				<sm:WFreeBlock>expUc</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="idNode">
+				<sm:callModel>
+					<sm:current axis="idNode"/>
+				</sm:callModel>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="title">
+				<sm:WFreeBlock>
+					<sm:callModel>
+						<sm:current axis="title"/>
+					</sm:callModel>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="co">
+				<sm:for codes="pb">
+					<sm:callSubModel/>
+				</sm:for>
+				<sm:for codes="div">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:callSubModel/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionXhtmlTransf>

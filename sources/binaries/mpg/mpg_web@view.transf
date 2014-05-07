@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/mpg/mpg.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WVideo widgetClass="resVideo">
+			<sm:binaryUrl/>
+			<sm:pluginType value="quicktime"/>
+			<sm:declareSize width="500" height="400"/>
+		</sm:WVideo>
+	</sm:content>
+</sm:binaryXhtmlTransf>

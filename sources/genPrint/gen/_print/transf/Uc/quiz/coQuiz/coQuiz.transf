@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<scBlock xmlns="http://www.w3.org/1999/xhtml" class="quiz coQuiz">
+				<hx class="quiz_ti">
+					<span>
+						<sm:dynamicString>
+							<sm:freeXslFragment>&lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+&lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+&lt;span class="prefixQuiz"&gt;￼;Exercice￼&lt;/span&gt;
+&lt;xsl:value-of select="si(op:exeM/sp:title,concat(' : ',op:exeM/sp:title),'')"/&gt;
+&lt;/span&gt;</sm:freeXslFragment>
+						</sm:dynamicString>
+					</span>
+				</hx>
+				<sm:callModel>
+					<sm:current axis="solTT"/>
+				</sm:callModel>
+				<sm:for codes="quest">
+					<sm:WSimpleBlock widgetClass="problem">
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:for>
+				<sm:for codes="trainUcMcqSur trainUcMcqMur trainUcField trainUcCloze">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultShort/include.cond">
+							<sm:callSubModel/>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+			</scBlock>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

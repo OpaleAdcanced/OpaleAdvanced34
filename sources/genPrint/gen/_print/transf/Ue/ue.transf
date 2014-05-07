@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:content format="xhtml">
+		<sm:Widget sc:refUri="/genPrint/gen/_print/widg/index/index.uiwidget">
+			<sm:xhtmlContentZone key="content">
+				<sm:for codes="obj">
+					<sm:WSimpleBlock widgetClass="part">
+						<sm:WSimpleBlock class="footerLeft">
+							<sm:title>
+								<sm:callModel view="xhtmlContent">
+									<sm:current axis="cpy"/>
+								</sm:callModel>
+							</sm:title>
+						</sm:WSimpleBlock>
+						<sm:WSimpleBlock class="footerRight">
+							<sm:title>
+								<sm:callModel view="xhtmlContent">
+									<sm:current axis="cpy"/>
+								</sm:callModel>
+							</sm:title>
+						</sm:WSimpleBlock>
+						<sm:WFreeBlock>
+							<scBlock xmlns="http://www.w3.org/1999/xhtml" class="obj">
+								<hx class="obj_ti">
+									<span>
+										<sm:dynamicString>
+											<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+￼;Objectifs￼
+ &lt;/span&gt;</sm:freeXslFragment>
+										</sm:dynamicString>
+									</span>
+								</hx>
+								<sm:callSubModel/>
+							</scBlock>
+						</sm:WFreeBlock>
+					</sm:WSimpleBlock>
+				</sm:for>
+				<sm:for codes="intro">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:WSimpleBlock widgetClass="part">
+								<sm:WSimpleBlock class="footerLeft">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WSimpleBlock class="footerRight">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WFreeBlock>
+									<scBlock xmlns="http://www.w3.org/1999/xhtml" class="intro">
+										<hx class="intro_ti">
+											<span>
+												<sm:dynamicString>
+													<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+￼;Introduction￼
+ &lt;/span&gt;</sm:freeXslFragment>
+												</sm:dynamicString>
+											</span>
+										</hx>
+										<sm:callSubModel/>
+									</scBlock>
+								</sm:WFreeBlock>
+							</sm:WSimpleBlock>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="div courseUa assmntUa courseUc practUc trainUcMcgSur trainUcMcgMur trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcCoQuiz">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:WSimpleBlock widgetClass="part">
+								<sm:WSimpleBlock class="headerLeft">
+									<sm:title>
+										<sm:subModelTitle/>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WSimpleBlock class="headerRight">
+									<sm:title>
+										<sm:subModelTitle/>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WSimpleBlock class="footerLeft">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WSimpleBlock class="footerRight">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:choose>
+									<sm:when xpath="name()='sp:courseUa' or name()='sp:div'">
+										<sm:callSubModel axis="subIndex"/>
+									</sm:when>
+									<sm:otherwise>
+										<sm:callSubModel/>
+									</sm:otherwise>
+								</sm:choose>
+							</sm:WSimpleBlock>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="conclu">
+					<sm:choose>
+						<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+							<sm:WSimpleBlock widgetClass="part">
+								<sm:WSimpleBlock class="footerLeft">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WSimpleBlock class="footerRight">
+									<sm:title>
+										<sm:callModel view="xhtmlContent">
+											<sm:current axis="cpy"/>
+										</sm:callModel>
+									</sm:title>
+								</sm:WSimpleBlock>
+								<sm:WFreeBlock>
+									<scBlock xmlns="http://www.w3.org/1999/xhtml" class="conclu">
+										<hx class="conclu_ti">
+											<span>
+												<sm:dynamicString>
+													<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+￼;Conclusion￼
+ &lt;/span&gt;</sm:freeXslFragment>
+												</sm:dynamicString>
+											</span>
+										</hx>
+										<sm:callSubModel/>
+									</scBlock>
+								</sm:WFreeBlock>
+							</sm:WSimpleBlock>
+						</sm:when>
+					</sm:choose>
+				</sm:for>
+				<sm:for codes="genRef">
+					<sm:callSubModel/>
+				</sm:for>
+				<sm:callCompositionMeta axis="keywds"/>
+				<sm:callModel>
+					<sm:root axis="annexes"/>
+				</sm:callModel>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionXhtmlTransf>

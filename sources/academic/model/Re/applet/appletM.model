@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Applet￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="appletM" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="title" name="￼;Titre￼" occurence="zeroOrOne">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="width" name="￼;Largeur￼" occurence="zeroOrOne">
+			<sm:number min="1" max="1000" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="height" name="￼;Hauteur￼" occurence="zeroOrOne">
+			<sm:number min="1" max="1000" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="alt" name="￼;Alternative statique￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;supports non interactifs : papier, web accessible etc.￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/altRes.model"/>
+		</sm:field>
+		<sm:subData code="info" name="￼;Métadonnées￼" occurence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/academic/model/metaData/infoBin.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+</sm:dataFormPrim>

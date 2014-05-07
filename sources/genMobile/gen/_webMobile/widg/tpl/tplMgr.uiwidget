@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="tplMgr" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:widgetPublishFiles sc:refUri="/genMobile/gen/_webMobile/widg/tpl/tplMgr.doss"/>
+	<sm:fillTemplateBuffers>
+		<sm:standardLibrary codeLib="PaLib"/>
+		<!--Ajout d'untitre au scBasket si il y a des tooltips dans la page.-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match=&quot;scBasket&quot;>
+	&lt;xsl:if test=&quot;count(//scTooltip)&amp;gt;0&quot;>&lt;hr class=&quot;hidden&quot;/>&lt;strong class=&quot;hidden&quot;>￼;Notes &amp;amp; renvois :￼&lt;/strong>&lt;/xsl:if>
+&lt;/xsl:overlay></sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match=&quot;span[containWord(parent::a/@class,'op_txt_ul_acr')]&quot;>
+	&lt;abbr>&lt;xsl:apply-templates select=&quot;@*|node()&quot;/>&lt;/abbr>
+&lt;/xsl:template>
+&lt;xsl:template match=&quot;span[containWord(parent::a/@class,'op_txt_ul_glos')]&quot;>
+	&lt;dfn>&lt;xsl:apply-templates select=&quot;@*|node()&quot;/>&lt;/dfn>
+&lt;/xsl:template>
+</sm:postXslFragment>
+		<!--Ajout init JS de tplMgr à la page.-->
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:overlay match=&quot;body&quot; priority=&quot;200&quot;>
+	&lt;xsl:value-of select=&quot;execute(java:append($vBufJs, 'tplMgr.init();'))&quot;/>
+&lt;/xsl:overlay></sm:postXslFragment>
+		<sm:linkScript path="tplMgr.js" pathFrom="localPublishFiles" sortKey="A"/>
+		<!--iscroll is loaded dynamicaly if needed.-->
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

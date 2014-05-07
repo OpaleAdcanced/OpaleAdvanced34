@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/undef/undefBinary.model"/>
+	<sm:axis code="lnk"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_undef_lnk_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre - téléchargement)￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow">
+				<sm:binaryUrl/>
+			</sm:link>
+		</sm:WLink>
+	</sm:content>
+</sm:binaryXhtmlTransf>

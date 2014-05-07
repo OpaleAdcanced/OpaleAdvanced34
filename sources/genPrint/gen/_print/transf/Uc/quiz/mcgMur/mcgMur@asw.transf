@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitGmcqHtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<div class="quizSol mcgMur">
+			<sm:choose>
+				<sm:when xpath="not(codeAgent(lookForAscendants($vDialog,'currentToRoot','op_coQuiz')))">
+					<div class="quiz_ti">
+						<span>￼;Solution n°￼</span>
+					</div>
+				</sm:when>
+			</sm:choose>
+			<div class="quiz_co">
+				<div class="bkBase bkExplanations">
+					<div class="bkBase_co">
+						<sm:WChoiceHighlightedImage>
+							<sm:callBackgroundImageModel axis="nav"/>
+							<sm:choiceArea>
+								<sm:solutionHighlight>
+									<sm:area strokeWidth="1" strokeColorChecked="#0F0" fillColorChecked="#0F02" strokeColorUnchecked="#F00" fillColorUnchecked="#F002"/>
+									<sm:label format="1" fontSizeInPt="10" fontColorChecked="white" fillColorChecked="#0F0A" fontColorUnchecked="white" fillColorUnchecked="#F00A"/>
+								</sm:solutionHighlight>
+							</sm:choiceArea>
+						</sm:WChoiceHighlightedImage>
+						<div class="mcgMurChoicesExpl">
+							<sm:WChoiceList widgetClass="mcgMurChoice" solutionClassPrefix="mcgMurSol" tagName="div">
+								<sm:choiceBody>
+									<div class="mcgMurChoiceNum">
+										<sm:choiceNumber format="1"/>
+									</div>
+									<div class="mcgMurChoiceLbl">
+										<sm:callLabelModel/>
+									</div>
+									<sm:WChoiceExplanation widgetClass="mcgMurChoiceExpl">
+										<sm:callExplanationModel/>
+									</sm:WChoiceExplanation>
+								</sm:choiceBody>
+							</sm:WChoiceList>
+						</div>
+						<sm:WGlobalExplanation widgetClass="mcgMurGlobalExplanation">
+							<sm:callExplanationModel/>
+						</sm:WGlobalExplanation>
+					</div>
+				</div>
+			</div>
+		</div>
+	</sm:content>
+</sma:assmntUnitGmcqHtmlTransf>

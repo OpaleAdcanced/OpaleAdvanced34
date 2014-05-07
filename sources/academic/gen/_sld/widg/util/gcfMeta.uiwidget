@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="gcfMeta" info="Balise meta Google Chrome Frame" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<!--Utiliser Google Chrome Frame sous IE si disponible.-->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" xmlns="http://www.w3.org/1999/xhtml"/>
+	</sm:content>
+</sm:openUiWidget>

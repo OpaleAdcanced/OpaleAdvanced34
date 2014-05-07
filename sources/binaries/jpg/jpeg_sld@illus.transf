@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="illus"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/_sld/widg/imgIllus.uiwidget">
+			<sm:xhtmlContentZone key="img">
+				<sm:WImage widgetClass="imgBase">
+					<sm:binaryUrl>
+						<sm:imageTransform>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="0.45"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+							<sm:sizeBounds maxWidthInPx="400" maxHeightInPx="267"/>
+							<sm:outputJPEG/>
+						</sm:imageTransform>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+				</sm:WImage>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="imgOthers">
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:imageSize>
+							<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+								<sm:ifNoStandardCharSize>
+									<sm:scale ratio="1.5"/>
+								</sm:ifNoStandardCharSize>
+							</sm:scaleFromStandardCharSize>
+						</sm:imageSize>
+					</sm:binary>
+					<sm:whenSize widthOver="400" heightOver="267">
+						<sm:WImage>
+							<sm:binaryUrl>
+								<sm:imageTransform>
+									<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+										<sm:ifNoStandardCharSize>
+											<sm:scale ratio="1.5"/>
+										</sm:ifNoStandardCharSize>
+									</sm:scaleFromStandardCharSize>
+									<sm:sizeBounds maxWidthInPx="1200" maxHeightInPx="800"/>
+									<sm:outputJPEG/>
+								</sm:imageTransform>
+							</sm:binaryUrl>
+							<sm:declareSize/>
+						</sm:WImage>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+			</sm:xhtmlContentZone>
+			<sm:xhtmlContentZone key="caption">
+				<sm:WFreeBlock>
+					<sm:title>
+						<sm:binaryMeta/>
+					</sm:title>
+				</sm:WFreeBlock>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:binaryXhtmlTransf>

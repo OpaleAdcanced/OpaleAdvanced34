@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/rm/rm.model"/>
+	<sm:axis code="zoom"/>
+	<sm:content>
+		<sm:WLink widgetClass="sfile_rm_zoom_lnk sfile_lnk">
+			<sm:label>
+				<sm:title>
+					<sm:binaryTitle/>
+				</sm:title>
+			</sm:label>
+			<sm:labelTitle>
+				<sm:title>
+					<sm:binaryTitle suffix="￼; (nouvelle fenêtre)￼"/>
+				</sm:title>
+			</sm:labelTitle>
+			<sm:link target="newWindow" windowName="zoom">
+				<sm:behavior addLinkInHref="yes"/>
+				<sm:position>
+					<sm:centerScreen/>
+				</sm:position>
+				<sm:windowFeatures scrollbars="no"/>
+				<sm:WVideo>
+					<sm:binaryUrl/>
+					<sm:pluginType value="realplayer"/>
+					<sm:declareSize width="500" height="400"/>
+				</sm:WVideo>
+			</sm:link>
+		</sm:WLink>
+		<sm:callBinaryMeta axis="info"/>
+	</sm:content>
+</sm:binaryXhtmlTransf>

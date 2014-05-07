@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:packMake xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:wspDef sc:refUri="/opale/opaleStarter.wspdef" lang="nl-NL">
+		<sm:localization defaultLang="fr-FR">
+			<sm:model>
+				<sm:locale sc:refUri="/l10n/nl-NL/modelStarter.locale"/>
+			</sm:model>
+		</sm:localization>
+	</sm:wspDef>
+</sm:packMake>

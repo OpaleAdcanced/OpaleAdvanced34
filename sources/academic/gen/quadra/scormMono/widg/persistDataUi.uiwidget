@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="persistDataUi">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="gotoLastLocation" style="display: none;">
+			<a href="#" onclick="scServices['scLoad'].loadFromRoot(scServices.locationStorage.getLocation()); return false;" title="￼Retrouver la dernière page consultée du module￼">￼;Ouvrir la dernière page consultée￼</a>
+		</div>
+		<div xmlns="http://www.w3.org/1999/xhtml" id="resetStorageData" style="display: none;">
+			<a href="#" onclick="scServices.storage.resetData(); if (scServices.scPreload) scServices.scPreload.reload(); else window.location.reload(); return false;" title="￼Effacer définitivement toutes mes productions relatives à ce module (annotations, réponses aux exercices...) enregistrées dans mon ordinateur￼">￼;Réinitialiser le module￼</a>
+		</div>
+		<script xmlns="http://www.w3.org/1999/xhtml">scOnLoads[scOnLoads.length] = {
+ onLoad: function() {
+  if(scServices.locationStorage &amp;&amp; scServices.locationStorage.getLocation()) {
+   sc$("gotoLastLocation").style.display = "";
+   if(scServices.storage &amp;&amp; scServices.storage.isStorageActive()) sc$("resetStorageData").style.display = "";
+  }
+ }
+}
+
+</script>
+	</sm:content>
+</sm:openUiWidget>

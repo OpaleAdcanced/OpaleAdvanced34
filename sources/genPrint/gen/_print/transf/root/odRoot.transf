@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/odRoot.model"/>
+	<sm:fullTitleText>
+		<sm:callSubModel codes="ue" axis="title"/>
+	</sm:fullTitleText>
+	<sm:navigation>
+		<sm:page template="print">
+			<sm:title/>
+			<sm:mainZone format="xhtml">
+				<sm:Widget sc:refUri="/genPrint/gen/_print/widg/tpl/tpl.uiwidget"/>
+				<sm:WHeadingBlock widgetClass="paper">
+					<sm:title>
+						<sm:compositionTitle/>
+						<sm:fixedTitle value="￼;[sans titre]￼"/>
+					</sm:title>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357233308660">Initialisation d'un buffer pour enregistrer les ressources intégrées dans le corps du document</comment></comment>-->
+					<sm:WFreeBlock>
+						<sm:dynamicString>
+							<sm:freeSelect xpath="initBuffer('resLnkList', java:java.util.HashSet.new())"/>
+						</sm:dynamicString>
+					</sm:WFreeBlock>
+					<!--Page de garde-->
+					<sm:callModel>
+						<sm:current axis="pdg"/>
+					</sm:callModel>
+					<!--Légende-->
+					<sm:callModel>
+						<sm:root axis="legend"/>
+					</sm:callModel>
+					<!--Content-->
+					<sm:for codes="ue">
+						<sm:callSubModel/>
+					</sm:for>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357233308660">Reset du buffer</comment></comment>-->
+					<sm:WFreeBlock>
+						<sm:dynamicString>
+							<sm:freeSelect xpath="initBuffer('resLnkList')"/>
+						</sm:dynamicString>
+					</sm:WFreeBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" info="Contexte de publication RSS">
+	<sm:callRootModel axis="root"/>
+	<sm:publishFiles sc:refUri="/scReader/gen/rssScReader/ui.doss">
+		<sm:callRootModel codeView="xhtmlContent"/>
+		<sm:callRootModel axis="online" codeView="xhtmlContent"/>
+	</sm:publishFiles>
+	<sm:bsRoot sc:refUri="/scReader/gen/rssScReader/bs.doss"/>
+</sm:freeUiFrame>

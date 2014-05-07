@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="￼;Mots-clés￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="keywds" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="keywd" name="￼;Mot-clé￼" occurence="zeroOrMore">
+			<sm:help quickHelp="￼;Liste de mots clés non structurés, une expression par champ￼"/>
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<sm:formEditor indentXml="true">
+			<sm:stringField refCode="keywd" autoRepeatField="yes" defaultStyle="property" textStyle="color :#6286cc;"/>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:dataFormPrim>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/eWeb/eWeb.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:Widget sc:refUri="/binaries/eWeb/eWeb.uiwidget"/>
+		<sm:WIFrame widgetClass="eWebFrame">
+			<sm:binaryUrl/>
+			<sm:frameTitle>
+				<sm:title>
+					<sm:fixedTitle value="￼;site web embarqué￼"/>
+				</sm:title>
+			</sm:frameTitle>
+		</sm:WIFrame>
+	</sm:content>
+</sm:binaryXhtmlTransf>

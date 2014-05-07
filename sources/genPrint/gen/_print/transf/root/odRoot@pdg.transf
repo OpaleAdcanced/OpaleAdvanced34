@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/odRoot.model"/>
+	<sm:axis code="pdg"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpColl">
+				<sm:dynamicString>
+					<sm:freeSelect xpath="op:odRootM/sp:coll"/>
+				</sm:dynamicString>
+			</div>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpId">
+				<sm:dynamicString>
+					<sm:freeSelect xpath="op:odRootM/sp:id"/>
+				</sm:dynamicString>
+			</div>
+			<sm:WSimpleBlock>
+				<sm:callModel>
+					<sm:root axis="logo"/>
+				</sm:callModel>
+			</sm:WSimpleBlock>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpAuthor">
+				<sm:dynamicString>
+					<sm:freeXslFragment>&lt;xsl:value-of select="getContent(gotoMeta(),'author')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+				</sm:dynamicString>
+			</div>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpVersion">
+				<sm:dynamicString>
+					<sm:freeSelect xpath="op:odRootM/sp:version"/>
+				</sm:dynamicString>
+			</div>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpDate">
+				<sm:dynamicString>
+					<sm:freeSelect xpath="op:odRootM/sp:date"/>
+				</sm:dynamicString>
+			</div>
+			<div xmlns="http://www.w3.org/1999/xhtml" class="fpLicences">
+				<sm:for codes="ue">
+					<sm:WFreeBlock>
+						<sm:dynamicString>
+							<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'licences')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+						</sm:dynamicString>
+					</sm:WFreeBlock>
+				</sm:for>
+			</div>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

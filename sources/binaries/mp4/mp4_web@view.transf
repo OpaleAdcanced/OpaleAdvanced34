@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/mp4/mp4.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WFreeBlock>
+			<video xmlns="http://www.w3.org/1999/xhtml" controls="controls" preload="none">
+				<sm:Widget sc:refUri="/binaries/_web/widg/videoDims.uiwidget"/>
+				<source type="video/mp4" onerror="tplMgr.xMediaFallback(this.parentNode)">
+					<addAttribute name="src">
+						<sm:binaryUrl/>
+					</addAttribute>
+				</source>
+				<sm:WVideoFlv widgetClass="resVideo">
+					<sm:binaryUrl>
+						<sm:flvSize>
+							<sm:scaleFromStandardCharSize/>
+							<sm:sizeBounds maxWidthInPx="630" maxHeightInPx="630"/>
+						</sm:flvSize>
+					</sm:binaryUrl>
+					<sm:declareSize/>
+					<sm:player show="always"/>
+					<sm:stopButton cancelLoad="false"/>
+					<sm:volumeButton/>
+					<sm:timeButton/>
+					<sm:fullscreenButton/>
+					<sm:configFile format="text" src="player/mp4.txt" srcFrom="skin"/>
+				</sm:WVideoFlv>
+			</video>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

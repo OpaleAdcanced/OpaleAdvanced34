@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/practUcQ.model"/>
+	<sm:axis code="asw"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when sc:refUri="/genPrint/gen/_print/_cnd/isSolExoRedac.cond">
+				<sm:for codes="sol">
+					<sm:WSimpleBlock widgetClass="op_practUcQ_sol">
+						<sm:title>
+							<sm:fixedTitle value="￼;Solution n°￼"/>
+						</sm:title>
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:for>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

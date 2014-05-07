@@ -1,0 +1,915 @@
+/* ========== DK CORE STYLES ========== */
+
+
+/**********/
+/* Table */
+/**********/
+.txt table{
+	border: 2px solid silver;
+	border-spacing: 0px;
+	caption-side: bottom;
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: 0.7em;
+}
+.txt td,
+.txt th {
+	border: 1px solid silver;
+	padding: 0.1em 0.3em;
+}
+.txt p{
+	margin-bottom: 2px;
+}
+.txt caption{
+	margin-top: 0.3em;
+	font-style: italic;
+	color: gray;
+	text-align: left;
+	font-style: italic;
+}
+.dk_text_tbtr_rowTi{
+	background-color:#e9e9e9;
+}
+
+.dk_text_tbtd_cellEmp{
+	background-color:#dadada;
+}
+
+
+
+/********/
+/* Text */
+/********/
+.dk_text_m,
+.dk_text_p,
+.dk_para_p{
+	line-height: 1.3em;
+}
+.dk_para_ul,
+.dk_text_ul,
+.dk_textSimple_ul,
+.dk_para_ul_web,
+.dk_text_ul_web,
+.dk_textSimple_ul_web {
+	background: url("../img/dkCo/txt/lnk.png") no-repeat right;
+	padding: 0px 18px 0px 0px;
+	text-decoration: none;
+	color: #4660a9;
+}
+.dk_para_ul:hover,
+.dk_text_ul:hover,
+.dk_textSimple_ul:hover {
+	background: url("../img/dkCo/txt/lnkOver.png") no-repeat right;
+	text-decoration: underline;
+}
+/* tooltips */
+.dk_text_ul_ref,
+.dk_text_ul_def,
+.dk_text_ul_doc,
+.dk_text_ul_web,
+.dk_text_tt_def_a,
+.dk_text_tt_ref_a,
+.dk_text_tt_doc_a,
+.dk_text_tt_web_a,
+.tt_a {
+	cursor: pointer;
+}
+
+.dk_text_ul_ref:hover,
+.dk_text_ul_def:hover,
+.dk_text_ul_doc:hover,
+.dk_text_ul_web:hover,
+.tt_a:hover {
+	text-decoration: underline;
+}
+.dk_text_ul_ref {
+	background: url("../img/dkCo/txt/ref.png") no-repeat left;
+	padding: 0px 0px 0px 13px;
+	color: #46a96f;
+}
+.dk_text_ul_def{
+	background: url("../img/dkCo/txt/def.png") no-repeat left;
+	padding: 0px 0px 0px 13px;
+	color: #a94648;
+}
+.dk_text_ul_doc{
+	background: url("../img/dkCo/txt/doc.png") no-repeat left;
+	padding: 0px 0px 0px 14px;
+	color: #515189;
+}
+.dk_text_ul_doc:hover{
+	background: url("../img/dkCo/txt/docOver.png") no-repeat left;
+}
+.dk_text_tt_def,
+.dk_text_tt_ref,
+.dk_text_tt_doc,
+.dk_text_tt_web,
+.tt {
+	background-color: InfoBackground;
+	border: 1px solid black;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	cursor: default;
+}
+.dk_text_tt_def_co, 
+.dk_text_tt_ref_co, 
+.dk_text_tt_doc_co, 
+.dk_text_tt_web_co,
+.tt_co{
+	font-size: 0.9em;
+}
+.dk_text_tt_ref_co > span >p{
+	padding: 2px;
+}
+.dk_text_tt_def_co,
+.dk_text_tt_doc_co,
+.tt_co {
+	padding: 2px;
+}
+.dk_text_tt_def_ti, 
+.dk_text_tt_ref_ti, 
+.dk_text_tt_doc_ti, 
+.dk_text_tt_web_ti,
+.tt_ti {
+	font-weight: bold;
+	padding: 2px;
+	font-size: 0.9em;
+}
+
+/* inlineStyles + textLeafs */
+.dk_text_m img,
+.dk_text_p img,
+.dk_para_p img{
+	vertical-align: middle;
+}
+.dk_textSimple_is_emphasis,
+ .dk_text_is_emphasis {
+  font-weight:bold;
+  color: #600000;
+}
+.dk_para_is_emphasis{
+	color: #E38686;
+}
+.dk_textSimple_is_alt {
+	font-weight:bold;
+	color:#177280;
+}
+.dk_text_is_alt {
+	font-weight:bold;
+	color:#886369;
+}
+.dk_textSimple_tl_textButton,
+ .dk_text_tl_textButton,
+  .dk_para_tl_textButton {
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #777777;
+	border-top: 1px solid #DDDDDD;
+	cursor: default;
+	padding:0px 3px;
+}
+
+.dk_textSimple_tl_textRadioButton, 
+.dk_text_tl_textRadioButton,
+.dk_para_tl_textRadioButton {
+background: url("../img/dkCo/txt/optButton.gif") no-repeat left;
+	background-color: #F0F0F0;
+	cursor: default;
+	padding: 0px 2px 0px 15px;
+}
+ 
+.dk_textSimple_tl_textCheckBox, 
+.dk_text_tl_textCheckBox, 
+.dk_para_tl_textCheckBox {
+	background: url("../img/dkCo/txt/chkButton.gif") no-repeat left;
+	background-color: #F0F0F0;
+	cursor: default;
+	padding: 0px 2px 0px 15px;
+}
+
+.dk_textSimple_tl_keyboard, 
+.dk_text_tl_keyboard,
+.dk_para_tl_keyboard {
+	background: url("../img/dkCo/txt/key.gif") no-repeat left;
+	background-color: #F4F4F4;
+	padding: 0px 2px 0px 15px;
+	cursor: default;
+}
+.dk_textSimple_tl_menuPath, 
+.dk_text_tl_menuPath,
+.dk_para_tl_menuPath{
+	background: url("../img/dkCo/txt/mnu.gif") no-repeat 2px;
+	padding: 0px 2px 0px 20px;
+	background-color: #F0F0F0;
+	cursor: default;
+}
+.dk_textSimple_tl_term:before, 
+.dk_text_tl_term:before,
+.dk_para_tl_term:before{
+	content: "<";
+	font-weight: normal;
+	color:silver;
+}
+.dk_textSimple_tl_term:after, 
+.dk_text_tl_term:after,
+.dk_para_tl_term:after{
+	content: ">";
+	font-weight: normal;
+	color:silver;
+}
+.dk_textSimple_tl_term, 
+.dk_text_tl_term,
+.dk_para_tl_term{
+	font-weight:bold;
+	color:#426188;
+	font-family: monospace; 
+}
+.dk_textSimple_tl_label, 
+.dk_text_tl_label,
+.dk_para_tl_label{
+	font-weight:bold;
+	font-family: monospace; 
+	color:#048c7b;
+}
+
+.dk_textSimple_tl_filePath, 
+.dk_text_tl_filePath,
+.dk_para_tl_filePath{
+	background: url("../img/dkCo/txt/file.gif") no-repeat 2px;
+	padding: 0px 2px 0px 22px;
+	background-color: #F0F0F0;
+	cursor: default;
+}
+.dk_textSimple_tl_cmd, 
+.dk_text_tl_cmd,
+.dk_para_tl_cmd{
+	background: url("../img/dkCo/txt/cmd.gif") no-repeat 2px;
+	padding: 0px 2px 0px 20px;
+	background-color: #F0F0F0;
+	cursor: default;
+	font-family:monospace;
+}
+
+ 
+/* lists */
+.dk_textSimple_sl, 
+.dk_text_sl {
+	list-style-image: url(../img/blocks/operatingProcess.gif);
+}
+
+
+
+/**********/
+/* Blocks */
+/**********/
+.infobloc {
+	padding: 5px 0px 5px 0px;
+}
+.infobloc_ti {
+	color: #003E80;
+	font-weight: bold;
+}
+.warning_ti,
+.advice_ti,
+.tip_ti,
+.example_ti,
+.note_ti,
+.legal_ti,
+.complement_ti {
+	font-weight: bold;
+	margin-bottom: 2px;
+	color:#6b6b6b;
+}
+
+.bloc{
+	margin: 0.5em 0em;
+	padding: 7px;
+	border-radius:10px 10px 10px 10px;
+	padding-left:32px;
+	box-shadow: 0px 0px 3px #888;
+}
+
+.warning {
+	background: url("../img/dkCo/blocks/warningFond.gif") #fffaf0 no-repeat top left;
+	border: 1px solid #da9d9d;
+}
+.warning_ti {
+	color:#bb3434
+}	
+.advice {
+	background: url("../img/dkCo/blocks/adviceFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+.tip {
+	background: url("../img/dkCo/blocks/trucFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+.example {
+	background: url("../img/dkCo/blocks/exampleFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+.note {
+	background: url("../img/dkCo/blocks/noteFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+.legal {
+	background: url("../img/dkCo/blocks/legFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+.complement {
+	background: url("../img/dkCo/blocks/compFond.gif") #fafafa no-repeat top left;
+	border: solid 1px #b4b4b4;
+}
+
+
+
+
+
+/************/
+/* Binaries */
+/************/
+.dk_content_linkSet_ti {
+	font-weight: bold;
+}
+.linkSet {
+	padding: 0px 5px;
+}
+.linkSet_ti {
+	color: #003E80;
+}	
+.linkDoc{
+	background: url("../img/dkCo/flow/doc.png") no-repeat top left;
+	padding-left: 23px;
+	margin-bottom:5px;
+	font-size:smaller;
+	min-height: 21px;
+}
+.linkDoc_ti{
+	font-weight: bold;
+}
+.dk_docMeta_refBiblio{
+	font-style: italic;
+}
+
+
+
+.dk_flowAll_caption {
+	border : 1px solid #C0C0C0;
+	text-align: center;
+}
+.dk_flowAll_caption_co {
+}
+.dk_flowAll_caption_ti {
+	border-top: 1px solid #C0C0C0;
+	background-color : #F4F4F4;
+	font-style:italic;
+	text-align: center;
+	padding-bottom:1px;
+}
+/*** Generateur GuideUi ***/
+#guideUi .caption_co {
+	margin: 0px auto;
+	width:560px;
+	background-color: white;
+	text-align: left;
+}
+#guideUi .caption_co img,
+#guideUi .caption_flash span {
+	border: 3px solid #f2b600;
+	text-align: center;
+}
+
+/*** Caption général ***/
+.caption {
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+}
+.caption_co {
+	margin: 0px auto;
+	width:560px;
+	background-color: #F7F7F7;
+	text-align: left;
+}
+.caption_co img,
+.caption_flash span {
+	border: 2px solid silver;
+	text-align: center;
+}
+.caption_flash span {
+	display: block;
+	float: left;
+}
+.caption_ti {
+	margin: 0px auto;
+	width:545px;
+	color: gray;
+	text-align: left;
+	font-style:italic;
+	clear: both;
+}
+.caption_zm{
+	display: none;
+}
+
+.scaption {
+	text-align: center;
+}
+.scaption_co {
+	margin: 0px auto;
+	width:260px;
+	background-color: white;
+	text-align: left;
+}
+.scaption_co img{
+	border: 3px solid silver;
+	text-align: center;
+}
+.scaption_ti {
+	margin: 0px auto;
+	width:245px;
+	color: gray;
+	text-align: left;
+	font-style:italic;
+}
+
+.dk_txtRes_cellResRgt .caption_co,
+.dk_txtRes_cellResLft .caption_co,
+.eltWin .caption_co,
+.procVid .caption_co{
+	width: auto;
+	margin:0px;
+}
+.dk_txtRes_cellResRgt .caption_ti,
+.dk_txtRes_cellResLft .caption_ti,
+.eltWin .caption_ti,
+.procVid .caption_ti{
+	width: auto;
+	margin:0px;
+}
+
+.webCap{
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+}
+.webCap_ti {
+	color: gray;
+	font-style:italic;
+}
+
+.dk_flowAll_table_ti {
+	font-weight: bold;
+}
+.dk_flowAll_graphic_ti {
+	font-weight: bold;
+}
+.overview {
+	padding-left:00px;
+}
+
+
+/**************/
+/* References */
+/**************/
+.dk_definition_notion {
+}
+.dk_text_tt_def_co .dk_definition_notion_ti {
+	display: none;
+}
+.dk_definitionMeta_def {
+}
+.dk_definitionMeta_syn:before{
+	content: "=";
+	font-style: normal;
+	color: silver;
+}
+.dk_definitionMeta_syn{
+	font-style: italic;
+}
+
+.dk_refMeta_tab td{
+	padding: 0px 2px;
+}
+
+.dk_refMeta_tab p{
+	margin: 0px;
+}
+
+.dk_refMeta_tab {
+	border-collapse: separate;
+	border-spacing:0px;
+}
+.dk_refMeta_lab {
+	border-top: solid gray 1px;
+	font-style: italic;
+}
+.dk_refMeta_val {
+	border-top: solid gray 1px;
+	border-left: solid gray 1px;
+	font-weight: bold;
+}
+.dk_refMeta_desc {
+	border-top: solid gray 1px;
+	border-left: solid gray 1px;
+}
+.dk_refMeta_alone {
+	font-weight:bold;
+	text-align: center;
+}
+
+/**********/
+/* others */
+/**********/
+
+
+.dk_txtRes_cellResLft{
+	padding-right: 10px;
+}
+.dk_txtRes_cellResRgt{
+	padding-left: 10px;
+}
+
+.metyTable td,
+.btnTable td{
+	vertical-align: top;
+	
+}
+
+td.procVid{
+	vertical-align: top;
+}
+td.procSteps{
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+ul.seeAlsoLnks{
+	margin: 0px;
+	padding: 0px;
+}
+ul.seeAlsoLnks li{
+	margin-left: 20px;
+}
+
+/****************************/
+/* screens, anim, steplists */
+/****************************/
+
+
+.slpTools{
+	
+	background-color:white;
+	top:5px;
+	position : relative;
+	left:5px;
+	width: 115px;
+	height: 25px;	
+}
+.slpOpAct .slpTools{
+	width: 415px;
+	top:0px;	
+}
+.slpOpAct {
+	border-radius:5px;
+	border: 2px solid #DEBF20;
+}
+a.slpBtnStp {
+	position:absolute;
+	left: 5px;
+	width:124px;
+	height:21px;
+	background: url(../img/dkCo/player/stepstep.png) no-repeat center left;
+	
+}
+a.slpBtnStp span{
+	position:absolute;
+	left: 31px;
+	width:90px;
+	height:21px;
+	color: #DEBF20;
+}
+a.slpBtnLst {
+	position:absolute;
+	left: 3px;
+	width:24px;
+	height:21px;
+	background: url(../img/dkCo/player/steplist.png) no-repeat center left;
+	
+}
+a.slpBtnPrv {
+	position:absolute;
+	left: 30px;
+	width:25px;
+	height:21px;
+	background: url(../img/dkCo/player/prevstep.png) no-repeat center left;
+	
+}
+a.slpBtnNxt {
+	position:absolute;
+	left: 60px;
+	width:25px;
+	height:21px;
+	background: url(../img/dkCo/player/nextstep.png) no-repeat center left;
+	
+}
+span.slpCountTxt {
+	position:absolute;
+	left: 100px;
+	top: 4px;
+	width:64px;
+	height:21px;
+	font-weight: bold;
+	font-size: 1.3;
+	
+}
+.slpSep,
+a.slpBtnLst span,
+a.slpBtnPrv span,
+a.slpBtnNxt span,
+.slpCountLbl{
+	display:none;
+}
+
+
+.scImgAnmCtrl{
+	border-radius:5px;
+	border: 2px solid #DEBF20;
+	box-shadow: 0px 0px 10px #000000; 
+	background-color:white;
+	bottom:20px;
+	position:absolute;
+	right:5px;
+	padding: 5px;
+	width: 115px;
+	height: 16px;
+	z-index: 101;
+	
+}
+.scImgAnmCtrLbl{
+	display:none;
+}
+.scImgAnmBtnInitPly{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../img/animPlayBtn.png) no-repeat center center;
+}
+.scImgAnmBtnInitPly span{
+	display:none;
+}
+a.scImgAnmBtnPse {
+position:absolute;
+	left:30px;
+	width:13px;
+	height:13px;
+	background: url(../img/dkCo/player/stop.png) no-repeat center center;
+}
+a.scImgAnmBtnNxt {
+	position:absolute;
+	left: 55px;
+	width:13px;
+	height:13px;
+	background: url(../img/dkCo/player/next.png) no-repeat center center;
+}
+a.scImgAnmBtnPrv {
+	position:absolute;
+	left:5px;
+	width:13px;
+	height:13px;
+	background: url(../img/dkCo/player/prev.png) no-repeat center center;
+}
+a.scImgAnmBtnPly {
+	position:absolute;
+	left:30px;
+	width:13px;
+	height:13px;
+	background: url(../img/dkCo/player/play.png) no-repeat center center;
+}
+a.scImgAnmBtnPse:hover {
+	background: url(../img/dkCo/player/stop-h.png) no-repeat center center;
+}
+a.scImgAnmBtnNxt:hover {
+	background: url(../img/dkCo/player/next-h.png) no-repeat center center;
+}
+a.scImgAnmBtnPrv:hover {
+	background: url(../img/dkCo/player/prev-h.png) no-repeat center center;
+}
+a.scImgAnmBtnPly:hover {
+	background: url(../img/dkCo/player/play-h.png) no-repeat center center;
+}
+.scImgAnmCtrl a span,
+.scImgSep{
+	display:none;
+}
+.scImgAnmCtrIdx{
+	position:absolute;
+	left:80px;
+	width:15px;
+	height:13px;
+}
+.scImgAnmCtrSep{
+	position:absolute;
+	left:95px;
+	width:10px;
+	height:13px;
+}
+.scImgAnmCtrCnt{
+	position:absolute;
+	left:105px;
+	width:15px;
+	height:13px;
+}
+
+.screenImgFra{
+	text-align: center;
+}
+.screenImg{
+	margin: 0 auto;
+}
+
+.screenBk{
+	margin:0.5em 0;
+}
+/* screen - list */
+.screenZones{
+	margin: 10px 0;
+}
+.screenZone{
+	margin: 10px 0;
+	padding: 3px;
+	margin: 0 0 1em 0;;
+}
+.screenZone p{
+	margin: 0 0 0.4em 0;;
+}
+.screenZone:target {
+	background-color:#EEECDD;
+}
+.screenZone_ti{
+	font-weight: bold;
+	
+}
+.screenZonePreview{
+	float:left;
+	margin-right: 10px;
+	padding-top:7px;
+}
+.screenZoneEnd{
+	clear:both;
+	font-style: italic;
+	font-size: 0.8em;
+	
+}
+
+
+/* screen : zone */
+
+a.screenZoneLnk{
+}
+a.screenZoneLnkSmall:hover,
+a.screenZoneLnk:hover,
+a.scrTt_act{
+	background-color: white;
+	opacity:0.4;
+	text-decoration: none;
+	outline: 2px dotted black;
+}
+a.screenZoneLnk span{
+	position: absolute;
+	display: block;
+	width:20px;
+	height:18px;
+	top:50%;
+	left:50%;
+	margin-top: -10px;
+	margin-left: -10px;
+	border-radius: 10px; 
+	box-shadow: 0px 0px 5px ; 
+	background-color:#AF0000;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 2px;
+	color: white;
+}
+a.screenZoneLnkSmall span{
+	position: absolute;
+	display: block;
+	width:20px;
+	height:18px;
+	top:-10px;
+	right:-10px;
+	border-radius: 10px; 
+	box-shadow: 0px 0px 5px black; 
+	background-color:#DEBF20;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 2px;
+}
+a.screenZoneLnk:hover span,
+a.screenZoneLnkSmall:hover span,
+a.scrTt_act span{
+	opacity:0.4;
+	display: none;
+}
+
+.scrTools{
+	background-color:white;
+	top:10px;
+	position : relative;
+	left:5px;
+	width: 115px;
+	height: 25px;	
+}
+a.scrBtnLst {
+	position:absolute;
+	left: 5px;
+	width:124px;
+	height:21px;
+	background: url(../img/dkCo/player/screenlist.png) no-repeat center left;
+	
+}
+a.scrBtnLst span,
+a.scrBtnTt span{
+	position:absolute;
+	left: 31px;
+	top: 3px;
+	width:90px;
+	height:21px;
+	color: #DEBF20;
+	font-size : 1.2em;
+}
+a.scrBtnTt {
+	position:absolute;
+	left: 5px;
+	width:124px;
+	height:21px;
+	background: url(../img/dkCo/player/screentt.png) no-repeat center left;
+	
+}
+/*screen : tooltip */
+
+.scrTt {
+	border: 2px solid #EDB77D;
+	border-radius: 5px; 
+	box-shadow: 0px 0px 5px black; 
+	background-color:white;
+	margin:5px;
+}
+.scrTt_ti {
+	min-height: 16px;
+	background-color: #EDB77D;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 2px 0px;
+}
+.scrTtLbl{
+	padding: 2px 5px;
+}
+
+.scrTt_x{
+	position  : absolute;
+	top: 0px;
+	right: 4px;
+	width: 20px;
+	height : 18px;
+	background: url(../img/dkCo/tt/close.gif) no-repeat center center;
+}
+a.scrTt_x:hover{
+	text-decoration : none;
+	background: url(../img/dkCo/tt/close-h.gif) no-repeat center center;
+}
+.scrTt_x span {
+	visibility : hidden;
+	}
+.scrTt_co {
+	padding: 5px;
+	min-width:400px;
+	font-size: 0.9em;
+	
+}
+.scrTt_co p{
+	margin: 0px 0px 3px 0px;
+	
+}
+
+.scrTt_co .screenZoneEnd a{
+	display: none;
+}
+.scrTt_co .screenZone_ti{
+	display: none;
+}
+
+/* ================ Zoom ==================== */
+
+div.scImgZmOver{
+	background-color:silver;
+	opacity:0.2;
+}
+div.scImgZmCvs{
+	
+}
+div.scImgZmFra{
+	padding: 10px;
+}
+div.scImgZmCo{
+	box-shadow: 0px 0px 5px 5px gray;
+}

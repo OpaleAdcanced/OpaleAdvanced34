@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/academic/model/Uc/trainUc.model"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:compositionTitle/>
+				<sm:fixedTitle value="￼;[sans titre]￼"/>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_trainUc"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<sm:WHeadingBlock widgetClass="mainContent">
+					<sm:title>
+						<sm:compositionTitle format="fullTitleText"/>
+					</sm:title>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<sm:WSimpleBlock widgetClass="divQuiz">
+						<sm:for codes="quiz">
+							<sm:callSubModel/>
+						</sm:for>
+					</sm:WSimpleBlock>
+				</sm:WHeadingBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<sm:WSimpleBlock widgetClass="decoTrainUc"/>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel>
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:compositionXhtmlTransf>

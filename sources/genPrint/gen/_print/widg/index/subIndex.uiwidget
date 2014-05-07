@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:localOutlineUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="subIndex">
+	<sm:content>
+		<div xmlns="http://www.w3.org/1999/xhtml" class="subIndex">
+			<div class="subIndex_co">
+				<sm:localOutline>
+					<sm:nodeArch>
+						<sm:constraints>
+							<sm:depth max="0"/>
+						</sm:constraints>
+						<sm:unorderedList rootElt="none"/>
+					</sm:nodeArch>
+					<sm:nodeArch>
+						<sm:constraints>
+							<sm:depth min="0"/>
+						</sm:constraints>
+						<sm:inline rootElt="none">
+							<sm:noChildren/>
+						</sm:inline>
+					</sm:nodeArch>
+					<sm:classes>
+						<sm:targetClasses onEntry="yes"/>
+					</sm:classes>
+				</sm:localOutline>
+			</div>
+		</div>
+		<sm:includeContent/>
+	</sm:content>
+</sm:localOutlineUiWidget>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:axis code="gal"/>
+	<sm:content>
+		<sm:WImage widgetClass="gallery">
+			<sm:binaryUrl>
+				<sm:freeTransform code="od2img" options="outType=PNG"/>
+				<sm:imageTransformForPrint>
+					<sm:scaleFromStandardCharSize targetFontSizeInPt="10"/>
+					<sm:dimBounds unit="cm" maxWidth="4.5" maxHeight="6">
+						<sm:rotate ifUndefined="false"/>
+					</sm:dimBounds>
+					<sm:outputPNG/>
+				</sm:imageTransformForPrint>
+			</sm:binaryUrl>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

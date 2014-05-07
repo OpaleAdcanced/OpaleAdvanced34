@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/refs/bib.model"/>
+	<sm:axis code="titleRef"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<span xmlns="http://www.w3.org/1999/xhtml" class="titleRef">
+				<sm:title>
+					<sm:compositionTitle/>
+				</sm:title>
+			</span>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

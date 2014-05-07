@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="solTT"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when sc:refUri="/genPrint/gen/_print/_cnd/isSolQuiz.cond">
+				<sm:WTooltip widgetClass="tt_solQuiz" tagName="a">
+					<sm:label>
+						<span xmlns="http://www.w3.org/1999/xhtml">￼;[Solution￼</span>
+					</sm:label>
+					<sm:tooltip>
+						<sm:basket key="solutionQuiz" render="inBasket"/>
+						<sm:ttContent>
+							<sm:callModel view="xhtmlContent">
+								<sm:current axis="asw"/>
+							</sm:callModel>
+						</sm:ttContent>
+					</sm:tooltip>
+				</sm:WTooltip>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:genericWebSiteTransf>

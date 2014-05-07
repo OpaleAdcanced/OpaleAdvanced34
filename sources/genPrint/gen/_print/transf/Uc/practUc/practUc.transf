@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/practUc.model"/>
+	<sm:content format="xhtml">
+		<sm:WFreeBlock>
+			<scBlock xmlns="http://www.w3.org/1999/xhtml" class="practUc">
+				<hx class="practUc_ti">
+					<span>
+						<sm:dynamicString>
+							<sm:freeXslFragment> &lt;!-- Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket --&gt;
+ &lt;span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}"&gt;
+&lt;span class="prefixQuiz"&gt;￼;Exercice￼&lt;/span&gt;
+&lt;xsl:value-of select="si(getFullTitleText(currentModel()),concat(' : ',getFullTitleText(currentModel())),'')"/&gt;
+ &lt;/span&gt;</sm:freeXslFragment>
+						</sm:dynamicString>
+					</span>
+				</hx>
+				<sm:inDataOrder>
+					<sm:for codes="desc">
+						<sm:WSimpleBlock widgetClass="practUcDesc">
+							<sm:title>
+								<sm:partTitle/>
+							</sm:title>
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:for>
+					<sm:for codes="quest">
+						<sm:WSimpleBlock widgetClass="practUcQuest">
+							<sm:title>
+								<sm:dynamicString>
+									<sm:freeSelect xpath="concat('Question ',si(count(preceding-sibling::sp:quest)+count(following-sibling::sp:quest)&gt;0,count(preceding-sibling::sp:quest)+1))"/>
+								</sm:dynamicString>
+							</sm:title>
+							<sm:choose>
+								<sm:when sc:refUri="/genPrint/gen/_print/_cnd/isSolExoRedac.cond">
+									<sm:WTooltip widgetClass="tt_sol" tagName="a">
+										<sm:label>
+											<sm:fixedString value="￼;[Solution￼"/>
+										</sm:label>
+										<sm:tooltip>
+											<sm:basket key="solution" render="inBasket"/>
+											<sm:ttContent>
+												<sm:callSubModel axis="asw"/>
+											</sm:ttContent>
+										</sm:tooltip>
+									</sm:WTooltip>
+								</sm:when>
+							</sm:choose>
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:for>
+				</sm:inDataOrder>
+			</scBlock>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:packMake xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:wspDef sc:refUri="/opale/opaleAdvanced.wspdef" lang="fr-FR">
+		<sm:welcomeSite sc:refUri="/l10n/fr-FR/_res/presAdvanced.site" mainFile="index.html"/>
+		<sm:webSite url="http://www.scenari-platform.org/opale"/>
+	</sm:wspDef>
+</sm:packMake>

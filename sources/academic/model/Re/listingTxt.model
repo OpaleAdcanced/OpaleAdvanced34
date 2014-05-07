@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" name="￼;Texte de listing￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="listingTxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;Paragraphe￼"/>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:textLeafTag role="note" name="￼;Commentaire￼"/>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:insertCharacters>
+				<sm:charGroup name="￼;Espaces￼">
+					<sm:char value="  " name="￼;Indentation￼"/>
+					<sm:char value=" " name="￼;Espace insécable￼"/>
+				</sm:charGroup>
+			</sm:insertCharacters>
+			<sm:writingAids spellCheck="no" autoInsertions="no"/>
+			<sm:htmlStyle tag="para">
+				<sm:entryStyle key="font-family" value="monospace"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="textLeaf" role="note">
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:textPrim>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf info="Homepage : boutons de navigation" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="rootModelNav"/>
+	<sm:content format="xhtml">
+		<sm:Widget sc:refUri="/genMobile/gen/_webMobile/widg/nav/startBtn.uiwidget">
+			<sm:urlZone key="urlPage">
+				<sm:link>
+					<sm:callModel>
+						<sm:root navCtx="newRoot"/>
+					</sm:callModel>
+				</sm:link>
+			</sm:urlZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionXhtmlTransf>

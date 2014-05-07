@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings xmlns="http://www.mozilla.org/xbl" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!-- Filtres de publications -->
+	<binding id="filters" extends="chrome://scenarixedlib/content/libUiBase/widgets/xedUiBase.xbl.xml#wrapper">
+		<implementation>
+			<property name="isLineFocusable" onget="return true;" readonly="true"/>
+			<method name="onxedload">
+				<body><![CDATA[
+					this.refresh();
+				]]></body>
+			</method>
+			<method name="refresh">
+				<body><![CDATA[
+					try {
+						//Reset les btns
+						var vXedBtn = this.firstChild;
+						while(vXedBtn) {
+							if("checked" in vXedBtn) vXedBtn.checked = false;
+							vXedBtn = vXedBtn.nextSibling;
+						}
+							
+						var vBind = xed.getBind(this);
+						var vFilter = vBind.fValue;
+						if(vFilter) {
+							var vName = vBind.getAttribute("filterName");
+							var vIdx = vName.indexOf(":");
+							var vPrefix = vIdx > 0 ? vName.substring(0, vIdx) : null;
+							var vNs = xed.lookupNamespaceUriInDst(vBind, vPrefix);
+							var vLocalNm = vIdx > 0 ? vName.substring(vIdx+1) : vName;
+							//Parcours la source
+							var vSrcNode = vFilter.firstChild;
+							while(vSrcNode) {
+								if(vSrcNode.nodeType==1 && vSrcNode.localName==vLocalNm && vSrcNode.namespaceURI==vNs) {
+									var vBtn = this.getElementsByAttribute("class", vSrcNode.textContent);
+									if(vBtn && vBtn.length>0) vBtn[0].checked = true;
+								}
+								vSrcNode = vSrcNode.nextSibling;
+							}
+						}
+					}catch(e){log.debug("filters.refresh"+e);}
+				]]></body>
+			</method>
+			<method name="updateValue">
+				<body><![CDATA[
+					try {
+						var vBind = xed.getBind(this);
+						var vEditor = xed.getEditor(vBind);
+						var vOldData = vBind.fValue;
+						
+						var vName = vBind.getAttribute("filterName");
+						var vIdx = vName.indexOf(":");
+						var vPrefix = vIdx > 0 ? vName.substring(0, vIdx) : null;
+						var vNs = xed.lookupNamespaceUriInDst(vBind, vPrefix);
+						var vLocalNm = vIdx > 0 ? vName.substring(vIdx+1) : vName;
+						
+						var vNewData = xed.createSubtreeRoot(vBind);
+						var vXedBtn = this.firstChild;
+						while(vXedBtn) {
+							if(vXedBtn.checked) {
+								var vNode = vNewData.appendChild(vNewData.ownerDocument.createElementNS(vNs, vName));
+								vNode.appendChild(vNewData.ownerDocument.createTextNode(vXedBtn.getAttribute("class")));
+							}
+							vXedBtn = vXedBtn.nextSibling;
+						}
+						
+						var vHisto = {
+								fInput : this
+							};
+						vHisto.redo = function() {
+							vBind.fValue = vNewData;
+							this.fInput.refresh();
+							vEditor.setFocus(this.fInput);
+						}
+						vHisto.undo = function() {
+							vBind.fValue = vOldData;
+							this.fInput.refresh();
+							vEditor.setFocus(this.fInput);
+						}
+						vBind.fValue = vNewData;
+						this.refresh();
+						xed.getEditor(this).addHisto(vHisto, true);
+						return true;
+
+					}catch(e){log.debug(e);}
+				]]></body>
+			</method>
+		</implementation>
+	</binding>
+	
+	<binding id="btnFilter" extends="chrome://scenarixedlib/content/libUiBase/widgets/xedUiBase.xbl.xml#input">
+		<content>
+			<xul:image/>
+		</content>
+		<implementation>
+			<property name="isReadOnly" onget="return this.hasAttribute('disabled')">
+				<setter>
+					if(val) this.setAttribute('disabled', 'true'); else this.removeAttribute('disabled');
+					return val;
+				</setter>
+			</property>
+			<property name="checked" onget="return this.hasAttribute('checked');">
+				<setter><![CDATA[
+					if (val) this.setAttribute("checked", "true");
+					else this.removeAttribute("checked");
+					return val;
+				]]></setter>
+			</property>
+			<method name="toggle">
+				<body><![CDATA[
+					if(this.isReadOnly) return;
+					this.checked = ! this.checked;
+					this.parentNode.updateValue();
+					this.setDirty(false);
+				]]></body>
+			</method>
+			<method name="synchData">
+				<body/>
+			</method> 
+		</implementation>
+		<handlers>
+			<handler event="click" action="this.toggle();"/>
+			<handler event="keypress" key=" " action="this.toggle();"/>
+			<handler event="focus"><![CDATA[
+				if ( ! this.hasAttribute("focused")) {
+					this.setAttribute("focused", "true");
+					//On informe du focus.
+					xed.fireXedFocusEvent(this);
+				}
+			]]></handler>
+			<handler event="blur" phase="capturing"><![CDATA[
+				if ( this.hasAttribute("focused")) this.removeAttribute('focused');
+			]]></handler>
+		</handlers>
+	</binding>
+</bindings>

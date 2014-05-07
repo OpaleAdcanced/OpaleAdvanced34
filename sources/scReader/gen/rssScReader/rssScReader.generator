@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="rssScReader" name="￼;Flux RSS ScenariReader￼">
+	<sm:icon sc:refUri="/scReader/model/authoring/RSSgen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/scReader/model/root/rssScReader.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 4.01 Transitional (Standards mode)" debug="no"/>
+	<sm:uiFrame sc:refUri="/scReader/gen/rssScReader/rssScReader.uiframe"/>
+	<sm:transformerList sc:refUri="/scReader/gen/rssScReader/transf.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code=""/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin/>
+</sm:webSiteGenerator>

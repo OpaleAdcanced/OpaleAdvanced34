@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget code="WTooltipQuiz" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:content>
+		<sm:choose>
+			<sm:when sc:refUri="/genPrint/gen/_print/_cnd/isSolQuiz.cond">
+				<sm:WTooltip widgetClass="tt_solQuiz" tagName="a">
+					<sm:label>￼;[Solution￼</sm:label>
+					<sm:tooltip>
+						<sm:basket key="solutionQuiz" render="inBasket"/>
+						<sm:ttContent>
+							<sm:callZone key="zCo"/>
+						</sm:ttContent>
+					</sm:tooltip>
+				</sm:WTooltip>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:openUiWidget>

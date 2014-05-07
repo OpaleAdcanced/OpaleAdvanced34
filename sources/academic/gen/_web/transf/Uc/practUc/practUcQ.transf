@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/practUcQ.model"/>
+	<sm:content format="xhtml">
+		<sm:for codes="desc">
+			<sm:callSubModel/>
+		</sm:for>
+		<sm:for codes="hint">
+			<sm:WCollapsableBlock widgetClass="op_practUcQ_hint collapse" class="cbkClosed">
+				<sm:label>
+					<sm:fixedString value="￼;Indice￼"/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:fixedString value="￼;Indice￼"/>
+				</sm:labelTitle>
+				<sm:content>
+					<sm:callSubModel/>
+				</sm:content>
+			</sm:WCollapsableBlock>
+		</sm:for>
+		<sm:for codes="sol">
+			<sm:WCollapsableBlock widgetClass="op_practUcQ_sol collapse" class="cbkClosed">
+				<sm:label>
+					<sm:fixedString value="￼;Solution￼"/>
+				</sm:label>
+				<sm:labelTitle>
+					<sm:fixedString value="￼;Solution￼"/>
+				</sm:labelTitle>
+				<sm:content>
+					<sm:callSubModel/>
+				</sm:content>
+			</sm:WCollapsableBlock>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

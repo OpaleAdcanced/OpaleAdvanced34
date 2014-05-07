@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqHtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:axis code="asw"/>
+	<sm:content>
+		<div class="quizSol mcqSur">
+			<sm:choose>
+				<sm:when xpath="not(codeAgent(lookForAscendants($vDialog,'currentToRoot','op_coQuiz')))">
+					<div class="quiz_ti">
+						<span>￼;Solution n°￼</span>
+					</div>
+				</sm:when>
+			</sm:choose>
+			<div class="quiz_co">
+				<sm:WChoiceList widgetClass="bkBase bkCorrections" solutionClassPrefix="mcqSurSelected" tagName="div">
+					<sm:choiceBody>
+						<div class="mcqSurChoice">
+							<div class="mcqSurChoiceLbl">
+								<sm:callLabelModel/>
+							</div>
+							<sm:WChoiceExplanation widgetClass="mcqSurChoiceExpl">
+								<sm:callExplanationModel/>
+							</sm:WChoiceExplanation>
+						</div>
+					</sm:choiceBody>
+				</sm:WChoiceList>
+				<sm:WGlobalExplanation widgetClass="mcqSurGlobalExplanation">
+					<sm:callExplanationModel/>
+				</sm:WGlobalExplanation>
+			</div>
+		</div>
+	</sm:content>
+</sma:assmntUnitMcqHtmlTransf>

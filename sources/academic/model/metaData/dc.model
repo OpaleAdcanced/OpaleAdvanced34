@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sext="http://www.utc.fr/ics/scenari/v3/modeling/extension" name="￼;Dublin Core￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="dc" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="auth" name="￼;Auteur￼" occurence="zeroOrMore">
+			<sm:help quickHelp="￼;Syntaxe imposée : Prénom-Nom￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="cont" name="￼;Contributeur￼" occurence="zeroOrMore">
+			<sm:help quickHelp="￼;Syntaxe imposée : Prénom-Nom￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="publisher" name="￼;Editeur￼" occurence="zeroOrMore">
+			<sm:help quickHelp="￼;Syntaxe imposée : Prénom-Nom￼"/>
+			<sm:string/>
+		</sm:field>
+		<sm:field code="desc" name="￼;Description￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;Résumé, description, plan du contenu￼"/>
+			<sm:otherType sc:refUri="/academic/model/Re/txt.model"/>
+		</sm:field>
+		<sm:group code="objs" name="￼;Objectifs Pédagogiques￼" occurence="zeroOrOne">
+			<sm:field code="obj" name="￼;Objectif￼" occurence="oneOrMore">
+				<sm:string/>
+			</sm:field>
+		</sm:group>
+		<sm:field code="lang" name="￼;Langue￼" occurence="zeroOrOne">
+			<sm:enum>
+				<sm:option key="FR" name="￼;Français￼"/>
+				<sm:option key="EN" name="￼;Anglais￼"/>
+				<sm:option key="OT" name="￼;Autre￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:group code="cover" name="￼;Couverture spatiale￼" occurence="zeroOrOne">
+			<sm:field code="spatial" name="￼;Pays￼" occurence="zeroOrMore">
+				<sm:help quickHelp="￼;Pays de validité du contenu￼"/>
+				<sm:enum>
+					<sm:option key="FR" name="￼;France￼"/>
+					<sm:option key="EN" name="￼;Grande-Bretagne￼"/>
+					<sm:option key="OT" name="￼;Autre￼"/>
+				</sm:enum>
+			</sm:field>
+		</sm:group>
+		<sm:field code="level" name="￼;Niveau LMD￼" occurence="zeroOrOne">
+			<sm:enum>
+				<sm:option key="L" name="￼;Licence￼"/>
+				<sm:option key="M" name="￼;Master￼"/>
+				<sm:option key="D" name="￼;Doctorat￼"/>
+			</sm:enum>
+		</sm:field>
+		<sm:field code="date" name="￼;Date￼" occurence="zeroOrOne">
+			<sm:help quickHelp="￼;Format recommandé : AAAA-MM-JJ￼"/>
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+	<sm:authoring>
+		<!--
+
+<sm:formEditor xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" indentXml="true">
+
+	<sm:stringField refCode="auth" defaultStyle="property" textStyle="color :#6286cc ;"/>
+
+	<sm:stringField refCode="cont" defaultStyle="property" textStyle="color :#6286cc ;"/>
+
+	<sm:stringField refCode="publisher" defaultStyle="property" textStyle="color :#6286cc ;"/>
+
+	<sm:otherTypeField refCode="desc" defaultStyle="property"/>
+
+	<sm:group refCode="objs" defaultStyle="property"/>
+
+	<sm:stringField refCode="obj" autoRepeatField="yes" defaultStyle="property" textStyle="color :#6286cc ;"/>
+
+	<sm:enumField refCode="lang" defaultStyle="property"/>
+
+	<sm:group refCode="cover" defaultStyle="property"/>
+
+	<sm:enumField refCode="spatial" defaultStyle="property"/>
+
+	<sm:enumField refCode="level" defaultStyle="property"/>
+
+	<sm:stringField refCode="date" defaultStyle="property" textStyle="color :#6286cc ;"/>
+
+</sm:formEditor>-->
+		<sm:formEditor indentXml="true">
+			<sm:xmlEditor sc:refUri="/academic/model/_edt/metaData/dc@readonly.xed"/>
+		</sm:formEditor>
+		
+	</sm:authoring>
+</sm:dataFormPrim>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Flux RSS ScenariReader￼">
+	<sm:identification targetNamespace="utc.fr:ics/opale3" targetPrefix="op" code="rssScReader" itemExtension="publi"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/scReader/model/root/rssScReaderM.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="item" name="￼;Item￼" internalized="never">
+				<sm:meta sc:refUri="/scReader/model/root/rssItemM.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/academic/model/root/webRoot.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/scReader/model/authoring/RSSico.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;scReader￼"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true">
+			<sm:composition>
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container>
+							<sm:head>
+								<sm:prefixIcon sc:refUri="/scReader/model/authoring/RSSitem.png"/>
+								<sm:name style="font-family:arial;font-size:1.8em; background-color:#DD622A; color:white; -moz-border-radius:5px; -moz-padding-start:4px; -moz-padding-end:4px; margin-left:5px"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:composition>
+			<sm:part refCode="item">
+				<sm:stylableWidget>
+					<sm:styles>
+						<sm:container style="-moz-border-radius:25px 25px 25px 25px; border:4px solid #DD622A; margin-left:10px;margin-right:10px; margin-top:10px">
+							<sm:head style="margin-top:5px; margin-bottom:5px">
+								<sm:prefixIcon sc:refUri="/scReader/model/authoring/rssItemItem.png"/>
+								<sm:name style="margin-left:5px; color:#DD622A; font-size:1.6em; font-family:arial"/>
+							</sm:head>
+						</sm:container>
+					</sm:styles>
+				</sm:stylableWidget>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="acr">
+	<sm:content>
+		<sm:WBasket key="acr" widgetClass="heading acrBk" tagName="ul" suppressIfEmpty="yes" sort="byTitle">
+			<sm:title tagName="hx">￼;Abréviations￼</sm:title>
+		</sm:WBasket>
+	</sm:content>
+</sm:openUiWidget>

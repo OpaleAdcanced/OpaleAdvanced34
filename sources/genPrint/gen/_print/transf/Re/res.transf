@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/res.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="txt txtRes">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="listing">
+				<sm:WSimpleBlock widgetClass="listingBk">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="bkquote">
+				<sm:WSimpleBlock widgetClass="bkquoteOpen">
+					<sm:WSimpleBlock widgetClass="bkquoteClose">
+						<sm:WSimpleBlock tagName="blockquote">
+							<sm:callSubModel/>
+						</sm:WSimpleBlock>
+					</sm:WSimpleBlock>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="res int">
+				<sm:WFreeBlock>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357233461430">Pour chaque ressource on enregistre dans le buffer son uri</comment></comment>-->
+					<sm:dynamicString>
+						<sm:freeSelect xpath="execute(setEntryBuffer('resLnkList', srcFields(resolveSrcPath(@sc:refUri), 'srcUri')))"/>
+					</sm:dynamicString>
+				</sm:WFreeBlock>
+				<sm:choose>
+					<sm:when xpath="//op:instructionM">
+						<sm:callPartMeta/>
+					</sm:when>
+				</sm:choose>
+				<sm:choose>
+					<!--Présence de ressource alternative-->
+					<sm:when xpath="string-length(getContent(gotoMeta(gotoSubModel()),'alt'))&gt;0">
+						<!--# Crédit-->
+						<sm:choose>
+							<sm:when xpath="string-length(getContent(gotoMeta(gotoSubModel()),'credit'))&gt;0">
+								<sm:WTooltip widgetClass="cprResItem">
+									<sm:label/>
+									<sm:tooltip>
+										<sm:basket key="cprRes" render="inBasket"/>
+										<sm:ttTitle>
+											<sm:title>
+												<sm:subModelTitle/>
+											</sm:title>
+										</sm:ttTitle>
+										<sm:ttContent>
+											<sm:WFreeBlock>
+												<sm:dynamicString>
+													<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'credit')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+												</sm:dynamicString>
+											</sm:WFreeBlock>
+										</sm:ttContent>
+									</sm:tooltip>
+								</sm:WTooltip>
+							</sm:when>
+						</sm:choose>
+						<!--# Ressource-->
+						<sm:WFreeBlock>
+							<sm:dynamicString>
+								<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'alt')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+							</sm:dynamicString>
+						</sm:WFreeBlock>
+					</sm:when>
+					<sm:when xpath="containWord('op_gallery', typeAgent(concat('@', getIdFromPath(@sc:refUri))))">
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="res">
+								<sm:dynamicString>
+									<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357315427124">Passage par un freexsl pour ajouter un id à res_co. Impossible de passer par une postxsl ou un addattribute sinon l'id est ajouté après le traitement des postxsl du tpl.uiwidget.</comment></comment>-->
+									<sm:freeXslFragment>&lt;div class="res_co" id="{alphaHash(concat(getIdFromPath(srcFields(resolveSrcPath(@sc:refUri), 'srcUri')),'_',java:nextDouble(java:java.util.Random.new())))}"&gt;
+&lt;xsl:value-of select="getContent(gotoSubModel(),'idNode')" disable-output-escaping="yes"/&gt;
+&lt;xsl:value-of select="getContent(gotoSubModel())" disable-output-escaping="yes"/&gt;
+&lt;/div&gt;</sm:freeXslFragment>
+								</sm:dynamicString>
+								<div class="res_ti">
+									<span class="res_tiIn">
+										<sm:callPartMeta axis="resTitle"/>
+										<sm:title>
+											<sm:subModelTitle/>
+										</sm:title>
+									</span>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+					<sm:when xpath="containWord('sfile_odg sfile_ods sfile_jpg_jpeg sfile_gif sfile_png sfile_odf mathTex', typeAgent(concat('@', getIdFromPath(@sc:refUri))))">
+						<!--# Crédit-->
+						<sm:choose>
+							<sm:when xpath="string-length(getContent(gotoMeta(gotoSubModel()),'credit'))&gt;0">
+								<sm:WTooltip widgetClass="cprResItem">
+									<sm:label/>
+									<sm:tooltip>
+										<sm:basket key="cprRes" render="inBasket"/>
+										<sm:ttTitle>
+											<sm:title>
+												<sm:subModelTitle/>
+											</sm:title>
+										</sm:ttTitle>
+										<sm:ttContent>
+											<sm:WFreeBlock>
+												<sm:dynamicString>
+													<sm:freeXslFragment>&lt;xsl:value-of select=" getContent(gotoMeta(gotoSubModel()),'credit')" disable-output-escaping="yes"/&gt;</sm:freeXslFragment>
+												</sm:dynamicString>
+											</sm:WFreeBlock>
+										</sm:ttContent>
+									</sm:tooltip>
+								</sm:WTooltip>
+							</sm:when>
+						</sm:choose>
+						<!--# Ressource-->
+						<sm:WFreeBlock>
+							<div xmlns="http://www.w3.org/1999/xhtml" class="res">
+								<sm:dynamicString>
+									<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357315427124">Passage par un freexsl pour ajouter un id à res_co. Impossible de passer par une postxsl ou un addattribute sinon l'id est ajouté après le traitement des postxsl du tpl.uiwidget.</comment></comment>-->
+									<sm:freeXslFragment>&lt;div class="res_co" id="{alphaHash(concat(getIdFromPath(srcFields(resolveSrcPath(@sc:refUri), 'srcUri')),'_',java:nextDouble(java:java.util.Random.new())))}"&gt;
+&lt;xsl:value-of select="getContent(gotoSubModel(),'idNode')" disable-output-escaping="yes"/&gt;
+&lt;xsl:value-of select="getContent(gotoSubModel())" disable-output-escaping="yes"/&gt;
+&lt;/div&gt;</sm:freeXslFragment>
+								</sm:dynamicString>
+								<div class="res_ti">
+									<span class="res_tiIn">
+										<sm:callPartMeta axis="resTitle"/>
+										<sm:title>
+											<sm:subModelTitle format="shortTitleText"/>
+										</sm:title>
+									</span>
+								</div>
+							</div>
+						</sm:WFreeBlock>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+			<sm:for codes="filtered">
+				<sm:choose>
+					<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+						<sm:callSubModel/>
+					</sm:when>
+				</sm:choose>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

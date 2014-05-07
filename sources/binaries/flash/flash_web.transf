@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/flash/flash.model"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName format="trimExtension"/>
+		</sm:returnFirst>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WCaptionBlock widgetClass="resInFlow" position="bottom">
+			<sm:caption>
+				<sm:WFreeBlock>
+					<span xmlns="http://www.w3.org/1999/xhtml" class="capTi">
+						<sm:title>
+							<sm:binaryMeta/>
+						</sm:title>
+					</span>
+				</sm:WFreeBlock>
+				<sm:chooseOnBinary>
+					<sm:binary>
+						<sm:swfSize>
+							<sm:scaleFromStandardCharSize/>
+						</sm:swfSize>
+					</sm:binary>
+					<sm:whenSize widthOver="693" heightOver="693">
+						<sm:WLink widgetClass="zoom">
+							<sm:label>
+								<sm:fixedString>￼;[Zoom...]￼</sm:fixedString>
+							</sm:label>
+							<sm:labelTitle>
+								<sm:fixedString>￼;Zoom (nouvelle fenêtre)...￼</sm:fixedString>
+							</sm:labelTitle>
+							<sm:link target="newWindow" windowName="zoom">
+								<sm:behavior addLinkInHref="yes"/>
+								<sm:position>
+									<sm:centerScreen/>
+								</sm:position>
+								<sm:windowFeatures scrollbars="no"/>
+								<sm:WFlash>
+									<sm:binaryUrl>
+										<sm:swfSize>
+											<sm:scaleFromStandardCharSize/>
+										</sm:swfSize>
+									</sm:binaryUrl>
+									<sm:declareSize maxWidth="1200" maxHeight="900"/>
+									<sm:param name="wmode">
+										<sm:fixedValue value="transparent"/>
+									</sm:param>
+								</sm:WFlash>
+							</sm:link>
+						</sm:WLink>
+					</sm:whenSize>
+				</sm:chooseOnBinary>
+				<sm:callBinaryMeta axis="info"/>
+			</sm:caption>
+			<sm:content>
+				<sm:callModel>
+					<sm:current axis="view"/>
+				</sm:callModel>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

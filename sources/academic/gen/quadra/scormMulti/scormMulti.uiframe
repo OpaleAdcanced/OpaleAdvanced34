@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:scormCamUiFrame xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" blockCache="yes">
+	<sm:uiServices>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/scormMulti.uiservice"/>
+		<sm:uiService sc:refUri="/academic/gen/_scorm/svc/lmsHack.uiservice"/>
+	</sm:uiServices>
+	<sm:rootContext>
+		<sm:transparentFrameset/>
+	</sm:rootContext>
+	<sm:callRootModel/>
+	<sm:publishFiles sc:refUri="/academic/gen/quadra/scormMulti/scorm.doss"/>
+</sma:scormCamUiFrame>

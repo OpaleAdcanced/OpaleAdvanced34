@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget code="clozeTxtGap" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type=&quot;xslOnSrc-dynamique&quot;>
+	&lt;xsl:stylesheet exclude-result-prefixes=&quot;sc sp op&quot;
+	version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+	xmlns:op=&quot;utc.fr:ics/opale3&quot;
+	xmlns:sc=&quot;http://www.utc.fr/ics/scenari/v3/core&quot;
+	xmlns:sp=&quot;http://www.utc.fr/ics/scenari/v3/primitive&quot;>
+
+		&lt;xsl:output omit-xml-declaration=&quot;yes&quot; indent=&quot;no&quot; method=&quot;xml&quot; />
+		&lt;xsl:param name=&quot;vDialog&quot; />
+		&lt;xsl:param name=&quot;vAgent&quot; />
+		&lt;xsl:param name=&quot;vArguments&quot; />
+
+		&lt;xsl:template match=&quot;*&quot;>
+			&lt;span class=&quot;clozeTxtGap&quot;>
+				&lt;xsl:value-of select=&quot;resultatAgent('xhtmlContentZone_content', $vArguments)&quot; disable-output-escaping=&quot;yes&quot;/>
+			&lt;/span>
+		&lt;/xsl:template>
+	&lt;/xsl:stylesheet>
+&lt;/source>
+</sm:widgetBsFragment>
+</sm:freeUiWidget>

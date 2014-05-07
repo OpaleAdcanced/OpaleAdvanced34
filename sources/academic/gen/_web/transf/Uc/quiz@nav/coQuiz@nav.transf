@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:genericWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/coQuiz.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:page template="page">
+			<sm:title>
+				<sm:dynamicString>
+					<sm:freeSelect xpath="si(*[local-name()='exeM']/sp:title,*[local-name()='exeM']/sp:title,&quot;￼Liste d'exercices￼&quot;)"/>
+				</sm:dynamicString>
+			</sm:title>
+			<sm:outlineClasses>
+				<sm:fixedString value="mnu_coQuiz"/>
+			</sm:outlineClasses>
+			<sm:mainZone format="xhtml">
+				<scBlock xmlns="http://www.w3.org/1999/xhtml" class="mainContent coQuizContent">
+					<hx class="mainContent_ti coQuiz">
+						<sm:choose>
+							<sm:when xpath="*[local-name()='exeM']/sp:title">
+								<sm:callModel view="fullTitleText">
+									<sm:current/>
+								</sm:callModel>
+							</sm:when>
+							<sm:otherwise>￼;Exercice￼</sm:otherwise>
+						</sm:choose>
+					</hx>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/util/noJsWarn.uiwidget"/>
+					<sm:Widget sc:refUri="/academic/gen/_web/widg/refs/kwrdEntries.uiwidget"/>
+					<div class="divQuiz">
+						<sm:callModel view="xhtmlContent">
+							<sm:current/>
+						</sm:callModel>
+					</div>
+				</scBlock>
+			</sm:mainZone>
+			<sm:zone key="zIconPage" format="xhtml">
+				<div xmlns="http://www.w3.org/1999/xhtml" class="decoTrainUc"></div>
+			</sm:zone>
+			<sm:zone key="zLegal" format="xhtml">
+				<sm:callModel view="xhtmlContent">
+					<sm:current axis="legal"/>
+				</sm:callModel>
+			</sm:zone>
+		</sm:page>
+	</sm:navigation>
+</sm:genericWebSiteTransf>

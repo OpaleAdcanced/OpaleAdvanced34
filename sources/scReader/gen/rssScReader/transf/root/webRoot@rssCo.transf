@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXslWebSiteTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/webRoot.model"/>
+	<sm:axis code="rssCo"/>
+	<sm:content>
+		<sm:xsl sc:refUri="/scReader/gen/rssScReader/transf/root/webRoot@rssCo.xsl"/>
+		<sm:callModel sc:refUri="/academic/model/Ue/ue.model" axis="descr" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/gif/gif.model" axis="large" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/jpg/jpeg.model" axis="large" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/png/png.model" axis="large" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/gif/gif.model" axis="small" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/jpg/jpeg.model" axis="small" codeView="xhtmlContent"/>
+		<sm:callModel sc:refUri="/binaries/png/png.model" axis="small" codeView="xhtmlContent"/>
+	</sm:content>
+</sm:freeXslWebSiteTransf>

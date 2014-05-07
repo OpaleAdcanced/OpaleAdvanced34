@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:fullTitleText>
+		<sm:returnFirst>
+			<sm:callBinaryMeta/>
+			<sm:binaryFileName/>
+		</sm:returnFirst>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callBinaryMeta/>
+	</sm:shortTitleText>
+	<sm:content>
+		<sm:WImage>
+			<sm:binaryUrl>
+				<!--Supprimer tout profil de couleur-->
+				<sm:freeTransform code="imageMagick" options="outType=JPEG&amp;command=convert%20%24src%20-strip%20%24dst"/>
+				<sm:imageTransformForPrint maxTargetDpi="300">
+					<sm:scaleFromStandardCharSize targetFontSizeInPt="10">
+						<sm:ifNoStandardCharSize>
+							<sm:scale ratio="1" sourceDpiIfNone="300"/>
+						</sm:ifNoStandardCharSize>
+					</sm:scaleFromStandardCharSize>
+					<sm:dimBounds unit="cm" maxWidth="15" maxHeight="22">
+						<sm:rotate ifUndefined="false"/>
+					</sm:dimBounds>
+					<sm:outputJPEG/>
+				</sm:imageTransformForPrint>
+			</sm:binaryUrl>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:openUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="tpl">
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357299723132">Supprimer les résidus des ref</comment></comment>-->&lt;xsl:template match="div[contains(@class,'genRefBk')]"/&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357299716163">Supprimer l'entrée de l'index pour les refs si celui-ci est vide.</comment></comment>-->&lt;xsl:template match="li[contains(a/@class,'glosBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'glos'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'acrBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'acr'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'bibBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'bib'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'webBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'web'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'refBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'ref'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'cprResBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'cprRes'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'keywdBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'keywd'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+
+&lt;xsl:template match="li[contains(a/@class,'solutionBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'solution'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'questBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'quest'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'solutionQuizBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'solutionQuiz'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'resLnkBk_ti_lo')]"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'resLnk'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*"/&gt;
+      &lt;xsl:apply-overlays/&gt;
+      &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357299702366">Gestion des bookmarks</comment></comment>-->&lt;xsl:template match="head"&gt;
+	&lt;xsl:copy&gt;
+		&lt;xsl:apply-templates select="@*"/&gt;
+		&lt;xsl:apply-overlays/&gt;
+		&lt;xsl:apply-templates/&gt;
+		&lt;xsl:apply-templates select="//div[@id='index']/div[@class='index_co']" mode="bookmarks"/&gt;
+	&lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="div[@id='index']/div[@class='index_co']" mode="bookmarks"&gt;
+	&lt;bookmarks&gt;
+		&lt;xsl:apply-templates mode="bookmarks"/&gt;
+	&lt;/bookmarks&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="*" mode="bookmarks"&gt;
+	&lt;xsl:apply-templates mode="bookmarks"/&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="text()" mode="bookmarks"&gt;
+	&lt;xsl:value-of select="normalize-space(.)" /&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'glosBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'glos'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'acrBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'acr'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'bibBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'bib'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'webBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'web'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'refBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'ref'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'cprResBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'cprRes'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'keywdBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'keywd'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'solutionBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'solution'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'questBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'quest'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'solutionQuizBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'solutionQuiz'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li[contains(a/@class,'resLnkBk_ti_lo')]" mode="bookmarks"&gt;
+  &lt;xsl:variable name="vHasElts" select="count(java:get($vBasketPool, 'resLnk'))&gt;0"/&gt;
+  &lt;xsl:if test="$vHasElts"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="li" mode="bookmarks"&gt;
+	&lt;xsl:call-template name="bookmark"/&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template name="bookmark"&gt;
+	&lt;xsl:if test="boolean(a)"&gt;
+		&lt;bookmark name="{normalize-space(a)}" href="{a/@href}"&gt;
+			&lt;xsl:apply-templates mode="bookmarks"/&gt;
+		&lt;/bookmark&gt;
+	&lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357299677439">Gestion des renvoies vers une Uc - ucLnk ou vers une ressource - resLnk</comment></comment>-->&lt;!-- Gestion des ucLnk si l'idnode de ucLnk est le même sur celui du hx on pose un lien vers ce hx --&gt;
+&lt;xsl:template match="span[contains(@class,'op_txt_ul_ucLnk') or contains(@class,'resLnkTitle')]/span"&gt;
+  &lt;xsl:variable name="vTargetId" select="idnode/@id"/&gt;
+  &lt;xsl:variable name="vTarget" select="//*[idnode/@id=$vTargetId and not(parent::span[contains(@class,'op_txt_ul_ucLnk')]) and not(parent::span[contains(@class,'resLnkTitle')])]"/&gt;
+  &lt;xsl:apply-templates select="@*"/&gt;
+  &lt;xsl:apply-overlays/&gt;
+  &lt;xsl:apply-templates/&gt;
+  &lt;span class="lnk_grp"&gt;
+    &lt;xsl:for-each select="$vTarget"&gt;
+      &lt;a href="#{@id}"&gt;&lt;/a&gt;
+      &lt;xsl:if test="not(position() = last())"&gt;,&lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
+  &lt;/span&gt;
+&lt;/xsl:template&gt;
+
+&lt;!-- Suppression des idnode --&gt;
+&lt;xsl:template match="idnode"/&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357299687503">Suppression de certains éléments de la table des matières</comment></comment>-->&lt;xsl:template match="ul[preceding-sibling::a[contains(@class,'assmntUa_ti_lo')]]"/&gt;
+&lt;xsl:template match="ul[preceding-sibling::a[contains(@class,'quiz_ti_lo')]]"/&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1357204413292">Surcharge des hx pour augmenter la limite du heading à 6 niveaux imposé par la norme html</comment></comment>-->&lt;xsl:template match="hx" priority="1"&gt;
+	&lt;xsl:variable name="vCount" select="count(ancestor::scBlock)"/&gt;
+	&lt;xsl:element name="{concat('h',  $vCount)}"&gt;
+		&lt;xsl:apply-templates select="@*"/&gt;
+		&lt;xsl:apply-overlays/&gt;
+		&lt;xsl:apply-templates/&gt;
+	&lt;/xsl:element&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+		<sm:postXslFragment keyXsl="xhtml"><!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1355154535461">Gestion des refs croisées</comment></comment>-->&lt;!-- Déclaration d'une clé pour récupéré facilement tout les éléments avec @itemKey (scTooltip et titre des items) --&gt;
+&lt;xsl:key name="items" match="*[@itemKey]" use="@itemKey" /&gt;
+
+&lt;!-- Génération de la liste de l'index pour les exos, l'index et les références des ressources --&gt;
+&lt;xsl:template match="scTooltip[contains(@basketKey,'solution') or contains(@basketKey,'keywd') or contains(@basketKey,'cprRes')]" mode="scBasketItem" priority="1" xmlns:xalan="http://xml.apache.org/xalan"&gt;
+	&lt;xsl:param name="vClass"/&gt;
+	&lt;xsl:variable name="vRefsType" select="si(contains(@basketKey,'solution'),'exo','others')"/&gt;
+
+	&lt;!-- Passage par un XML intérmédiaire pour créer une liste triée des scBlocks contenant un tooltip de même itemKey --&gt;
+	&lt;xsl:variable name="vItemTargets"&gt;
+		&lt;root&gt;
+			&lt;xsl:for-each select="key('items', @itemKey)"&gt;
+				&lt;xsl:variable name="vTitle" select="(ancestor::scBlock[1])//hx/span" /&gt;
+				&lt;item title="{normalize-space($vTitle)}" id="{$vTitle/span/@id}" /&gt;
+			&lt;/xsl:for-each&gt;
+		&lt;/root&gt;
+	&lt;/xsl:variable&gt;
+
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="local-name() = 'scTooltip'"&gt;
+			&lt;xsl:variable name="vKey" select="string(@basketKey)"/&gt;
+			&lt;xsl:variable name="vItemKey" select="string(@itemKey)"/&gt;
+			&lt;xsl:variable name="vIdInBskt" select="concat($vKey, generate-id(java:get($vBasketPool, $vKey)[@itemKey = $vItemKey][1]))"/&gt;
+			&lt;xsl:element name="li"&gt;
+				&lt;xsl:attribute name="class"&gt;&lt;xsl:value-of select="addSuffixOnWords($vClass, '_it')"/&gt;&lt;/xsl:attribute&gt;
+				&lt;xsl:attribute name="id"&gt;&lt;xsl:value-of select="$vIdInBskt"/&gt;&lt;/xsl:attribute&gt;
+				&lt;div class="{addSuffixOnWords($vClass, '_itti')}"&gt;
+					&lt;xsl:choose&gt;
+						&lt;xsl:when test="scTooltipTitle"&gt;&lt;xsl:apply-templates select="scTooltipTitle/node()"/&gt;&lt;/xsl:when&gt;
+						&lt;xsl:otherwise&gt;&lt;xsl:attribute name="style"&gt;display:none;&lt;/xsl:attribute&gt;&lt;/xsl:otherwise&gt;
+					&lt;/xsl:choose&gt;
+				&lt;/div&gt;
+				&lt;div class="{addSuffixOnWords($vClass, '_itco')}"&gt;
+					&lt;!-- Appel au template ref avec une classe différente s'il s'agit d'un exo ou non --&gt;
+					&lt;xsl:choose&gt;
+						&lt;xsl:when test="scTooltipContent"&gt;
+							&lt;xsl:if test="$vRefsType='exo'"&gt;
+								&lt;xsl:call-template name="ref"&gt;
+									&lt;xsl:with-param name="vItemTargets" select="$vItemTargets"/&gt;
+									&lt;xsl:with-param name="vClass"&gt;grpRefSol_a&lt;/xsl:with-param&gt;
+								&lt;/xsl:call-template&gt;
+							&lt;/xsl:if&gt;
+							&lt;xsl:apply-templates select="scTooltipContent/node()"/&gt;
+							&lt;xsl:if test="$vRefsType='others'"&gt;
+								&lt;xsl:call-template name="ref"&gt;
+									&lt;xsl:with-param name="vItemTargets" select="$vItemTargets"/&gt;
+									&lt;xsl:with-param name="vClass"&gt;grpRef_a&lt;/xsl:with-param&gt;
+								&lt;/xsl:call-template&gt;
+							&lt;/xsl:if&gt;
+						&lt;/xsl:when&gt;
+						&lt;xsl:otherwise&gt;&lt;xsl:attribute name="style"&gt;display:none;&lt;/xsl:attribute&gt;&lt;/xsl:otherwise&gt;
+					&lt;/xsl:choose&gt;
+				&lt;/div&gt;
+			&lt;/xsl:element&gt;		
+		&lt;/xsl:when&gt;
+	&lt;/xsl:choose&gt;	
+&lt;/xsl:template&gt;
+
+&lt;xsl:template name="ref" xmlns:xalan="http://xml.apache.org/xalan"&gt;
+	&lt;xsl:param name="vItemTargets"/&gt;
+	&lt;xsl:param name="vClass"/&gt;
+	&lt;div class="{$vClass}"&gt;
+		&lt;xsl:for-each select="xalan:nodeset($vItemTargets)/root/*"&gt;
+			&lt;xsl:if test="not(preceding-sibling::*/@id= @id)"&gt;
+				&lt;a class="itemRef_a" href="#{@id}" /&gt;
+				&lt;xsl:if test="following-sibling::item"&gt;,&lt;/xsl:if&gt;
+			&lt;/xsl:if&gt;
+		&lt;/xsl:for-each&gt;
+	&lt;/div&gt;
+&lt;/xsl:template&gt;</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+	<sm:content/>
+</sm:openUiWidget>

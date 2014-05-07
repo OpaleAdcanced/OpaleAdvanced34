@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXhtmlTransf info="Transfomer text pur de Texte Simple" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/sTxt.model"/>
+	<sm:axis code="txt"/>
+	<sm:bs sc:refUri="/genPrint/gen/_print/transf/Re/sTxt@txt.doss" bsPath="op_sTxt@txt.xml"/>
+</sm:freeXhtmlTransf>

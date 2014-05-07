@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/gif/gif.model"/>
+	<sm:axis code="nav"/>
+	<sm:navigation>
+		<sm:binaryUrl>
+			<sm:imageTransform>
+				<sm:scaleFromStandardCharSize targetFontSizeInPt="24">
+					<sm:ifNoStandardCharSize>
+						<sm:scale ratio="1.5"/>
+					</sm:ifNoStandardCharSize>
+				</sm:scaleFromStandardCharSize>
+				<sm:sizeBounds maxWidthInPx="800" maxHeightInPx="533"/>
+				<sm:outputGIF/>
+			</sm:imageTransform>
+		</sm:binaryUrl>
+	</sm:navigation>
+</sm:binaryXhtmlTransf>

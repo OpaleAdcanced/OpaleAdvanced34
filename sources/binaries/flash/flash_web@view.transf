@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/flash/flash.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WFlash widgetClass="resFlash">
+			<sm:binaryUrl>
+				<sm:swfSize>
+					<sm:scaleFromStandardCharSize/>
+				</sm:swfSize>
+			</sm:binaryUrl>
+			<sm:alt>
+				<sm:callBinaryMeta axis="alt"/>
+			</sm:alt>
+			<sm:declareSize maxWidth="630" maxHeight="630"/>
+			<sm:param name="wmode">
+				<sm:fixedValue value="transparent"/>
+			</sm:param>
+		</sm:WFlash>
+	</sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/root/odRootM.model"/>
+	<sm:axis code="logo"/>
+	<sm:content>
+		<sm:forField codes="logo">
+			<sm:fieldValueRefItem>
+				<sm:callRefModel axis="logo"/>
+			</sm:fieldValueRefItem>
+		</sm:forField>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

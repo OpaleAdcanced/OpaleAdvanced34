@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Re/refs/genRef.model"/>
+	<sm:content format="xhtml">
+		<sm:choose>
+			<sm:when codes="ref">
+				<sm:WSimpleBlock widgetClass="genRefBk">
+					<sm:for codes="ref">
+						<sm:choose>
+							<sm:when xpath="containWord('op_glos', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+								<sm:WTooltip widgetClass="glosItem">
+									<sm:label/>
+									<sm:tooltip>
+										<sm:basket key="glos" render="inBasket"/>
+										<sm:ttTitle>
+											<sm:WFreeBlock>
+												<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1366648745169">Passage par un freeblock pour ne pas avoir de span. Pour coincider avec les refs dans le texte lors de l'ordonnancement alphabétique</comment></comment>-->
+												<sm:title>
+													<sm:subModelTitle/>
+												</sm:title>
+											</sm:WFreeBlock>
+										</sm:ttTitle>
+										<sm:ttContent>
+											<sm:callSubModel/>
+										</sm:ttContent>
+									</sm:tooltip>
+								</sm:WTooltip>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="containWord('op_ref', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+								<sm:WTooltip widgetClass="refItem">
+									<sm:label/>
+									<sm:tooltip>
+										<sm:basket key="ref" render="inBasket"/>
+										<sm:ttTitle>
+											<sm:WFreeBlock>
+												<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1366648745169">Passage par un freeblock pour ne pas avoir de span. Pour coincider avec les refs dans le texte lors de l'ordonnancement alphabétique</comment></comment>-->
+												<sm:title>
+													<sm:subModelTitle/>
+												</sm:title>
+											</sm:WFreeBlock>
+										</sm:ttTitle>
+										<sm:ttContent>
+											<sm:callSubModel/>
+										</sm:ttContent>
+									</sm:tooltip>
+								</sm:WTooltip>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="containWord('op_acr', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+								<sm:WTooltip widgetClass="acrItem">
+									<sm:label/>
+									<sm:tooltip>
+										<sm:basket key="acr" render="inBasket"/>
+										<sm:ttTitle>
+											<sm:WFreeBlock>
+												<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1366648745169">Passage par un freeblock pour ne pas avoir de span. Pour coincider avec les refs dans le texte lors de l'ordonnancement alphabétique</comment></comment>-->
+												<sm:title>
+													<sm:subModelTitle/>
+												</sm:title>
+											</sm:WFreeBlock>
+										</sm:ttTitle>
+										<sm:ttContent>
+											<sm:callSubModel/>
+										</sm:ttContent>
+									</sm:tooltip>
+								</sm:WTooltip>
+							</sm:when>
+						</sm:choose>
+						<sm:choose>
+							<sm:when xpath="containWord('op_bib', srcFields(srcFileAgent(concat('@', getIdFromPath(@sc:refUri))), 'itModel'))">
+								<sm:choose>
+									<sm:when xpath="getContent(gotoSubModel(),'type') = 'bib'">
+										<sm:WTooltip widgetClass="bibItem">
+											<sm:label/>
+											<sm:tooltip>
+												<sm:basket key="bib" render="inBasket"/>
+												<sm:ttTitle>
+													<sm:WFreeBlock>
+														<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1366648745169">Passage par un freeblock pour ne pas avoir de span. Pour coincider avec les refs dans le texte lors de l'ordonnancement alphabétique</comment></comment>-->
+														<sm:title>
+															<sm:subModelTitle/>
+														</sm:title>
+													</sm:WFreeBlock>
+												</sm:ttTitle>
+												<sm:ttContent>
+													<sm:callSubModel/>
+												</sm:ttContent>
+											</sm:tooltip>
+										</sm:WTooltip>
+									</sm:when>
+									<sm:otherwise>
+										<sm:WTooltip widgetClass="webItem">
+											<sm:label/>
+											<sm:tooltip>
+												<sm:basket key="web" render="inBasket"/>
+												<sm:ttTitle>
+													<sm:WFreeBlock>
+														<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1366648745169">Passage par un freeblock pour ne pas avoir de span. Pour coincider avec les refs dans le texte lors de l'ordonnancement alphabétique</comment></comment>-->
+														<sm:title>
+															<sm:subModelTitle/>
+														</sm:title>
+													</sm:WFreeBlock>
+												</sm:ttTitle>
+												<sm:ttContent>
+													<sm:callSubModel/>
+												</sm:ttContent>
+											</sm:tooltip>
+										</sm:WTooltip>
+									</sm:otherwise>
+								</sm:choose>
+							</sm:when>
+						</sm:choose>
+					</sm:for>
+				</sm:WSimpleBlock>
+			</sm:when>
+		</sm:choose>
+	</sm:content>
+</sm:compositionXhtmlTransf>

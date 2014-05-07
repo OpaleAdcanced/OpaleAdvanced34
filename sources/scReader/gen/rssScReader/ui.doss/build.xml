@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="Phone" default="main" basedir=".">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+	<property file="${vFolderDest}/online.properties"/>
+
+	<condition property="delete.pub.content">
+		<or>
+			<equals arg1="${include.online}" arg2="no"/>
+			<equals arg1="${include.online}" arg2=""/>
+		</or>
+	</condition>
+
+	<target name="main">
+		<foreach target="zip" param="pDir">
+			<path>
+				<dirset dir="${vFolderDest}" includes="co/*" />
+			</path>
+		</foreach>
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${vFolderDest}" includes="**/*" excludes="index.rss co/** meta/** res/**"/>
+		</delete>
+	</target>
+	
+	<target name="zip">
+		<delete file="${pDir}/phone.zip"/>
+		<zip destfile="${pDir}/phone.zip" compress="true" keepcompression="false" update="true">
+			<fileset dir="${pDir}" excludes=" meta/**"/>
+		</zip>
+		<antcall target="del" >
+			<param name="pDir" value="${pDir}"/>
+		</antcall>
+	</target>
+	<target name="del" if="delete.pub.content">
+		<delete includeemptydirs="true" failonerror="false" >
+			<fileset dir="${pDir}" includes="**/*" excludes="phone.zip"/>
+		</delete>
+	</target>	
+</project>

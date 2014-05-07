@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeUiWidget xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" code="txtTableIndex">
+	<sm:widgetBsFragment contentFormat="xhtml">&lt;source type="xslOnSrc-dynamique"&gt;
+	&lt;xsl:stylesheet exclude-result-prefixes="sc sp java op"
+	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:op="utc.fr:ics/opale3"
+	xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"
+	xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+	xmlns:java="http://xml.apache.org/xslt/java"&gt;
+
+		&lt;xsl:output omit-xml-declaration="yes" indent="no" method="xml" /&gt;
+		&lt;xsl:param name="vDialog" /&gt;
+		&lt;xsl:param name="vAgent" /&gt;
+		&lt;xsl:param name="vArguments" /&gt;
+
+		&lt;xsl:template match="*"&gt;
+			&lt;xsl:variable name="vIdxType" select="$vArguments/op:txtTableM/sp:index"/&gt;
+			&lt;xsl:if test="string-length($vIdxType)&amp;gt;0"&gt;
+				&lt;addTableIndex type="{$vIdxType}"/&gt;
+			&lt;/xsl:if&gt;
+		&lt;/xsl:template&gt;
+	&lt;/xsl:stylesheet&gt;
+&lt;/source&gt;
+</sm:widgetBsFragment>
+	<sm:fillTemplateBuffers>
+		<sm:postXslFragment keyXsl="xhtml">&lt;xsl:template match="addTableIndex"&gt;
+	&lt;xsl:attribute name="class"&gt;
+		&lt;xsl:value-of select="concat(../@class,' indexType_',@type)"/&gt;
+	&lt;/xsl:attribute&gt;
+&lt;/xsl:template&gt;
+</sm:postXslFragment>
+	</sm:fillTemplateBuffers>
+</sm:freeUiWidget>

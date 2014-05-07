@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:webSiteGenerator code="pdf" name="￼;Publication PDF￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:icon sc:refUri="/genPrint/gen/pdf/pdfGen.png"/>
+	<sm:modelRoot>
+		<sm:allowedModel sc:refUri="/academic/model/root/odRoot.model"/>
+		<sm:allowedModel sc:refUri="/academic/model/Ue/ue.model"/>
+	</sm:modelRoot>
+	<sm:mode standard="HTML 4.01 Transitional (Standards mode)" debug="no"/>
+	<sm:uiFrame sc:refUri="/genPrint/gen/pdf/pdf.uiframe"/>
+	<sm:transformerList sc:refUri="/genPrint/gen/pdf/pdf.transflist"/>
+	<sm:uiTemplateList>
+		<sm:uiTemplate code="print" sc:refUri="/genPrint/gen/pdf/tpl/print.uitemplate"/>
+	</sm:uiTemplateList>
+	<sm:defaultSkin sc:refUri="/genPrint/gen/pdf/pdf.skin.doss"/>
+</sm:webSiteGenerator>

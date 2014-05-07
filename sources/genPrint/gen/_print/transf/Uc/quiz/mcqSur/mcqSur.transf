@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitMcqHtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcqSur.model"/>
+	<sm:content>
+		<scBlock class="quiz mcqSur">
+			<hx class="quiz_ti">
+				<span>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1355306925384">Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket</comment></comment>-->
+					<span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}">
+						<sm:dynamicString>
+							<sm:freeXslFragment>&lt;span class="prefixQuiz"&gt;￼;Exercice￼&lt;/span&gt;
+&lt;xsl:value-of select="si(op:exeM/sp:title,concat(' : ',op:exeM/sp:title),'')"/&gt;</sm:freeXslFragment>
+						</sm:dynamicString>
+					</span>
+				</span>
+			</hx>
+			<sm:choose>
+				<sm:when xpath="not(codeAgent(lookForAscendants($vDialog,'currentToRoot','op_coQuiz')))">
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/utils/WTooltipQuiz.uiwidget">
+						<sm:xhtmlContentZone key="zCo">
+							<sm:callModel>
+								<sm:current axis="asw"/>
+							</sm:callModel>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:when>
+			</sm:choose>
+			<div class="quiz_co">
+				<div class="bkBase bkQuestion">
+					<div class="bkBase_co">
+						<sm:callQuestionModel/>
+					</div>
+				</div>
+				<sm:WChoiceList widgetClass="bkBase bkChoices" tagName="div">
+					<sm:choiceBody>
+						<div class="mcqSurChoice">
+							<div class="mcqSurChoiceLbl">
+								<sm:callLabelModel/>
+							</div>
+						</div>
+					</sm:choiceBody>
+				</sm:WChoiceList>
+			</div>
+		</scBlock>
+	</sm:content>
+</sma:assmntUnitMcqHtmlTransf>

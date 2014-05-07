@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ua/courseUa.model"/>
+	<sm:axis code="co"/>
+	<sm:content format="xhtml">
+		<sm:for codes="obj">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WSimpleBlock widgetClass="section" class="obj">
+						<sm:title>
+							<sm:fixedTitle value="￼;Objectifs￼"/>
+						</sm:title>
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="intro">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WSimpleBlock widgetClass="section" class="intro">
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="trainUcMcgSur trainUcMcgMur trainUcMcqSur trainUcMcqMur trainUcMatch trainUcOrdWord trainUcCloze trainUcField trainUcCoQuiz courseUc practUc vidUc">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WSimpleBlock widgetClass="section">
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="quest">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WTooltip widgetClass="hidden_tt">
+						<sm:label/>
+						<sm:tooltip>
+							<sm:basket key="quest" render="inBasket"/>
+							<sm:ttContent>
+								<sm:callSubModel/>
+								<sm:WSimpleBlock widgetClass="answer">
+									<!--Hack permettant de faire fonctionner le page-break-inside dans un div vide avec Flying Saucer. le texte est mis en blanc en CSS.
+Essayer de trouver une meilleur solution.-->
+									<!--
+
+<sm:WFreeBlock xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">Mauris pharetra elit ultricies tellus commodo eu egestas risus ullamcorper. Suspendisse imperdiet, metus at rutrum imperdiet, ante augue tincidunt tortor, sed eleifend velit sapien eu tortor. Pellentesque et diam orci, vitae sollicitudin est. Etiam at tempus orci. Etiam luctus venenatis egestas. Nulla nec ligula ante. Fusce rutrum cursus pharetra. Aenean in enim nec leo facilisis tincidunt sit amet a est. Quisque vitae sapien sem, eget viverra magna. Nulla facilisi. Donec eleifend dictum neque rutrum pretium. In at condimentum enim. Maecenas porta, magna nec tincidunt cursus, felis tortor luctus felis, non porta purus tellus id tortor.</sm:WFreeBlock>-->
+									<sm:WFreeBlock>......................................................................................................................................................................................................................................................... 
+......................................................................................................................................................................................................................................................... 
+......................................................................................................................................................................................................................................................... 
+......................................................................................................................................................................................................................................................... 
+.........................................................................................................................................................................................................................................................
+
+.........................................................................................................................................................................................................................................................
+
+.........................................................................................................................................................................................................................................................</sm:WFreeBlock>
+								</sm:WSimpleBlock>
+							</sm:ttContent>
+						</sm:tooltip>
+					</sm:WTooltip>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+		<sm:for codes="conclu">
+			<sm:choose>
+				<sm:when sc:refUri="/academic/gen/_cnd/filters/defaultStandard/include.cond">
+					<sm:WFreeBlock>
+						<p xmlns="http://www.w3.org/1999/xhtml" class="carBeforeConclu">*  *</p>
+						<p xmlns="http://www.w3.org/1999/xhtml" class="carBeforeConclu">*</p>
+					</sm:WFreeBlock>
+					<sm:WSimpleBlock widgetClass="section" class="conclu">
+						<sm:callSubModel/>
+					</sm:WSimpleBlock>
+				</sm:when>
+			</sm:choose>
+		</sm:for>
+	</sm:content>
+</sm:compositionXhtmlTransf>

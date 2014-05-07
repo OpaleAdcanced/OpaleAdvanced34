@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:fullTitleText>
+		<sm:callCompositionMeta/>
+	</sm:fullTitleText>
+	<sm:shortTitleText>
+		<sm:callCompositionMeta/>
+	</sm:shortTitleText>
+	<sm:content format="xhtml">
+		<sm:Widget sc:refUri="/academic/gen/_sld/widg/ss/ssBkCoOnly.uiwidget">
+			<sm:xhtmlContentZone key="co">
+				<sm:callModel xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+					<sm:root axis="coHome"/>
+				</sm:callModel>
+			</sm:xhtmlContentZone>
+		</sm:Widget>
+	</sm:content>
+</sm:compositionXhtmlTransf>

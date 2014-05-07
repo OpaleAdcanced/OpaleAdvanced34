@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:transformerList>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/avi_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/doc_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/eWeb_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/flash_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/flv_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/mov_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/mp3_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odg_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odp_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/ods_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odt_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/pdf_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/ppt_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/rm_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/wmv_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/xls_print.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/zip_print.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="inline">
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/doc_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/flash_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odp_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/ods_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/ods_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odt_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/pdf_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/ppt_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/xls_print@inline.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/zip_print@inline.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="logo">
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print@logo.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print@logo.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print@logo.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="txtRes">
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print@txtRes.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print@txtRes.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print@txtRes.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="gal">
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print@gal.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print@gal.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/odg_print@gal.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print@gal.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="nav">
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/gif_print@nav.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/jpg_print@nav.transf"/>
+		<sm:transformer sc:refUri="/genPrint/gen/_print/transf/binaries/png_print@nav.transf"/>
+	</sm:transformerList>
+	<sm:transformerList info="importé du web">
+		<sm:transformerList info="ico" sc:refUri="/binaries/_web/binaries@ico.transflist"/>
+	</sm:transformerList>
+</sm:transformerList>

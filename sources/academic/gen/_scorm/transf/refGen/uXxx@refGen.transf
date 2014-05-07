@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:freeXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/academic/model/Ue/ue.model"/>
+	<sm:axis code="refGen"/>
+	<sm:bs sc:refUri="/academic/gen/_scorm/transf/refGen/uXxx@refGen.doss" bsPath="op_uXxx_ArefGen.xml"/>
+	<sm:view code="scormCam"/>
+</sm:freeXhtmlTransf>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/opus/opus.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WFreeBlock>
+			<audio xmlns="http://www.w3.org/1999/xhtml" preload="none" controls="controls">
+				<source onerror="tplMgr.xMediaFallback(this.parentNode)">
+					<addAttribute name="src">
+						<sm:binaryUrl/>
+					</addAttribute>
+				</source>
+				<div class="infoAudio">
+					<p>￼;Votre navigateur ne prend pas en charge le format OPUS. Téléchargez le fichier :￼</p>
+					<sm:WLink>
+						<sm:label>
+							<sm:binaryFileName/>
+						</sm:label>
+						<sm:link target="newWindow">
+							<sm:binaryUrl>
+								<sm:imageSize/>
+							</sm:binaryUrl>
+						</sm:link>
+					</sm:WLink>
+				</div>
+			</audio>
+		</sm:WFreeBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

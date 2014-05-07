@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sma:assmntUnitGmcqHtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sma="kelis.fr:scenari/modeling/assessment" xmlns="http://www.w3.org/1999/xhtml">
+	<sm:model sc:refUri="/academic/model/Uc/quiz/mcgMur.model"/>
+	<sm:content>
+		<scBlock class="quiz mcqMur">
+			<hx class="quiz_ti">
+				<span>
+					<!--<comment xmlns="scenari.eu:comment:1.0" type="thread"><comment creationTime="1355306925384">Ce span est ajouté à chaque titre d'items pour permettre une liaison avec les tooltips des scBasket</comment></comment>-->
+					<span id="{alphaHash(concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new())))}" itemKey="{concat(getIdNode(.),'_',java:nextDouble(java:java.util.Random.new()))}">
+						<sm:dynamicString>
+							<sm:freeXslFragment>&lt;span class="prefixQuiz"&gt;￼;Exercice￼&lt;/span&gt;
+&lt;xsl:value-of select="si(op:exeM/sp:title,concat(' : ',op:exeM/sp:title),'')"/&gt;</sm:freeXslFragment>
+						</sm:dynamicString>
+					</span>
+				</span>
+			</hx>
+			<sm:choose>
+				<sm:when xpath="not(codeAgent(lookForAscendants($vDialog,'currentToRoot','op_coQuiz')))">
+					<sm:Widget sc:refUri="/genPrint/gen/_print/widg/utils/WTooltipQuiz.uiwidget">
+						<sm:xhtmlContentZone key="zCo">
+							<sm:callModel>
+								<sm:current axis="asw"/>
+							</sm:callModel>
+						</sm:xhtmlContentZone>
+					</sm:Widget>
+				</sm:when>
+			</sm:choose>
+			<div class="quiz_co">
+				<div class="bkBase bkQuestion">
+					<div class="bkBase_co">
+						<sm:callQuestionModel/>
+						<div class="stepMap">
+							<sm:WChoiceHighlightedImage>
+								<sm:callBackgroundImageModel axis="nav"/>
+								<sm:choiceArea>
+									<sm:simpleHighlight>
+										<sm:area strokeWidth="1" strokeColor="gray" fillColor="#FFF6"/>
+										<sm:label format="1" fontSizeInPt="10" fontColor="white" fillColor="#999A"/>
+									</sm:simpleHighlight>
+								</sm:choiceArea>
+							</sm:WChoiceHighlightedImage>
+						</div>
+					</div>
+				</div>
+				<sm:choose>
+					<sm:when xpath="boolean(//sc:choiceLabel)">
+						<sm:WChoiceList widgetClass="mcgMurChoice" tagName="div">
+							<sm:choiceBody>
+								<div class="mcgMurChoiceNum">
+									<sm:choiceNumber format="1"/>
+								</div>
+								<div class="mcgMurChoiceLbl">
+									<sm:callLabelModel/>
+								</div>
+							</sm:choiceBody>
+						</sm:WChoiceList>
+					</sm:when>
+				</sm:choose>
+			</div>
+		</scBlock>
+	</sm:content>
+</sma:assmntUnitGmcqHtmlTransf>
